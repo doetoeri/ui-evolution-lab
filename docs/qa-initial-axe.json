@@ -1,0 +1,3426 @@
+{
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#929bae",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.79,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"lab-header\">",
+                  "target": [
+                    ".lab-header"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.79 (foreground color: #929bae, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<small>DESIGN GENOME EXPLORER</small>",
+          "target": [
+            ".lab-brand > span:nth-child(2) > small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #929bae, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#7f8b9d",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.45,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"lab-header\">",
+                  "target": [
+                    ".lab-header"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.45 (foreground color: #7f8b9d, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"phase-badge\">PHASE 0</span>",
+          "target": [
+            ".phase-badge"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.45 (foreground color: #7f8b9d, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#728097",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.99,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"lab-header\">",
+                  "target": [
+                    ".lab-header"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.99 (foreground color: #728097, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>컴포넌트</span>",
+          "target": [
+            ".lab-navigation > button:nth-child(2) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.99 (foreground color: #728097, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#728097",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.99,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"lab-header\">",
+                  "target": [
+                    ".lab-header"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.99 (foreground color: #728097, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>디자인 비교</span>",
+          "target": [
+            ".lab-navigation > button:nth-child(3) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.99 (foreground color: #728097, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8a95a6",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.03,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"lab-header\">",
+                  "target": [
+                    ".lab-header"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.03 (foreground color: #8a95a6, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"local-indicator\"><span></span> 로컬 저장</span>",
+          "target": [
+            ".local-indicator"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #8a95a6, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8490a3",
+                "bgColor": "#fbfcfe",
+                "contrastRatio": 3.14,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lab-toolbar\">",
+                  "target": [
+                    ".lab-toolbar"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.14 (foreground color: #8490a3, background color: #fbfcfe, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>#5539ae</span>",
+          "target": [
+            ".toolbar-title > span:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.14 (foreground color: #8490a3, background color: #fbfcfe, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#929caf",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.76,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<label class=\"seed-input\"><span>SEED</span><input aria-label=\"랜덤 시드\" min=\"0\" max=\"4294967295\" type=\"number\" value=\"12345\" style=\"\"></label>",
+                  "target": [
+                    ".seed-input"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.76 (foreground color: #929caf, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>SEED</span>",
+          "target": [
+            ".seed-input > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.76 (foreground color: #929caf, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#6e7d93",
+                "bgColor": "#fbfcfe",
+                "contrastRatio": 4.07,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lab-toolbar\">",
+                  "target": [
+                    ".lab-toolbar"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 4.07 (foreground color: #6e7d93, background color: #fbfcfe, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>가져오기</span>",
+          "target": [
+            ".toolbar-text:nth-child(5) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #6e7d93, background color: #fbfcfe, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#6e7d93",
+                "bgColor": "#fbfcfe",
+                "contrastRatio": 4.07,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"lab-toolbar\">",
+                  "target": [
+                    ".lab-toolbar"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 4.07 (foreground color: #6e7d93, background color: #fbfcfe, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>JSON</span>",
+          "target": [
+            ".toolbar-text:nth-child(6) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.07 (foreground color: #6e7d93, background color: #fbfcfe, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9ba5b5",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.48,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"panel-kicker\">YOUR DESIGN DNA</span>",
+          "target": [
+            ".explorer-panel > .panel-heading > div > .panel-kicker"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8d98aa",
+                "bgColor": "#f1f3f7",
+                "contrastRatio": 2.62,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span>120</span>",
+                  "target": [
+                    ".panel-heading > div > h2 > span"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.62 (foreground color: #8d98aa, background color: #f1f3f7, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>120</span>",
+          "target": [
+            ".panel-heading > div > h2 > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.62 (foreground color: #8d98aa, background color: #f1f3f7, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#98a2b3",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.57,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.57 (foreground color: #98a2b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-pressed=\"false\">수정됨 <strong>0</strong></button>",
+          "target": [
+            ".explorer-summary > button:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.57 (foreground color: #98a2b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#98a2b3",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.57,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.57 (foreground color: #98a2b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>",
+          "target": [
+            ".explorer-summary > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.57 (foreground color: #98a2b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#7d8ba0",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.45,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.45 (foreground color: #7d8ba0, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\">초기화</button>",
+          "target": [
+            ".explorer-summary > button:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.45 (foreground color: #7d8ba0, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a6aebe",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.22,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.22 (foreground color: #a6aebe, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<small>Structure</small>",
+          "target": [
+            "button[aria-controls=\"group-A\"] > span:nth-child(2) > small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.22 (foreground color: #a6aebe, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9faabc",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.34,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.34 (foreground color: #9faabc, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"group-count\">12</span>",
+          "target": [
+            "button[aria-controls=\"group-A\"] > .group-count"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.34 (foreground color: #9faabc, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a3adbd",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.26,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"var-id\">A01</span>",
+          "target": [
+            "div[data-variable=\"A01\"] > .variable-label > label > .var-id"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#939fb1",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.68,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.68 (foreground color: #939fb1, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>구조·형태·색상 역할·모션의 기본 철학을 바꿉니다.</p>",
+          "target": [
+            "div[data-variable=\"A01\"] > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.68 (foreground color: #939fb1, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9ba5b5",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.48,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<summary>스키마·연결 정보</summary>",
+          "target": [
+            "div[data-variable=\"A01\"] > .schema-details > summary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a3adbd",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.26,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"var-id\">A02</span>",
+          "target": [
+            "div[data-variable=\"A02\"] > .variable-label > label > .var-id"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#939fb1",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.68,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.68 (foreground color: #939fb1, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>히어로와 상품 영역의 공간 구성을 바꿉니다.</p>",
+          "target": [
+            "div[data-variable=\"A02\"] > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.68 (foreground color: #939fb1, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9ba5b5",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.48,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<summary>스키마·연결 정보</summary>",
+          "target": [
+            "div[data-variable=\"A02\"] > .schema-details > summary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a3adbd",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.26,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"var-id\">A03</span>",
+          "target": [
+            "div[data-variable=\"A03\"] > .variable-label > label > .var-id"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#939fb1",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.68,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.68 (foreground color: #939fb1, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>콘텐츠가 확장될 수 있는 최대 폭입니다.</p>",
+          "target": [
+            "div[data-variable=\"A03\"] > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.68 (foreground color: #939fb1, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9ba5b5",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.48,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<summary>스키마·연결 정보</summary>",
+          "target": [
+            "div[data-variable=\"A03\"] > .schema-details > summary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a3adbd",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.26,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"var-id\">A04</span>",
+          "target": [
+            "div[data-variable=\"A04\"] > .variable-label > label > .var-id"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#939fb1",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.68,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.68 (foreground color: #939fb1, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>화면 내부 좌우 안전 여백입니다.</p>",
+          "target": [
+            "div[data-variable=\"A04\"] > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.68 (foreground color: #939fb1, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9ba5b5",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.48,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<summary>스키마·연결 정보</summary>",
+          "target": [
+            "div[data-variable=\"A04\"] > .schema-details > summary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a3adbd",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.26,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"var-id\">A05</span>",
+          "target": [
+            "div[data-variable=\"A05\"] > .variable-label > label > .var-id"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#939fb1",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.68,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.68 (foreground color: #939fb1, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>최대 너비 콘텐츠의 화면 기준 위치입니다.</p>",
+          "target": [
+            "div[data-variable=\"A05\"] > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.68 (foreground color: #939fb1, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9ba5b5",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.48,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<summary>스키마·연결 정보</summary>",
+          "target": [
+            "div[data-variable=\"A05\"] > .schema-details > summary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a3adbd",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.26,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"var-id\">A06</span>",
+          "target": [
+            "div[data-variable=\"A06\"] > .variable-label > label > .var-id"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9ba5b5",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.48,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"explorer-panel panel\" aria-label=\"Variable Explorer\">",
+                  "target": [
+                    ".explorer-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>0개 선택됨</span>",
+          "target": [
+            ".explorer-bottom > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#329775",
+                "bgColor": "#f4f6fa",
+                "contrastRatio": 3.33,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"preview-panel\" aria-label=\"Live Preview\">",
+                  "target": [
+                    ".preview-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.33 (foreground color: #329775, background color: #f4f6fa, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"live-dot\">LIVE</span>",
+          "target": [
+            ".preview-topline > div > .live-dot"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.33 (foreground color: #329775, background color: #f4f6fa, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a7afbe",
+                "bgColor": "#f4f6fa",
+                "contrastRatio": 2.03,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"preview-panel\" aria-label=\"Live Preview\">",
+                  "target": [
+                    ".preview-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.03 (foreground color: #a7afbe, background color: #f4f6fa, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>FUNCTIONAL DEMO</span>",
+          "target": [
+            ".preview-topline > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.03 (foreground color: #a7afbe, background color: #f4f6fa, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8e9aad",
+                "bgColor": "#f4f6fa",
+                "contrastRatio": 2.63,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"preview-panel\" aria-label=\"Live Preview\">",
+                  "target": [
+                    ".preview-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.63 (foreground color: #8e9aad, background color: #f4f6fa, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" class=\"subtle-link\">",
+          "target": [
+            ".subtle-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.63 (foreground color: #8e9aad, background color: #f4f6fa, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8793a7",
+                "bgColor": "#e8ecf3",
+                "contrastRatio": 2.62,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"family-picker\" role=\"group\" aria-label=\"디자인 계열\">",
+                  "target": [
+                    ".family-picker"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.62 (foreground color: #8793a7, background color: #e8ecf3, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-pressed=\"false\" title=\"컬러 역할과 명확한 상태·표면\"><span class=\"family-icon material-inspired\">M</span>Material</button>",
+          "target": [
+            "button[title=\"컬러 역할과 명확한 상태·표면\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.62 (foreground color: #8793a7, background color: #e8ecf3, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8793a7",
+                "bgColor": "#e8ecf3",
+                "contrastRatio": 2.62,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"family-picker\" role=\"group\" aria-label=\"디자인 계열\">",
+                  "target": [
+                    ".family-picker"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.62 (foreground color: #8793a7, background color: #e8ecf3, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-pressed=\"false\" title=\"비대칭 구조와 대담한 편집 디자인\"><span class=\"family-icon experimental\">X</span>Experimental</button>",
+          "target": [
+            "button[title=\"비대칭 구조와 대담한 편집 디자인\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.62 (foreground color: #8793a7, background color: #e8ecf3, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8794a8",
+                "bgColor": "#f4f6fa",
+                "contrastRatio": 2.84,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"preview-panel\" aria-label=\"Live Preview\">",
+                  "target": [
+                    ".preview-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.84 (foreground color: #8794a8, background color: #f4f6fa, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<label for=\"_r_c_\">Signature</label>",
+          "target": [
+            "label[for=\"_r_c_\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.84 (foreground color: #8794a8, background color: #f4f6fa, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9ba6b7",
+                "bgColor": "#f4f6fa",
+                "contrastRatio": 2.27,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"preview-panel\" aria-label=\"Live Preview\">",
+                  "target": [
+                    ".preview-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.27 (foreground color: #9ba6b7, background color: #f4f6fa, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>1120 × 800</span>",
+          "target": [
+            ".canvas-device-toolbar > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.27 (foreground color: #9ba6b7, background color: #f4f6fa, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9ba6b7",
+                "bgColor": "#f4f6fa",
+                "contrastRatio": 2.27,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<section class=\"preview-panel\" aria-label=\"Live Preview\">",
+                  "target": [
+                    ".preview-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.27 (foreground color: #9ba6b7, background color: #f4f6fa, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" title=\"화면에 맞춤\">84%</button>",
+          "target": [
+            "button[title=\"화면에 맞춤\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.27 (foreground color: #9ba6b7, background color: #f4f6fa, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9aa6b8",
+                "bgColor": "#f9fafc",
+                "contrastRatio": 2.35,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer class=\"preview-footer\"><span><span class=\"status-dot\"></span> 모든 변경은 실시간으로 반영됩니다</span><span>120 VARIABLES · 3 FAMILIES · 1 GENOME</span></footer>",
+                  "target": [
+                    ".preview-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.35 (foreground color: #9aa6b8, background color: #f9fafc, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span><span class=\"status-dot\"></span> 모든 변경은 실시간으로 반영됩니다</span>",
+          "target": [
+            ".preview-footer > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.35 (foreground color: #9aa6b8, background color: #f9fafc, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#aab3c3",
+                "bgColor": "#f9fafc",
+                "contrastRatio": 2.02,
+                "fontSize": "4.5pt (6px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer class=\"preview-footer\"><span><span class=\"status-dot\"></span> 모든 변경은 실시간으로 반영됩니다</span><span>120 VARIABLES · 3 FAMILIES · 1 GENOME</span></footer>",
+                  "target": [
+                    ".preview-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.02 (foreground color: #aab3c3, background color: #f9fafc, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>120 VARIABLES · 3 FAMILIES · 1 GENOME</span>",
+          "target": [
+            ".preview-footer > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.02 (foreground color: #aab3c3, background color: #f9fafc, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9ba5b5",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.48,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"panel-kicker\">UNDER THE SURFACE</span>",
+          "target": [
+            ".inspector-panel > .panel-heading > div > .panel-kicker"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #9ba5b5, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a2adbd",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.27,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.27 (foreground color: #a2adbd, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" role=\"tab\" id=\"inspect-tab-genome\" aria-selected=\"false\" aria-controls=\"inspect-panel-genome\" tabindex=\"-1\">Genome</button>",
+          "target": [
+            "#inspect-tab-genome"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.27 (foreground color: #a2adbd, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a2adbd",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.27,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.27 (foreground color: #a2adbd, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" role=\"tab\" id=\"inspect-tab-history\" aria-selected=\"false\" aria-controls=\"inspect-panel-history\" tabindex=\"-1\">History</button>",
+          "target": [
+            "#inspect-tab-history"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.27 (foreground color: #a2adbd, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#77859a",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.74,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.74 (foreground color: #77859a, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>현재 유전자</span>",
+          "target": [
+            ".inspector-section:nth-child(1) > .section-label > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #77859a, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#329775",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.6,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.6 (foreground color: #329775, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"live-dot\">LIVE</span>",
+          "target": [
+            ".section-label > .live-dot"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.6 (foreground color: #329775, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a3adbd",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.26,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<small>v1 · apple · seed 12345</small>",
+          "target": [
+            ".genome-id > div:nth-child(2) > small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.26 (foreground color: #a3adbd, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a2adbd",
+                "bgColor": "#fbfcff",
+                "contrastRatio": 2.21,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"mini-stats\"><div><strong>120</strong><span>설계변수</span></div><div><strong>10</strong><span>변수 그룹</span></div><div><strong>0</strong><span>고정 변수</span></div></div>",
+                  "target": [
+                    ".mini-stats"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.21 (foreground color: #a2adbd, background color: #fbfcff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>설계변수</span>",
+          "target": [
+            ".mini-stats > div:nth-child(1) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #a2adbd, background color: #fbfcff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a2adbd",
+                "bgColor": "#fbfcff",
+                "contrastRatio": 2.21,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"mini-stats\"><div><strong>120</strong><span>설계변수</span></div><div><strong>10</strong><span>변수 그룹</span></div><div><strong>0</strong><span>고정 변수</span></div></div>",
+                  "target": [
+                    ".mini-stats"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.21 (foreground color: #a2adbd, background color: #fbfcff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>변수 그룹</span>",
+          "target": [
+            ".mini-stats > div:nth-child(2) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #a2adbd, background color: #fbfcff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a2adbd",
+                "bgColor": "#fbfcff",
+                "contrastRatio": 2.21,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"mini-stats\"><div><strong>120</strong><span>설계변수</span></div><div><strong>10</strong><span>변수 그룹</span></div><div><strong>0</strong><span>고정 변수</span></div></div>",
+                  "target": [
+                    ".mini-stats"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.21 (foreground color: #a2adbd, background color: #fbfcff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>고정 변수</span>",
+          "target": [
+            ".mini-stats > div:nth-child(3) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #a2adbd, background color: #fbfcff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#77859a",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.74,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.74 (foreground color: #77859a, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>디자인 토큰</span>",
+          "target": [
+            ".inspector-section:nth-child(2) > .section-label > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #77859a, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9ca6b6",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.45,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.45 (foreground color: #9ca6b6, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\">",
+          "target": [
+            ".section-label > button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.45 (foreground color: #9ca6b6, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9aa5b6",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.49,
+                "fontSize": "4.5pt (6px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.49 (foreground color: #9aa5b6, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<small>primary</small>",
+          "target": [
+            "div:nth-child(1) > small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.49 (foreground color: #9aa5b6, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9aa5b6",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.49,
+                "fontSize": "4.5pt (6px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.49 (foreground color: #9aa5b6, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<small>onPrimary</small>",
+          "target": [
+            ".color-swatches > div:nth-child(2) > small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.49 (foreground color: #9aa5b6, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9aa5b6",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.49,
+                "fontSize": "4.5pt (6px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.49 (foreground color: #9aa5b6, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<small>surface</small>",
+          "target": [
+            ".color-swatches > div:nth-child(3) > small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.49 (foreground color: #9aa5b6, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9aa5b6",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.49,
+                "fontSize": "4.5pt (6px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.49 (foreground color: #9aa5b6, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<small>canvas</small>",
+          "target": [
+            "div:nth-child(4) > small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.49 (foreground color: #9aa5b6, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9aa5b6",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.49,
+                "fontSize": "4.5pt (6px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.49 (foreground color: #9aa5b6, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<small>ink</small>",
+          "target": [
+            "div:nth-child(5) > small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.49 (foreground color: #9aa5b6, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9aa5b6",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.49,
+                "fontSize": "4.5pt (6px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.49 (foreground color: #9aa5b6, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<small>muted</small>",
+          "target": [
+            "div:nth-child(6) > small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.49 (foreground color: #9aa5b6, background color: #ffffff, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#96a1b3",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.61,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.61 (foreground color: #96a1b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<dt>모서리</dt>",
+          "target": [
+            "div:nth-child(1) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #96a1b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#96a1b3",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.61,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.61 (foreground color: #96a1b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<dt>기본 간격</dt>",
+          "target": [
+            "div:nth-child(2) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #96a1b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#96a1b3",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.61,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.61 (foreground color: #96a1b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<dt>타이포그래피</dt>",
+          "target": [
+            "div:nth-child(3) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #96a1b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#96a1b3",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.61,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.61 (foreground color: #96a1b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<dt>모션</dt>",
+          "target": [
+            "div:nth-child(4) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #96a1b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#96a1b3",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.61,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.61 (foreground color: #96a1b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<dt>터치 목표</dt>",
+          "target": [
+            "div:nth-child(5) > dt"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.61 (foreground color: #96a1b3, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8d9bb1",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.81,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.81 (foreground color: #8d9bb1, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<summary>전체 CSS 토큰</summary>",
+          "target": [
+            ".inspector-section:nth-child(2) > details > summary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.81 (foreground color: #8d9bb1, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#77859a",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.74,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.74 (foreground color: #77859a, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>접근성 검사</span>",
+          "target": [
+            ".inspector-section:nth-child(3) > .section-label > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #77859a, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#9ba8b9",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.41,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.41 (foreground color: #9ba8b9, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<small>계산된 색상 쌍의 명도 대비</small>",
+          "target": [
+            ".a11y-status > div > small"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.41 (foreground color: #9ba8b9, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#929fb1",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.68,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.68 (foreground color: #929fb1, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-check\"><path d=\"M20 6 9 17l-5-5\"></path></svg> 본문 / 표면</span>",
+          "target": [
+            ".contrast-checks > div:nth-child(1) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.68 (foreground color: #929fb1, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#47947f",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.61,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.61 (foreground color: #47947f, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong class=\"pass\">16.84:1</strong>",
+          "target": [
+            "div:nth-child(1) > .pass"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #47947f, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#929fb1",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.68,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.68 (foreground color: #929fb1, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-check\"><path d=\"M20 6 9 17l-5-5\"></path></svg> 보조 텍스트 / 표면</span>",
+          "target": [
+            ".contrast-checks > div:nth-child(2) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.68 (foreground color: #929fb1, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#47947f",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.61,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.61 (foreground color: #47947f, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong class=\"pass\">6.37:1</strong>",
+          "target": [
+            "div:nth-child(2) > .pass"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #47947f, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#929fb1",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.68,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.68 (foreground color: #929fb1, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-check\"><path d=\"M20 6 9 17l-5-5\"></path></svg> 버튼 전경 / 기본색</span>",
+          "target": [
+            ".contrast-checks > div:nth-child(3) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.68 (foreground color: #929fb1, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#47947f",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.61,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.61 (foreground color: #47947f, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong class=\"pass\">5.37:1</strong>",
+          "target": [
+            "div:nth-child(3) > .pass"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #47947f, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#929fb1",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.68,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.68 (foreground color: #929fb1, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>",
+          "target": [
+            ".contrast-checks > div:nth-child(4) > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.68 (foreground color: #929fb1, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a57d3c",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.75,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.75 (foreground color: #a57d3c, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong class=\"warn\">1.82:1</strong>",
+          "target": [
+            ".warn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.75 (foreground color: #a57d3c, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#5d83bf",
+                "bgColor": "#f5f8ff",
+                "contrastRatio": 3.61,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" class=\"audit-button\">",
+                  "target": [
+                    ".audit-button"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.61 (foreground color: #5d83bf, background color: #f5f8ff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" class=\"audit-button\">",
+          "target": [
+            ".audit-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #5d83bf, background color: #f5f8ff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8d99ad",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.87,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.87 (foreground color: #8d99ad, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"muted-note\">DOM 자동 검사는 아직 실행하지 않았습니다.</p>",
+          "target": [
+            ".inspector-section:nth-child(3) > .muted-note"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.87 (foreground color: #8d99ad, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#a6b0bf",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.19,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.19 (foreground color: #a6b0bf, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"inspection-disclaimer\">자동 검사와 색상 계산은 WCAG 2.2 AA 전체 준수를 보장하지 않습니다. 키보드·확대·스크린리더 수동 검토가 필요합니다.</p>",
+          "target": [
+            ".inspection-disclaimer"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.19 (foreground color: #a6b0bf, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#77859a",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.74,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.74 (foreground color: #77859a, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>제약조건</span>",
+          "target": [
+            ".inspector-section:nth-child(4) > .section-label > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #77859a, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#47947f",
+                "bgColor": "#ffffff",
+                "contrastRatio": 3.61,
+                "fontSize": "6.8pt (9px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.61 (foreground color: #47947f, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"constraint-line pass\">",
+          "target": [
+            ".constraint-line"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.61 (foreground color: #47947f, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8d99ad",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.87,
+                "fontSize": "6.0pt (8px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.87 (foreground color: #8d99ad, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<small class=\"muted-note\">조건부 비활성 값은 JSON에 보존됩니다.</small>",
+          "target": [
+            ".inspector-section:nth-child(4) > .muted-note"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.87 (foreground color: #8d99ad, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#adb6c5",
+                "bgColor": "#ffffff",
+                "contrastRatio": 2.04,
+                "fontSize": "5.3pt (7px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<aside class=\"inspector-panel panel\" aria-label=\"Inspector\">",
+                  "target": [
+                    ".inspector-panel"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.04 (foreground color: #adb6c5, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Client-side. Your ideas stay here.</span>",
+          "target": [
+            ".inspector-bottom > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.04 (foreground color: #adb6c5, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "target-size",
+      "impact": "serious",
+      "tags": [
+        "cat.sensory-and-visual-cues",
+        "wcag22aa",
+        "wcag258",
+        "EN-301-549v4",
+        "EN-9.2.5.8"
+      ],
+      "description": "Ensure touch targets have sufficient size and space",
+      "help": "All touch targets must be 24px large, or leave sufficient space",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/target-size?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 20,
+                "height": 21
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (20px by 21px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 16,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"A01 잠금\" title=\"A01 잠금\" class=\"icon-button \" aria-pressed=\"false\">",
+                  "target": [
+                    "button[aria-label=\"A01 잠금\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"A01 기본값 복원\" title=\"A01 기본값 복원\" class=\"icon-button \">",
+          "target": [
+            "button[aria-label=\"A01 기본값 복원\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (20px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 20,
+                "height": 21
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (20px by 21px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 16,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"A01 기본값 복원\" title=\"A01 기본값 복원\" class=\"icon-button \">",
+                  "target": [
+                    "button[aria-label=\"A01 기본값 복원\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"A01 잠금\" title=\"A01 잠금\" class=\"icon-button \" aria-pressed=\"false\">",
+          "target": [
+            "button[aria-label=\"A01 잠금\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (20px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 20,
+                "height": 21
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (20px by 21px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 16,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"A02 잠금\" title=\"A02 잠금\" class=\"icon-button \" aria-pressed=\"false\">",
+                  "target": [
+                    "button[aria-label=\"A02 잠금\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"A02 기본값 복원\" title=\"A02 기본값 복원\" class=\"icon-button \">",
+          "target": [
+            "button[aria-label=\"A02 기본값 복원\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (20px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 20,
+                "height": 21
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (20px by 21px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 16,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"A02 기본값 복원\" title=\"A02 기본값 복원\" class=\"icon-button \">",
+                  "target": [
+                    "button[aria-label=\"A02 기본값 복원\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"A02 잠금\" title=\"A02 잠금\" class=\"icon-button \" aria-pressed=\"false\">",
+          "target": [
+            "button[aria-label=\"A02 잠금\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (20px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 20,
+                "height": 21
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (20px by 21px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 16,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"A03 잠금\" title=\"A03 잠금\" class=\"icon-button \" aria-pressed=\"false\">",
+                  "target": [
+                    "button[aria-label=\"A03 잠금\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"A03 기본값 복원\" title=\"A03 기본값 복원\" class=\"icon-button \">",
+          "target": [
+            "button[aria-label=\"A03 기본값 복원\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (20px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 20,
+                "height": 21
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (20px by 21px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 16,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"A03 기본값 복원\" title=\"A03 기본값 복원\" class=\"icon-button \">",
+                  "target": [
+                    "button[aria-label=\"A03 기본값 복원\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"A03 잠금\" title=\"A03 잠금\" class=\"icon-button \" aria-pressed=\"false\">",
+          "target": [
+            "button[aria-label=\"A03 잠금\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (20px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 20,
+                "height": 21
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (20px by 21px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 16,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"A04 잠금\" title=\"A04 잠금\" class=\"icon-button \" aria-pressed=\"false\">",
+                  "target": [
+                    "button[aria-label=\"A04 잠금\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"A04 기본값 복원\" title=\"A04 기본값 복원\" class=\"icon-button \">",
+          "target": [
+            "button[aria-label=\"A04 기본값 복원\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (20px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 20,
+                "height": 21
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (20px by 21px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 16,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"A04 기본값 복원\" title=\"A04 기본값 복원\" class=\"icon-button \">",
+                  "target": [
+                    "button[aria-label=\"A04 기본값 복원\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"A04 잠금\" title=\"A04 잠금\" class=\"icon-button \" aria-pressed=\"false\">",
+          "target": [
+            "button[aria-label=\"A04 잠금\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (20px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 20,
+                "height": 21
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (20px by 21px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 16,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"A05 잠금\" title=\"A05 잠금\" class=\"icon-button \" aria-pressed=\"false\">",
+                  "target": [
+                    "button[aria-label=\"A05 잠금\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"A05 기본값 복원\" title=\"A05 기본값 복원\" class=\"icon-button \">",
+          "target": [
+            "button[aria-label=\"A05 기본값 복원\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (20px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 20,
+                "height": 21
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (20px by 21px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 16,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"A05 기본값 복원\" title=\"A05 기본값 복원\" class=\"icon-button \">",
+                  "target": [
+                    "button[aria-label=\"A05 기본값 복원\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"A05 잠금\" title=\"A05 잠금\" class=\"icon-button \" aria-pressed=\"false\">",
+          "target": [
+            "button[aria-label=\"A05 잠금\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (20px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 20,
+                "height": 21
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (20px by 21px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 16,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"A06 잠금\" title=\"A06 잠금\" class=\"icon-button \" aria-pressed=\"false\">",
+                  "target": [
+                    "button[aria-label=\"A06 잠금\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"A06 기본값 복원\" title=\"A06 기본값 복원\" class=\"icon-button \">",
+          "target": [
+            "button[aria-label=\"A06 기본값 복원\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (20px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 20,
+                "height": 21
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (20px by 21px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 16,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"A06 기본값 복원\" title=\"A06 기본값 복원\" class=\"icon-button \">",
+                  "target": [
+                    "button[aria-label=\"A06 기본값 복원\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"A06 잠금\" title=\"A06 잠금\" class=\"icon-button \" aria-pressed=\"false\">",
+          "target": [
+            "button[aria-label=\"A06 잠금\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (20px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 23,
+                "height": 25
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (23px by 25px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 23,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" title=\"화면에 맞춤\">84%</button>",
+                  "target": [
+                    "button[title=\"화면에 맞춤\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 23px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"미리보기 축소\" title=\"미리보기 축소\" class=\"icon-button \">",
+          "target": [
+            "button[aria-label=\"미리보기 축소\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (23px by 25px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 23px instead of at least 24px."
+        },
+        {
+          "any": [
+            {
+              "id": "target-size",
+              "data": {
+                "minSize": 24,
+                "width": 23,
+                "height": 25
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Target has insufficient size (23px by 25px, should be at least 24px by 24px)"
+            },
+            {
+              "id": "target-offset",
+              "data": {
+                "closestOffset": 23,
+                "minOffset": 24
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" title=\"화면에 맞춤\">84%</button>",
+                  "target": [
+                    "button[title=\"화면에 맞춤\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 23px instead of at least 24px."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" aria-label=\"미리보기 확대\" title=\"미리보기 확대\" class=\"icon-button \">",
+          "target": [
+            "button[aria-label=\"미리보기 확대\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Target has insufficient size (23px by 25px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 23px instead of at least 24px."
+        }
+      ]
+    }
+  ],
+  "passes": 33,
+  "incomplete": 2,
+  "errors": []
+}

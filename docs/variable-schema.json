@@ -1,0 +1,3534 @@
+{
+  "schemaVersion": "phase0-1.0.0",
+  "groups": [
+    {
+      "id": "A",
+      "name": "철학·전체 구조",
+      "english": "Structure",
+      "color": "#6670da"
+    },
+    {
+      "id": "B",
+      "name": "내비게이션·정보",
+      "english": "Navigation",
+      "color": "#3083c9"
+    },
+    {
+      "id": "C",
+      "name": "색상 시스템",
+      "english": "Color",
+      "color": "#b06bc6"
+    },
+    {
+      "id": "D",
+      "name": "타이포그래피",
+      "english": "Typography",
+      "color": "#d18642"
+    },
+    {
+      "id": "E",
+      "name": "간격·크기·형태",
+      "english": "Geometry",
+      "color": "#3d9e87"
+    },
+    {
+      "id": "F",
+      "name": "입력·선택 컴포넌트",
+      "english": "Controls",
+      "color": "#1874d4"
+    },
+    {
+      "id": "G",
+      "name": "카드·데이터",
+      "english": "Content",
+      "color": "#b57850"
+    },
+    {
+      "id": "H",
+      "name": "모션·피드백",
+      "english": "Motion",
+      "color": "#b16491"
+    },
+    {
+      "id": "I",
+      "name": "효과·재질",
+      "english": "Material",
+      "color": "#668c91"
+    },
+    {
+      "id": "J",
+      "name": "반응형·적응형",
+      "english": "Adaptive",
+      "color": "#71759c"
+    }
+  ],
+  "variables": [
+    {
+      "id": "A01",
+      "group": "A",
+      "name": "디자인 계열",
+      "type": "enum",
+      "options": [
+        {
+          "value": "apple-inspired",
+          "label": "Apple-inspired"
+        },
+        {
+          "value": "material-inspired",
+          "label": "Material-inspired"
+        },
+        {
+          "value": "experimental",
+          "label": "Experimental"
+        }
+      ],
+      "default": "apple-inspired",
+      "description": "구조·형태·색상 역할·모션의 기본 철학을 바꿉니다.",
+      "binding": "family class / root structure",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/A01",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "A02",
+      "group": "A",
+      "name": "전체 화면 구성",
+      "type": "enum",
+      "options": [
+        {
+          "value": "standard",
+          "label": "기본"
+        },
+        {
+          "value": "split",
+          "label": "분할"
+        },
+        {
+          "value": "editorial",
+          "label": "에디토리얼"
+        }
+      ],
+      "default": "standard",
+      "description": "히어로와 상품 영역의 공간 구성을 바꿉니다.",
+      "binding": "data-a02 → shop composition",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/A02",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "A03",
+      "group": "A",
+      "name": "콘텐츠 최대 너비",
+      "type": "number",
+      "options": [
+        {
+          "value": 720,
+          "label": "720"
+        },
+        {
+          "value": 960,
+          "label": "960"
+        },
+        {
+          "value": 1200,
+          "label": "1200"
+        },
+        {
+          "value": 1440,
+          "label": "1440"
+        }
+      ],
+      "default": 1200,
+      "description": "콘텐츠가 확장될 수 있는 최대 폭입니다.",
+      "unit": "px",
+      "binding": "--content-max",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/A03",
+      "constraint": "허용된 4개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "A04",
+      "group": "A",
+      "name": "화면 좌우 여백",
+      "type": "number",
+      "options": [
+        {
+          "value": 16,
+          "label": "16"
+        },
+        {
+          "value": 24,
+          "label": "24"
+        },
+        {
+          "value": 36,
+          "label": "36"
+        },
+        {
+          "value": 48,
+          "label": "48"
+        }
+      ],
+      "default": 24,
+      "description": "화면 내부 좌우 안전 여백입니다.",
+      "unit": "px",
+      "binding": "--page-pad",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/A04",
+      "constraint": "허용된 4개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "A05",
+      "group": "A",
+      "name": "전체 정렬 방식",
+      "type": "enum",
+      "options": [
+        {
+          "value": "start",
+          "label": "왼쪽"
+        },
+        {
+          "value": "center",
+          "label": "가운데"
+        },
+        {
+          "value": "end",
+          "label": "오른쪽"
+        }
+      ],
+      "default": "center",
+      "description": "최대 너비 콘텐츠의 화면 기준 위치입니다.",
+      "binding": "--page-margin",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/A05",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "A06",
+      "group": "A",
+      "name": "레이아웃 시스템",
+      "type": "enum",
+      "options": [
+        {
+          "value": "grid",
+          "label": "그리드"
+        },
+        {
+          "value": "flex",
+          "label": "유연한 행"
+        },
+        {
+          "value": "stack",
+          "label": "세로 스택"
+        }
+      ],
+      "default": "grid",
+      "description": "상품 컬렉션의 배치 알고리즘을 바꿉니다.",
+      "binding": "data-a06 → collection display",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/A06",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "A07",
+      "group": "A",
+      "name": "정보 밀도",
+      "type": "enum",
+      "options": [
+        {
+          "value": "compact",
+          "label": "조밀하게"
+        },
+        {
+          "value": "balanced",
+          "label": "균형 있게"
+        },
+        {
+          "value": "spacious",
+          "label": "여유롭게"
+        }
+      ],
+      "default": "balanced",
+      "description": "컴포넌트 간격과 카드 내부 여백의 배율입니다.",
+      "binding": "--density",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/A07",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "A08",
+      "group": "A",
+      "name": "주요 콘텐츠 비율",
+      "type": "number",
+      "options": [
+        {
+          "value": 60,
+          "label": "60"
+        },
+        {
+          "value": 70,
+          "label": "70"
+        },
+        {
+          "value": 80,
+          "label": "80"
+        }
+      ],
+      "default": 70,
+      "description": "분할 히어로의 제목 영역이 차지하는 비율입니다.",
+      "unit": "%",
+      "binding": "--hero-ratio",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [
+        {
+          "id": "A02",
+          "values": [
+            "split"
+          ],
+          "reason": "분할 화면 구성에서만 비율을 적용합니다."
+        }
+      ],
+      "serialization": "/variables/A08",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "A09",
+      "group": "A",
+      "name": "섹션 구분 방식",
+      "type": "enum",
+      "options": [
+        {
+          "value": "space",
+          "label": "여백"
+        },
+        {
+          "value": "line",
+          "label": "구분선"
+        },
+        {
+          "value": "surface",
+          "label": "색상면"
+        }
+      ],
+      "default": "space",
+      "description": "주요 섹션의 경계를 구별하는 방식입니다.",
+      "binding": "data-a09 → section treatment",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/A09",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "A10",
+      "group": "A",
+      "name": "화면 계층 깊이",
+      "type": "number",
+      "options": [
+        {
+          "value": 0,
+          "label": "평면"
+        },
+        {
+          "value": 1,
+          "label": "한 단계"
+        },
+        {
+          "value": 2,
+          "label": "두 단계"
+        }
+      ],
+      "default": 1,
+      "description": "전체 표면·내부 패널에 적용하는 입체 계층입니다.",
+      "binding": "data-a10 → nesting shadows",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/A10",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "A11",
+      "group": "A",
+      "name": "콘텐츠 표시 순서",
+      "type": "enum",
+      "options": [
+        {
+          "value": "featured-first",
+          "label": "상품 먼저"
+        },
+        {
+          "value": "controls-first",
+          "label": "설정 먼저"
+        },
+        {
+          "value": "reverse",
+          "label": "상품 역순"
+        }
+      ],
+      "default": "featured-first",
+      "description": "설정과 상품의 순서 또는 상품 열거 방향을 바꿉니다.",
+      "binding": "data-a11 / product order",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/A11",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "A12",
+      "group": "A",
+      "name": "레이아웃 대칭성",
+      "type": "enum",
+      "options": [
+        {
+          "value": "symmetric",
+          "label": "대칭"
+        },
+        {
+          "value": "offset",
+          "label": "오프셋"
+        },
+        {
+          "value": "staggered",
+          "label": "엇갈림"
+        }
+      ],
+      "default": "symmetric",
+      "description": "히어로와 카드의 수평 정렬·교차 오프셋입니다.",
+      "binding": "data-a12 → offsets",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/A12",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "B01",
+      "group": "B",
+      "name": "내비게이션 위치",
+      "type": "enum",
+      "options": [
+        {
+          "value": "top",
+          "label": "상단 바"
+        },
+        {
+          "value": "left",
+          "label": "왼쪽 레일"
+        },
+        {
+          "value": "bottom",
+          "label": "하단 바"
+        }
+      ],
+      "default": "top",
+      "description": "동일한 탐색 메뉴를 화면의 다른 위치에 배치합니다.",
+      "binding": "data-b01 → nav placement",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/B01",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "B02",
+      "group": "B",
+      "name": "내비게이션 표현",
+      "type": "enum",
+      "options": [
+        {
+          "value": "text",
+          "label": "텍스트"
+        },
+        {
+          "value": "icons",
+          "label": "아이콘"
+        },
+        {
+          "value": "both",
+          "label": "아이콘+텍스트"
+        }
+      ],
+      "default": "text",
+      "description": "텍스트를 숨겨도 접근 가능한 이름은 유지합니다.",
+      "binding": "navigation markup",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/B02",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "B03",
+      "group": "B",
+      "name": "내비게이션 높이",
+      "type": "number",
+      "options": [
+        {
+          "value": 48,
+          "label": "48"
+        },
+        {
+          "value": 64,
+          "label": "64"
+        },
+        {
+          "value": 80,
+          "label": "80"
+        }
+      ],
+      "default": 64,
+      "description": "탐색 항목 행의 최소 높이입니다.",
+      "unit": "px",
+      "binding": "--nav-height",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/B03",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "B04",
+      "group": "B",
+      "name": "메뉴 깊이",
+      "type": "number",
+      "options": [
+        {
+          "value": 1,
+          "label": "1단계"
+        },
+        {
+          "value": 2,
+          "label": "2단계"
+        },
+        {
+          "value": 3,
+          "label": "3단계"
+        }
+      ],
+      "default": 2,
+      "description": "더보기 메뉴의 중첩 카테고리 깊이입니다.",
+      "binding": "dropdown submenus",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [
+        {
+          "id": "B05",
+          "values": [
+            "dropdown",
+            "drawer"
+          ],
+          "reason": "드롭다운·드로어 메뉴에서 깊이를 확인할 수 있습니다."
+        }
+      ],
+      "serialization": "/variables/B04",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "B05",
+      "group": "B",
+      "name": "메뉴 표시 방식",
+      "type": "enum",
+      "options": [
+        {
+          "value": "inline",
+          "label": "항상 표시"
+        },
+        {
+          "value": "dropdown",
+          "label": "드롭다운"
+        },
+        {
+          "value": "drawer",
+          "label": "드로어"
+        }
+      ],
+      "default": "inline",
+      "description": "보조 탐색 메뉴를 여는 방식을 선택합니다.",
+      "binding": "menu rendering",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/B05",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "B06",
+      "group": "B",
+      "name": "현재 위치 강조",
+      "type": "enum",
+      "options": [
+        {
+          "value": "pill",
+          "label": "캡슐"
+        },
+        {
+          "value": "underline",
+          "label": "밑줄"
+        },
+        {
+          "value": "bold",
+          "label": "굵은 글씨"
+        }
+      ],
+      "default": "pill",
+      "description": "선택된 탐색 항목의 시각적 표시입니다.",
+      "binding": "data-b06 → active navigation",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/B06",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "B07",
+      "group": "B",
+      "name": "검색창 위치",
+      "type": "enum",
+      "options": [
+        {
+          "value": "header",
+          "label": "헤더"
+        },
+        {
+          "value": "content",
+          "label": "콘텐츠 위"
+        },
+        {
+          "value": "aside",
+          "label": "필터 영역"
+        }
+      ],
+      "default": "content",
+      "description": "검색 필드가 놓이는 위치를 바꿉니다.",
+      "binding": "search slot",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/B07",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "B08",
+      "group": "B",
+      "name": "검색창 형태",
+      "type": "enum",
+      "options": [
+        {
+          "value": "pill",
+          "label": "캡슐"
+        },
+        {
+          "value": "rounded",
+          "label": "둥근 사각형"
+        },
+        {
+          "value": "line",
+          "label": "밑줄"
+        }
+      ],
+      "default": "pill",
+      "description": "검색 필드의 외곽선 모양입니다.",
+      "binding": "data-b08 → search field",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/B08",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "B09",
+      "group": "B",
+      "name": "필터 배치",
+      "type": "enum",
+      "options": [
+        {
+          "value": "row",
+          "label": "가로 행"
+        },
+        {
+          "value": "sidebar",
+          "label": "사이드바"
+        },
+        {
+          "value": "popover",
+          "label": "팝오버"
+        }
+      ],
+      "default": "row",
+      "description": "카테고리·가격 필터 영역의 위치입니다.",
+      "binding": "filter layout",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/B09",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "B10",
+      "group": "B",
+      "name": "필터 조작",
+      "type": "enum",
+      "options": [
+        {
+          "value": "chips",
+          "label": "칩 단일선택"
+        },
+        {
+          "value": "select",
+          "label": "선택 상자"
+        },
+        {
+          "value": "checkbox",
+          "label": "체크박스 다중선택"
+        }
+      ],
+      "default": "chips",
+      "description": "카테고리 선택 의미와 조작을 바꿉니다.",
+      "binding": "category input",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/B10",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "B11",
+      "group": "B",
+      "name": "정렬 기능 위치",
+      "type": "enum",
+      "options": [
+        {
+          "value": "toolbar",
+          "label": "도구 모음"
+        },
+        {
+          "value": "filter",
+          "label": "필터 영역"
+        },
+        {
+          "value": "footer",
+          "label": "목록 아래"
+        }
+      ],
+      "default": "toolbar",
+      "description": "가격·이름 정렬 입력의 배치입니다.",
+      "binding": "sort slot",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/B11",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "B12",
+      "group": "B",
+      "name": "이동 경로 표시",
+      "type": "enum",
+      "options": [
+        {
+          "value": "none",
+          "label": "숨김"
+        },
+        {
+          "value": "compact",
+          "label": "현재 컬렉션"
+        },
+        {
+          "value": "full",
+          "label": "전체 경로"
+        }
+      ],
+      "default": "compact",
+      "description": "상위 경로로 돌아갈 수 있는 이동 경로입니다.",
+      "binding": "breadcrumb",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/B12",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "C01",
+      "group": "C",
+      "name": "기본 색상 계열",
+      "type": "enum",
+      "options": [
+        {
+          "value": "blue",
+          "label": "블루"
+        },
+        {
+          "value": "violet",
+          "label": "바이올렛"
+        },
+        {
+          "value": "teal",
+          "label": "틸"
+        },
+        {
+          "value": "orange",
+          "label": "오렌지"
+        }
+      ],
+      "default": "blue",
+      "description": "역할 기반 팔레트의 기준 색조입니다.",
+      "binding": "--primary hue",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/C01",
+      "constraint": "허용된 4개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "C02",
+      "group": "C",
+      "name": "색상 생성 방식",
+      "type": "enum",
+      "options": [
+        {
+          "value": "tonal",
+          "label": "톤 팔레트"
+        },
+        {
+          "value": "complementary",
+          "label": "보색"
+        },
+        {
+          "value": "analogous",
+          "label": "유사색"
+        }
+      ],
+      "default": "tonal",
+      "description": "보조·강조 색상의 색조 관계를 생성합니다.",
+      "binding": "--secondary / --accent",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/C02",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "C03",
+      "group": "C",
+      "name": "기본 색상 명도",
+      "type": "number",
+      "options": [
+        {
+          "value": 35,
+          "label": "35"
+        },
+        {
+          "value": 42,
+          "label": "42"
+        },
+        {
+          "value": 50,
+          "label": "50"
+        }
+      ],
+      "default": 42,
+      "description": "기본 강조색의 HSL 명도입니다. 전경색은 대비를 계산해 정합니다.",
+      "unit": "%",
+      "binding": "--primary",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/C03",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "C04",
+      "group": "C",
+      "name": "기본 색상 채도",
+      "type": "number",
+      "options": [
+        {
+          "value": 55,
+          "label": "55"
+        },
+        {
+          "value": 75,
+          "label": "75"
+        },
+        {
+          "value": 95,
+          "label": "95"
+        }
+      ],
+      "default": 95,
+      "description": "강조색의 선명함을 조절합니다.",
+      "unit": "%",
+      "binding": "--primary",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/C04",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "C05",
+      "group": "C",
+      "name": "배경 색상",
+      "type": "enum",
+      "options": [
+        {
+          "value": "neutral",
+          "label": "중립"
+        },
+        {
+          "value": "tinted",
+          "label": "브랜드 틴트"
+        },
+        {
+          "value": "warm",
+          "label": "따뜻한 톤"
+        }
+      ],
+      "default": "neutral",
+      "description": "미리보기 전체 배경의 톤입니다.",
+      "binding": "--canvas",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/C05",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "C06",
+      "group": "C",
+      "name": "표면 색상",
+      "type": "enum",
+      "options": [
+        {
+          "value": "white",
+          "label": "기본 표면"
+        },
+        {
+          "value": "tinted",
+          "label": "색조 표면"
+        },
+        {
+          "value": "contrast",
+          "label": "대비 표면"
+        }
+      ],
+      "default": "white",
+      "description": "카드와 입력 컨테이너의 표면색입니다.",
+      "binding": "--surface",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/C06",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "C07",
+      "group": "C",
+      "name": "강조 색상 개수",
+      "type": "number",
+      "options": [
+        {
+          "value": 1,
+          "label": "1"
+        },
+        {
+          "value": 2,
+          "label": "2"
+        },
+        {
+          "value": 3,
+          "label": "3"
+        }
+      ],
+      "default": 2,
+      "description": "배지와 칩에 사용하는 팔레트 색상 수입니다.",
+      "binding": "accent assignment",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/C07",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "C08",
+      "group": "C",
+      "name": "텍스트 색상 단계",
+      "type": "number",
+      "options": [
+        {
+          "value": 2,
+          "label": "2"
+        },
+        {
+          "value": 3,
+          "label": "3"
+        },
+        {
+          "value": 4,
+          "label": "4"
+        }
+      ],
+      "default": 3,
+      "description": "제목·본문·설명·메타데이터의 색상 위계 단계입니다.",
+      "binding": "text role palette",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/C08",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "C09",
+      "group": "C",
+      "name": "경계선 색상 대비",
+      "type": "enum",
+      "options": [
+        {
+          "value": "soft",
+          "label": "부드럽게"
+        },
+        {
+          "value": "medium",
+          "label": "보통"
+        },
+        {
+          "value": "strong",
+          "label": "강하게"
+        }
+      ],
+      "default": "medium",
+      "description": "카드와 입력 외곽선의 대비를 조절합니다.",
+      "binding": "--border",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/C09",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "C10",
+      "group": "C",
+      "name": "상태 색상 체계",
+      "type": "enum",
+      "options": [
+        {
+          "value": "semantic",
+          "label": "의미별 색상"
+        },
+        {
+          "value": "brand",
+          "label": "브랜드 통일"
+        },
+        {
+          "value": "monochrome",
+          "label": "단색+아이콘"
+        }
+      ],
+      "default": "semantic",
+      "description": "성공·오류·로딩 피드백의 색상 체계입니다.",
+      "binding": "status colors",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/C10",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "C11",
+      "group": "C",
+      "name": "다크모드 전략",
+      "type": "enum",
+      "options": [
+        {
+          "value": "light",
+          "label": "라이트"
+        },
+        {
+          "value": "dark",
+          "label": "다크"
+        },
+        {
+          "value": "system",
+          "label": "시스템"
+        }
+      ],
+      "default": "light",
+      "description": "미리보기 테마를 선택합니다. 앱 셸은 밝은 톤을 유지합니다.",
+      "binding": "data-dark / matchMedia",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/C11",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "C12",
+      "group": "C",
+      "name": "색상 전환 방식",
+      "type": "enum",
+      "options": [
+        {
+          "value": "instant",
+          "label": "즉시"
+        },
+        {
+          "value": "fade",
+          "label": "짧은 전환"
+        },
+        {
+          "value": "smooth",
+          "label": "부드러운 전환"
+        }
+      ],
+      "default": "fade",
+      "description": "색상 변경 시 CSS 색상 전환 시간입니다.",
+      "binding": "--color-duration",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/C12",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "D01",
+      "group": "D",
+      "name": "글꼴 계열",
+      "type": "enum",
+      "options": [
+        {
+          "value": "sans",
+          "label": "시스템 산세리프"
+        },
+        {
+          "value": "serif",
+          "label": "세리프"
+        },
+        {
+          "value": "mono",
+          "label": "모노스페이스"
+        }
+      ],
+      "default": "sans",
+      "description": "기기에서 제공하는 글꼴 스택을 사용합니다.",
+      "binding": "--font",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/D01",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "D02",
+      "group": "D",
+      "name": "기본 글자 크기",
+      "type": "number",
+      "options": [
+        {
+          "value": 14,
+          "label": "14"
+        },
+        {
+          "value": 16,
+          "label": "16"
+        },
+        {
+          "value": 18,
+          "label": "18"
+        }
+      ],
+      "default": 16,
+      "description": "미리보기 본문 글자 크기입니다.",
+      "unit": "px",
+      "binding": "--font-size",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/D02",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "D03",
+      "group": "D",
+      "name": "제목 크기 비율",
+      "type": "number",
+      "options": [
+        {
+          "value": 1.6,
+          "label": "1.6"
+        },
+        {
+          "value": 2,
+          "label": "2"
+        },
+        {
+          "value": 2.5,
+          "label": "2.5"
+        }
+      ],
+      "default": 2,
+      "description": "본문 대비 큰 제목의 배율입니다.",
+      "unit": "×",
+      "binding": "--heading-size",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/D03",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "D04",
+      "group": "D",
+      "name": "제목 굵기",
+      "type": "number",
+      "options": [
+        {
+          "value": 500,
+          "label": "500"
+        },
+        {
+          "value": 600,
+          "label": "600"
+        },
+        {
+          "value": 700,
+          "label": "700"
+        },
+        {
+          "value": 800,
+          "label": "800"
+        }
+      ],
+      "default": 700,
+      "description": "히어로·카드 제목의 글꼴 굵기입니다.",
+      "binding": "--heading-weight",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/D04",
+      "constraint": "허용된 4개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "D05",
+      "group": "D",
+      "name": "본문 굵기",
+      "type": "number",
+      "options": [
+        {
+          "value": 400,
+          "label": "400"
+        },
+        {
+          "value": 500,
+          "label": "500"
+        },
+        {
+          "value": 600,
+          "label": "600"
+        }
+      ],
+      "default": 400,
+      "description": "설명·입력 텍스트의 기본 굵기입니다.",
+      "binding": "--body-weight",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/D05",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "D06",
+      "group": "D",
+      "name": "행간",
+      "type": "number",
+      "options": [
+        {
+          "value": 1.3,
+          "label": "1.3"
+        },
+        {
+          "value": 1.5,
+          "label": "1.5"
+        },
+        {
+          "value": 1.75,
+          "label": "1.75"
+        }
+      ],
+      "default": 1.5,
+      "description": "본문 줄 사이 간격입니다.",
+      "unit": "×",
+      "binding": "--leading",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/D06",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "D07",
+      "group": "D",
+      "name": "자간",
+      "type": "number",
+      "options": [
+        {
+          "value": -0.02,
+          "label": "-0.02"
+        },
+        {
+          "value": 0,
+          "label": "0"
+        },
+        {
+          "value": 0.04,
+          "label": "0.04"
+        }
+      ],
+      "default": -0.02,
+      "description": "미리보기의 글자 사이 간격입니다.",
+      "unit": "em",
+      "binding": "--tracking",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/D07",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "D08",
+      "group": "D",
+      "name": "텍스트 정렬",
+      "type": "enum",
+      "options": [
+        {
+          "value": "left",
+          "label": "왼쪽"
+        },
+        {
+          "value": "center",
+          "label": "가운데"
+        },
+        {
+          "value": "right",
+          "label": "오른쪽"
+        }
+      ],
+      "default": "left",
+      "description": "히어로와 카드 본문을 정렬합니다.",
+      "binding": "--text-align",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/D08",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "D09",
+      "group": "D",
+      "name": "제목 스타일",
+      "type": "enum",
+      "options": [
+        {
+          "value": "plain",
+          "label": "기본"
+        },
+        {
+          "value": "accent",
+          "label": "색상 강조"
+        },
+        {
+          "value": "uppercase",
+          "label": "영문 대문자"
+        }
+      ],
+      "default": "plain",
+      "description": "제목의 강조색과 영문 표시 방법입니다.",
+      "binding": "data-d09 → heading style",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/D09",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "D10",
+      "group": "D",
+      "name": "숫자 표시",
+      "type": "enum",
+      "options": [
+        {
+          "value": "proportional",
+          "label": "비례폭"
+        },
+        {
+          "value": "tabular",
+          "label": "고정 숫자폭"
+        },
+        {
+          "value": "mono",
+          "label": "모노스페이스"
+        }
+      ],
+      "default": "tabular",
+      "description": "가격·진행 값의 숫자 글꼴입니다.",
+      "binding": "data-d10 → numeric text",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/D10",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "D11",
+      "group": "D",
+      "name": "텍스트 줄바꿈",
+      "type": "enum",
+      "options": [
+        {
+          "value": "normal",
+          "label": "기본"
+        },
+        {
+          "value": "balance",
+          "label": "균형 제목"
+        },
+        {
+          "value": "pretty",
+          "label": "정돈된 본문"
+        }
+      ],
+      "default": "balance",
+      "description": "브라우저가 지원하는 text-wrap 전략입니다.",
+      "binding": "text-wrap",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/D11",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "D12",
+      "group": "D",
+      "name": "텍스트 위계 단계",
+      "type": "number",
+      "options": [
+        {
+          "value": 2,
+          "label": "2"
+        },
+        {
+          "value": 3,
+          "label": "3"
+        },
+        {
+          "value": 4,
+          "label": "4"
+        }
+      ],
+      "default": 3,
+      "description": "상품의 메타·본문·제목 크기 단계를 나눕니다.",
+      "binding": "--meta-size / --card-title-size",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/D12",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "E01",
+      "group": "E",
+      "name": "기본 간격 단위",
+      "type": "number",
+      "options": [
+        {
+          "value": 4,
+          "label": "4"
+        },
+        {
+          "value": 6,
+          "label": "6"
+        },
+        {
+          "value": 8,
+          "label": "8"
+        }
+      ],
+      "default": 4,
+      "description": "칩과 아이콘 내부 간격의 기준입니다.",
+      "unit": "px",
+      "binding": "--space-unit",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/E01",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "E02",
+      "group": "E",
+      "name": "컴포넌트 내부 여백",
+      "type": "number",
+      "options": [
+        {
+          "value": 12,
+          "label": "12"
+        },
+        {
+          "value": 16,
+          "label": "16"
+        },
+        {
+          "value": 24,
+          "label": "24"
+        }
+      ],
+      "default": 16,
+      "description": "카드와 패널의 내부 여백입니다.",
+      "unit": "px",
+      "binding": "--component-pad",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/E02",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "E03",
+      "group": "E",
+      "name": "컴포넌트 간격",
+      "type": "number",
+      "options": [
+        {
+          "value": 8,
+          "label": "8"
+        },
+        {
+          "value": 16,
+          "label": "16"
+        },
+        {
+          "value": 24,
+          "label": "24"
+        }
+      ],
+      "default": 16,
+      "description": "상품 그리드와 갤러리의 간격입니다.",
+      "unit": "px",
+      "binding": "--component-gap",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/E03",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "E04",
+      "group": "E",
+      "name": "섹션 간격",
+      "type": "number",
+      "options": [
+        {
+          "value": 20,
+          "label": "20"
+        },
+        {
+          "value": 32,
+          "label": "32"
+        },
+        {
+          "value": 48,
+          "label": "48"
+        }
+      ],
+      "default": 32,
+      "description": "히어로·컨트롤·상품 영역 사이의 간격입니다.",
+      "unit": "px",
+      "binding": "--section-gap",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/E04",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "E05",
+      "group": "E",
+      "name": "버튼 높이",
+      "type": "number",
+      "options": [
+        {
+          "value": 36,
+          "label": "36"
+        },
+        {
+          "value": 44,
+          "label": "44"
+        },
+        {
+          "value": 52,
+          "label": "52"
+        }
+      ],
+      "default": 44,
+      "description": "보이는 버튼의 높이. 실제 터치 영역은 J07 이상입니다.",
+      "unit": "px",
+      "binding": "--button-height",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/E05",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "E06",
+      "group": "E",
+      "name": "입력창 높이",
+      "type": "number",
+      "options": [
+        {
+          "value": 40,
+          "label": "40"
+        },
+        {
+          "value": 48,
+          "label": "48"
+        },
+        {
+          "value": 56,
+          "label": "56"
+        }
+      ],
+      "default": 48,
+      "description": "텍스트·검색·선택 입력의 높이입니다.",
+      "unit": "px",
+      "binding": "--input-height",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/E06",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "E07",
+      "group": "E",
+      "name": "카드 최소 높이",
+      "type": "number",
+      "options": [
+        {
+          "value": 180,
+          "label": "180"
+        },
+        {
+          "value": 240,
+          "label": "240"
+        },
+        {
+          "value": 300,
+          "label": "300"
+        }
+      ],
+      "default": 240,
+      "description": "상품 카드가 갖는 최소 높이입니다.",
+      "unit": "px",
+      "binding": "--card-min-height",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/E07",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "E08",
+      "group": "E",
+      "name": "모서리 반경",
+      "type": "number",
+      "options": [
+        {
+          "value": 4,
+          "label": "4"
+        },
+        {
+          "value": 12,
+          "label": "12"
+        },
+        {
+          "value": 20,
+          "label": "20"
+        },
+        {
+          "value": 28,
+          "label": "28"
+        }
+      ],
+      "default": 20,
+      "description": "카드·패널의 기본 모서리 반경입니다.",
+      "unit": "px",
+      "binding": "--radius",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/E08",
+      "constraint": "허용된 4개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "E09",
+      "group": "E",
+      "name": "캡슐형 사용 비율",
+      "type": "number",
+      "options": [
+        {
+          "value": 0,
+          "label": "0"
+        },
+        {
+          "value": 50,
+          "label": "50"
+        },
+        {
+          "value": 100,
+          "label": "100"
+        }
+      ],
+      "default": 100,
+      "description": "칩·입력·보조 버튼에 캡슐 반경을 순차 적용합니다.",
+      "unit": "%",
+      "binding": "--chip-radius / --field-radius",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/E09",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "E10",
+      "group": "E",
+      "name": "테두리 두께",
+      "type": "number",
+      "options": [
+        {
+          "value": 1,
+          "label": "1"
+        },
+        {
+          "value": 2,
+          "label": "2"
+        },
+        {
+          "value": 3,
+          "label": "3"
+        }
+      ],
+      "default": 1,
+      "description": "테두리가 있는 컴포넌트의 두께입니다.",
+      "unit": "px",
+      "binding": "--border-width",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/E10",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "E11",
+      "group": "E",
+      "name": "그림자 강도",
+      "type": "number",
+      "options": [
+        {
+          "value": 0,
+          "label": "0"
+        },
+        {
+          "value": 0.06,
+          "label": "0.06"
+        },
+        {
+          "value": 0.14,
+          "label": "0.14"
+        },
+        {
+          "value": 0.24,
+          "label": "0.24"
+        }
+      ],
+      "default": 0.06,
+      "description": "카드 그림자의 알파값입니다.",
+      "binding": "--shadow-alpha",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/E11",
+      "constraint": "허용된 4개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "E12",
+      "group": "E",
+      "name": "그림자 확산 범위",
+      "type": "number",
+      "options": [
+        {
+          "value": 8,
+          "label": "8"
+        },
+        {
+          "value": 20,
+          "label": "20"
+        },
+        {
+          "value": 40,
+          "label": "40"
+        }
+      ],
+      "default": 20,
+      "description": "그림자의 흐림 반경입니다.",
+      "unit": "px",
+      "binding": "--shadow-blur",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [
+        {
+          "id": "E11",
+          "values": [
+            0.06,
+            0.14,
+            0.24
+          ],
+          "reason": "그림자 강도가 0이면 확산 범위가 보이지 않습니다."
+        }
+      ],
+      "serialization": "/variables/E12",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "F01",
+      "group": "F",
+      "name": "기본 버튼 스타일",
+      "type": "enum",
+      "options": [
+        {
+          "value": "filled",
+          "label": "Filled"
+        },
+        {
+          "value": "tonal",
+          "label": "Tonal"
+        },
+        {
+          "value": "outlined",
+          "label": "Outlined"
+        }
+      ],
+      "default": "filled",
+      "description": "주요 동작 버튼의 배경과 테두리입니다.",
+      "binding": "data-f01 → primary button",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/F01",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "F02",
+      "group": "F",
+      "name": "버튼 형태",
+      "type": "enum",
+      "options": [
+        {
+          "value": "pill",
+          "label": "캡슐"
+        },
+        {
+          "value": "rounded",
+          "label": "둥근 사각형"
+        },
+        {
+          "value": "square",
+          "label": "사각형"
+        }
+      ],
+      "default": "pill",
+      "description": "버튼의 시각적인 외곽입니다.",
+      "binding": "--button-radius",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/F02",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "F03",
+      "group": "F",
+      "name": "버튼 아이콘 위치",
+      "type": "enum",
+      "options": [
+        {
+          "value": "leading",
+          "label": "앞"
+        },
+        {
+          "value": "trailing",
+          "label": "뒤"
+        },
+        {
+          "value": "none",
+          "label": "숨김"
+        }
+      ],
+      "default": "leading",
+      "description": "버튼 텍스트와 아이콘의 순서입니다.",
+      "binding": "button icon order",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/F03",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "F04",
+      "group": "F",
+      "name": "버튼 텍스트 방식",
+      "type": "enum",
+      "options": [
+        {
+          "value": "sentence",
+          "label": "문장형"
+        },
+        {
+          "value": "uppercase",
+          "label": "영문 대문자"
+        },
+        {
+          "value": "spaced",
+          "label": "넓은 자간"
+        }
+      ],
+      "default": "sentence",
+      "description": "버튼 레이블의 타이포그래피입니다.",
+      "binding": "data-f04 → button text",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/F04",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "F05",
+      "group": "F",
+      "name": "주요 버튼 강조",
+      "type": "enum",
+      "options": [
+        {
+          "value": "normal",
+          "label": "기본"
+        },
+        {
+          "value": "elevated",
+          "label": "그림자"
+        },
+        {
+          "value": "ring",
+          "label": "강조 링"
+        }
+      ],
+      "default": "normal",
+      "description": "주요 버튼의 추가 시각적 강조입니다.",
+      "binding": "data-f05 → primary emphasis",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/F05",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "F06",
+      "group": "F",
+      "name": "보조 버튼 스타일",
+      "type": "enum",
+      "options": [
+        {
+          "value": "ghost",
+          "label": "Ghost"
+        },
+        {
+          "value": "tonal",
+          "label": "Tonal"
+        },
+        {
+          "value": "outlined",
+          "label": "Outlined"
+        }
+      ],
+      "default": "ghost",
+      "description": "보조 동작 버튼의 표현입니다.",
+      "binding": "data-f06 → secondary button",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/F06",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "F07",
+      "group": "F",
+      "name": "선택 입력 방식",
+      "type": "enum",
+      "options": [
+        {
+          "value": "mixed",
+          "label": "체크박스+라디오"
+        },
+        {
+          "value": "checkbox",
+          "label": "체크박스 중심"
+        },
+        {
+          "value": "radio",
+          "label": "라디오 중심"
+        }
+      ],
+      "default": "mixed",
+      "description": "데모 설정에 보여 줄 선택 입력 유형입니다.",
+      "binding": "preference selection markup",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/F07",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "F08",
+      "group": "F",
+      "name": "토글 형태",
+      "type": "enum",
+      "options": [
+        {
+          "value": "signature-pill",
+          "label": "Signature"
+        },
+        {
+          "value": "wide-pill",
+          "label": "Wide pill"
+        },
+        {
+          "value": "compact-pill",
+          "label": "Compact pill"
+        }
+      ],
+      "default": "signature-pill",
+      "description": "흰색 가로형 핸들의 길이와 트랙 폭을 바꿉니다.",
+      "binding": "--toggle-width / --toggle-handle",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/F08",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "F09",
+      "group": "F",
+      "name": "슬라이더 형태",
+      "type": "enum",
+      "options": [
+        {
+          "value": "signature-pill",
+          "label": "Signature"
+        },
+        {
+          "value": "long-pill",
+          "label": "Long pill"
+        },
+        {
+          "value": "flat-pill",
+          "label": "Flat pill"
+        }
+      ],
+      "default": "signature-pill",
+      "description": "가로형 슬라이더 핸들의 길이·두께입니다.",
+      "binding": "--slider-thumb-width / --slider-thumb-height",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/F09",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "F10",
+      "group": "F",
+      "name": "입력창 스타일",
+      "type": "enum",
+      "options": [
+        {
+          "value": "outlined",
+          "label": "외곽선"
+        },
+        {
+          "value": "filled",
+          "label": "채움"
+        },
+        {
+          "value": "underline",
+          "label": "밑줄"
+        }
+      ],
+      "default": "outlined",
+      "description": "텍스트 필드의 외곽과 채움입니다.",
+      "binding": "data-f10 → field",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/F10",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "F11",
+      "group": "F",
+      "name": "입력 오류 표시",
+      "type": "enum",
+      "options": [
+        {
+          "value": "inline",
+          "label": "인라인 메시지"
+        },
+        {
+          "value": "border",
+          "label": "경계선+메시지"
+        },
+        {
+          "value": "summary",
+          "label": "오류 요약"
+        }
+      ],
+      "default": "inline",
+      "description": "갤러리의 이메일 검증 실패를 보여 주는 방식입니다.",
+      "binding": "form error markup",
+      "scope": "gallery",
+      "appliesTo": "컴포넌트 갤러리",
+      "dependencies": [],
+      "serialization": "/variables/F11",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "F12",
+      "group": "F",
+      "name": "입력 도움말 위치",
+      "type": "enum",
+      "options": [
+        {
+          "value": "below",
+          "label": "입력 아래"
+        },
+        {
+          "value": "above",
+          "label": "입력 위"
+        },
+        {
+          "value": "tooltip",
+          "label": "도움말 툴팁"
+        }
+      ],
+      "default": "below",
+      "description": "이메일 입력 설명의 위치입니다.",
+      "binding": "form helper slot",
+      "scope": "gallery",
+      "appliesTo": "컴포넌트 갤러리",
+      "dependencies": [],
+      "serialization": "/variables/F12",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "G01",
+      "group": "G",
+      "name": "상품 표시 방식",
+      "type": "enum",
+      "options": [
+        {
+          "value": "grid",
+          "label": "그리드"
+        },
+        {
+          "value": "list",
+          "label": "목록"
+        },
+        {
+          "value": "feature",
+          "label": "첫 상품 강조"
+        }
+      ],
+      "default": "grid",
+      "description": "상품 컬렉션의 카드 구조입니다.",
+      "binding": "data-g01 → product layout",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/G01",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "G02",
+      "group": "G",
+      "name": "카드 이미지 비율",
+      "type": "enum",
+      "options": [
+        {
+          "value": "1 / 1",
+          "label": "1:1"
+        },
+        {
+          "value": "4 / 3",
+          "label": "4:3"
+        },
+        {
+          "value": "3 / 2",
+          "label": "3:2"
+        }
+      ],
+      "default": "4 / 3",
+      "description": "상품 일러스트 영역의 가로세로 비율입니다.",
+      "binding": "--image-ratio",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/G02",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "G03",
+      "group": "G",
+      "name": "카드 이미지 위치",
+      "type": "enum",
+      "options": [
+        {
+          "value": "top",
+          "label": "위"
+        },
+        {
+          "value": "left",
+          "label": "왼쪽"
+        },
+        {
+          "value": "right",
+          "label": "오른쪽"
+        }
+      ],
+      "default": "top",
+      "description": "상품 일러스트를 본문과 배치하는 방향입니다.",
+      "binding": "data-g03 → image position",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/G03",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "G04",
+      "group": "G",
+      "name": "카드 정보 순서",
+      "type": "enum",
+      "options": [
+        {
+          "value": "name-first",
+          "label": "이름 먼저"
+        },
+        {
+          "value": "price-first",
+          "label": "가격 먼저"
+        },
+        {
+          "value": "category-first",
+          "label": "카테고리 먼저"
+        }
+      ],
+      "default": "name-first",
+      "description": "카드 제목·가격·메타데이터의 순서입니다.",
+      "binding": "product body order",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/G04",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "G05",
+      "group": "G",
+      "name": "카드 테두리",
+      "type": "enum",
+      "options": [
+        {
+          "value": "none",
+          "label": "없음"
+        },
+        {
+          "value": "solid",
+          "label": "실선"
+        },
+        {
+          "value": "dashed",
+          "label": "점선"
+        }
+      ],
+      "default": "none",
+      "description": "상품 카드 테두리의 선 형태입니다.",
+      "binding": "--card-border-style",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/G05",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "G06",
+      "group": "G",
+      "name": "카드 배경",
+      "type": "enum",
+      "options": [
+        {
+          "value": "surface",
+          "label": "표면"
+        },
+        {
+          "value": "tinted",
+          "label": "색조"
+        },
+        {
+          "value": "transparent",
+          "label": "투명"
+        }
+      ],
+      "default": "surface",
+      "description": "상품 카드가 놓이는 배경색입니다.",
+      "binding": "--card-bg",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/G06",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "G07",
+      "group": "G",
+      "name": "카드 상호작용",
+      "type": "enum",
+      "options": [
+        {
+          "value": "lift",
+          "label": "떠오름"
+        },
+        {
+          "value": "outline",
+          "label": "강조선"
+        },
+        {
+          "value": "reveal",
+          "label": "동작 강조"
+        }
+      ],
+      "default": "lift",
+      "description": "카드 hover·focus-within 피드백입니다.",
+      "binding": "data-g07 → card interaction",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/G07",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "G08",
+      "group": "G",
+      "name": "상품 그리드 열 수",
+      "type": "number",
+      "options": [
+        {
+          "value": 2,
+          "label": "2"
+        },
+        {
+          "value": 3,
+          "label": "3"
+        },
+        {
+          "value": 4,
+          "label": "4"
+        }
+      ],
+      "default": 2,
+      "description": "넓은 화면의 최대 열 수. 작은 화면은 J01·J02가 조정합니다.",
+      "binding": "--columns",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [
+        {
+          "id": "G01",
+          "values": [
+            "grid",
+            "feature"
+          ],
+          "reason": "목록 표시는 한 열로 고정됩니다."
+        }
+      ],
+      "serialization": "/variables/G08",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "G09",
+      "group": "G",
+      "name": "상품 정보 표시량",
+      "type": "enum",
+      "options": [
+        {
+          "value": "minimal",
+          "label": "최소"
+        },
+        {
+          "value": "standard",
+          "label": "기본"
+        },
+        {
+          "value": "detailed",
+          "label": "상세"
+        }
+      ],
+      "default": "standard",
+      "description": "상품 설명·재고 정보의 표시량입니다.",
+      "binding": "product metadata visibility",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/G09",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "G10",
+      "group": "G",
+      "name": "가격 강조 수준",
+      "type": "enum",
+      "options": [
+        {
+          "value": "subtle",
+          "label": "은은하게"
+        },
+        {
+          "value": "bold",
+          "label": "굵게"
+        },
+        {
+          "value": "large",
+          "label": "크게"
+        }
+      ],
+      "default": "bold",
+      "description": "가격의 글자 크기와 굵기입니다.",
+      "binding": "data-g10 → price",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/G10",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "G11",
+      "group": "G",
+      "name": "상태 배지 형태",
+      "type": "enum",
+      "options": [
+        {
+          "value": "pill",
+          "label": "캡슐"
+        },
+        {
+          "value": "rounded",
+          "label": "둥근 사각형"
+        },
+        {
+          "value": "dot",
+          "label": "점+텍스트"
+        }
+      ],
+      "default": "pill",
+      "description": "상품 상태 배지의 형태입니다.",
+      "binding": "data-g11 → badge",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/G11",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "G12",
+      "group": "G",
+      "name": "목록 구분 방식",
+      "type": "enum",
+      "options": [
+        {
+          "value": "space",
+          "label": "여백"
+        },
+        {
+          "value": "line",
+          "label": "구분선"
+        },
+        {
+          "value": "alternating",
+          "label": "교차 배경"
+        }
+      ],
+      "default": "space",
+      "description": "장바구니·데이터 표 행의 구분입니다.",
+      "binding": "data-g12 → list rows",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/G12",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "H01",
+      "group": "H",
+      "name": "기본 애니메이션 시간",
+      "type": "number",
+      "options": [
+        {
+          "value": 0,
+          "label": "0"
+        },
+        {
+          "value": 150,
+          "label": "150"
+        },
+        {
+          "value": 250,
+          "label": "250"
+        },
+        {
+          "value": 400,
+          "label": "400"
+        }
+      ],
+      "default": 250,
+      "description": "상태 전환의 기본 시간입니다. Reduced Motion이 우선합니다.",
+      "unit": "ms",
+      "binding": "--duration",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/H01",
+      "constraint": "허용된 4개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "H02",
+      "group": "H",
+      "name": "모션 곡선",
+      "type": "enum",
+      "options": [
+        {
+          "value": "ease",
+          "label": "부드러운 Ease"
+        },
+        {
+          "value": "spring",
+          "label": "탄성 곡선"
+        },
+        {
+          "value": "linear",
+          "label": "선형"
+        }
+      ],
+      "default": "spring",
+      "description": "핸들과 표면 전환의 CSS 보간 곡선입니다.",
+      "binding": "--easing",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/H02",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "H03",
+      "group": "H",
+      "name": "화면 전환",
+      "type": "enum",
+      "options": [
+        {
+          "value": "none",
+          "label": "없음"
+        },
+        {
+          "value": "fade",
+          "label": "페이드"
+        },
+        {
+          "value": "slide",
+          "label": "슬라이드"
+        }
+      ],
+      "default": "fade",
+      "description": "쇼핑몰 내 컬렉션·미리보기 탭 전환 효과입니다.",
+      "binding": "data-h03 → view-enter",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/H03",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "H04",
+      "group": "H",
+      "name": "버튼 반응",
+      "type": "enum",
+      "options": [
+        {
+          "value": "color",
+          "label": "색상"
+        },
+        {
+          "value": "scale",
+          "label": "크기"
+        },
+        {
+          "value": "shadow",
+          "label": "그림자"
+        }
+      ],
+      "default": "color",
+      "description": "주요 버튼 hover·focus의 반응입니다.",
+      "binding": "data-h04 → button feedback",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/H04",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "H05",
+      "group": "H",
+      "name": "Hover 효과",
+      "type": "enum",
+      "options": [
+        {
+          "value": "none",
+          "label": "없음"
+        },
+        {
+          "value": "lift",
+          "label": "위로 이동"
+        },
+        {
+          "value": "brighten",
+          "label": "밝게"
+        }
+      ],
+      "default": "lift",
+      "description": "갤러리 카드와 칩의 hover 반응입니다.",
+      "binding": "data-h05 → surface hover",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/H05",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "H06",
+      "group": "H",
+      "name": "Press 효과",
+      "type": "enum",
+      "options": [
+        {
+          "value": "none",
+          "label": "없음"
+        },
+        {
+          "value": "shrink",
+          "label": "축소"
+        },
+        {
+          "value": "inset",
+          "label": "안쪽 그림자"
+        }
+      ],
+      "default": "shrink",
+      "description": "포인터·키보드 누름 상태의 효과입니다.",
+      "binding": "data-h06 → active feedback",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/H06",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "H07",
+      "group": "H",
+      "name": "메뉴 열림 방식",
+      "type": "enum",
+      "options": [
+        {
+          "value": "fade",
+          "label": "페이드"
+        },
+        {
+          "value": "slide",
+          "label": "슬라이드"
+        },
+        {
+          "value": "scale",
+          "label": "확대"
+        }
+      ],
+      "default": "scale",
+      "description": "팝오버·드롭다운 메뉴 등장 애니메이션입니다.",
+      "binding": "data-h07 → menu-enter",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/H07",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "H08",
+      "group": "H",
+      "name": "모달 등장 방식",
+      "type": "enum",
+      "options": [
+        {
+          "value": "fade",
+          "label": "페이드"
+        },
+        {
+          "value": "rise",
+          "label": "아래에서"
+        },
+        {
+          "value": "scale",
+          "label": "확대"
+        }
+      ],
+      "default": "rise",
+      "description": "모달·드로어의 등장 애니메이션입니다.",
+      "binding": "data-h08 → dialog-enter",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/H08",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "H09",
+      "group": "H",
+      "name": "로딩 표현",
+      "type": "enum",
+      "options": [
+        {
+          "value": "spinner",
+          "label": "스피너"
+        },
+        {
+          "value": "progress",
+          "label": "진행 막대"
+        },
+        {
+          "value": "skeleton",
+          "label": "스켈레톤"
+        }
+      ],
+      "default": "spinner",
+      "description": "갤러리 비동기 시연의 진행 표시입니다.",
+      "binding": "loading content",
+      "scope": "gallery",
+      "appliesTo": "컴포넌트 갤러리",
+      "dependencies": [],
+      "serialization": "/variables/H09",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "H10",
+      "group": "H",
+      "name": "성공 피드백",
+      "type": "enum",
+      "options": [
+        {
+          "value": "toast",
+          "label": "토스트"
+        },
+        {
+          "value": "inline",
+          "label": "인라인"
+        },
+        {
+          "value": "banner",
+          "label": "배너"
+        }
+      ],
+      "default": "toast",
+      "description": "장바구니 추가·갤러리 저장 결과의 위치입니다.",
+      "binding": "success feedback slot",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/H10",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "H11",
+      "group": "H",
+      "name": "오류 피드백",
+      "type": "enum",
+      "options": [
+        {
+          "value": "inline",
+          "label": "인라인"
+        },
+        {
+          "value": "toast",
+          "label": "토스트"
+        },
+        {
+          "value": "banner",
+          "label": "배너"
+        }
+      ],
+      "default": "inline",
+      "description": "재고 부족·입력 실패 결과의 위치입니다.",
+      "binding": "error feedback slot",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/H11",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "H12",
+      "group": "H",
+      "name": "애니메이션 연속성",
+      "type": "enum",
+      "options": [
+        {
+          "value": "together",
+          "label": "동시에"
+        },
+        {
+          "value": "stagger",
+          "label": "순차 등장"
+        },
+        {
+          "value": "single",
+          "label": "첫 요소만"
+        }
+      ],
+      "default": "together",
+      "description": "카드·갤러리 타일의 등장 지연입니다.",
+      "binding": "animation-delay / iteration",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/H12",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "I01",
+      "group": "I",
+      "name": "재질 표현",
+      "type": "enum",
+      "options": [
+        {
+          "value": "flat",
+          "label": "Flat"
+        },
+        {
+          "value": "soft",
+          "label": "Soft"
+        },
+        {
+          "value": "translucent",
+          "label": "반투명"
+        }
+      ],
+      "default": "soft",
+      "description": "표면의 입체감과 투명도를 조절합니다.",
+      "binding": "material surface",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/I01",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "I02",
+      "group": "I",
+      "name": "배경 투명도",
+      "type": "number",
+      "options": [
+        {
+          "value": 70,
+          "label": "70"
+        },
+        {
+          "value": 85,
+          "label": "85"
+        },
+        {
+          "value": 100,
+          "label": "100"
+        }
+      ],
+      "default": 100,
+      "description": "반투명 표면의 불투명도입니다.",
+      "unit": "%",
+      "binding": "--surface-alpha",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [
+        {
+          "id": "I01",
+          "values": [
+            "translucent"
+          ],
+          "reason": "반투명 재질에서만 투명도를 적용합니다."
+        }
+      ],
+      "serialization": "/variables/I02",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "I03",
+      "group": "I",
+      "name": "배경 흐림",
+      "type": "number",
+      "options": [
+        {
+          "value": 0,
+          "label": "0"
+        },
+        {
+          "value": 8,
+          "label": "8"
+        },
+        {
+          "value": 16,
+          "label": "16"
+        }
+      ],
+      "default": 0,
+      "description": "반투명 표면 뒤 콘텐츠를 흐리게 합니다.",
+      "unit": "px",
+      "binding": "--backdrop-blur",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [
+        {
+          "id": "I01",
+          "values": [
+            "translucent"
+          ],
+          "reason": "반투명 재질에서만 배경 흐림을 적용합니다."
+        }
+      ],
+      "serialization": "/variables/I03",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "I04",
+      "group": "I",
+      "name": "표면 하이라이트",
+      "type": "enum",
+      "options": [
+        {
+          "value": "none",
+          "label": "없음"
+        },
+        {
+          "value": "top",
+          "label": "위쪽"
+        },
+        {
+          "value": "edge",
+          "label": "테두리"
+        }
+      ],
+      "default": "top",
+      "description": "카드 안쪽에 얇은 광원 표시를 추가합니다.",
+      "binding": "--surface-highlight",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/I04",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "I05",
+      "group": "I",
+      "name": "입체감",
+      "type": "number",
+      "options": [
+        {
+          "value": 0,
+          "label": "없음"
+        },
+        {
+          "value": 1,
+          "label": "얕게"
+        },
+        {
+          "value": 2,
+          "label": "깊게"
+        }
+      ],
+      "default": 1,
+      "description": "컨트롤 핸들의 그림자와 카드 하단 깊이입니다.",
+      "binding": "--depth",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/I05",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "I06",
+      "group": "I",
+      "name": "테두리 하이라이트",
+      "type": "enum",
+      "options": [
+        {
+          "value": "none",
+          "label": "없음"
+        },
+        {
+          "value": "subtle",
+          "label": "중립"
+        },
+        {
+          "value": "brand",
+          "label": "브랜드"
+        }
+      ],
+      "default": "none",
+      "description": "카드 외곽 링의 색상입니다.",
+      "binding": "--edge-highlight",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/I06",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "I07",
+      "group": "I",
+      "name": "배경 그라디언트",
+      "type": "enum",
+      "options": [
+        {
+          "value": "none",
+          "label": "없음"
+        },
+        {
+          "value": "radial",
+          "label": "방사형"
+        },
+        {
+          "value": "linear",
+          "label": "선형"
+        }
+      ],
+      "default": "none",
+      "description": "전체 캔버스의 색조 그라디언트입니다.",
+      "binding": "--canvas-gradient",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/I07",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "I08",
+      "group": "I",
+      "name": "배경 패턴",
+      "type": "enum",
+      "options": [
+        {
+          "value": "none",
+          "label": "없음"
+        },
+        {
+          "value": "dots",
+          "label": "점"
+        },
+        {
+          "value": "grid",
+          "label": "그리드"
+        }
+      ],
+      "default": "none",
+      "description": "캔버스 배경 패턴입니다.",
+      "binding": "--canvas-pattern",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/I08",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "I09",
+      "group": "I",
+      "name": "레이어 수",
+      "type": "number",
+      "options": [
+        {
+          "value": 1,
+          "label": "1"
+        },
+        {
+          "value": 2,
+          "label": "2"
+        },
+        {
+          "value": 3,
+          "label": "3"
+        }
+      ],
+      "default": 1,
+      "description": "히어로 일러스트 뒤의 겹친 종이 레이어 수입니다.",
+      "binding": "hero illustration layers",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/I09",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "I10",
+      "group": "I",
+      "name": "떠 있는 컴포넌트",
+      "type": "enum",
+      "options": [
+        {
+          "value": "none",
+          "label": "없음"
+        },
+        {
+          "value": "cart",
+          "label": "장바구니"
+        },
+        {
+          "value": "help",
+          "label": "도움말"
+        }
+      ],
+      "default": "none",
+      "description": "미리보기 오른쪽 아래의 고정 동작입니다.",
+      "binding": "floating action slot",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/I10",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "I11",
+      "group": "I",
+      "name": "아이콘 스타일",
+      "type": "enum",
+      "options": [
+        {
+          "value": "outline",
+          "label": "외곽선"
+        },
+        {
+          "value": "bold",
+          "label": "굵게"
+        },
+        {
+          "value": "duotone",
+          "label": "듀오톤"
+        }
+      ],
+      "default": "outline",
+      "description": "Lucide 아이콘의 선 굵기와 채움입니다.",
+      "binding": "--icon-stroke / --icon-fill",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/I11",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "I12",
+      "group": "I",
+      "name": "아이콘 크기",
+      "type": "number",
+      "options": [
+        {
+          "value": 16,
+          "label": "16"
+        },
+        {
+          "value": 20,
+          "label": "20"
+        },
+        {
+          "value": 24,
+          "label": "24"
+        }
+      ],
+      "default": 20,
+      "description": "미리보기 내부 아이콘의 기본 크기입니다.",
+      "unit": "px",
+      "binding": "--icon-size",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/I12",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "J01",
+      "group": "J",
+      "name": "모바일 레이아웃",
+      "type": "enum",
+      "options": [
+        {
+          "value": "single",
+          "label": "한 열"
+        },
+        {
+          "value": "two-column",
+          "label": "두 열"
+        },
+        {
+          "value": "compact-list",
+          "label": "간결한 목록"
+        }
+      ],
+      "default": "single",
+      "description": "모바일 폭에서 상품 컬렉션을 재배치합니다.",
+      "binding": "data-j01 → container query",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/J01",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "J02",
+      "group": "J",
+      "name": "태블릿 레이아웃",
+      "type": "enum",
+      "options": [
+        {
+          "value": "two-column",
+          "label": "두 열"
+        },
+        {
+          "value": "three-column",
+          "label": "세 열"
+        },
+        {
+          "value": "list",
+          "label": "목록"
+        }
+      ],
+      "default": "two-column",
+      "description": "태블릿 폭에서의 상품 배치입니다.",
+      "binding": "data-j02 → adaptive columns",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/J02",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "J03",
+      "group": "J",
+      "name": "데스크톱 레이아웃",
+      "type": "enum",
+      "options": [
+        {
+          "value": "fluid",
+          "label": "유동형"
+        },
+        {
+          "value": "centered",
+          "label": "가운데 고정"
+        },
+        {
+          "value": "wide",
+          "label": "넓은 화면"
+        }
+      ],
+      "default": "fluid",
+      "description": "큰 화면에서 콘텐츠 최대 폭·정렬을 바꿉니다.",
+      "binding": "data-j03 → desktop container",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/J03",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "J04",
+      "group": "J",
+      "name": "반응형 전환점",
+      "type": "number",
+      "options": [
+        {
+          "value": 600,
+          "label": "600"
+        },
+        {
+          "value": 720,
+          "label": "720"
+        },
+        {
+          "value": 840,
+          "label": "840"
+        }
+      ],
+      "default": 720,
+      "description": "모바일에서 태블릿으로 전환하는 실제 미리보기 폭입니다.",
+      "unit": "px",
+      "binding": "ResizeObserver breakpoint",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/J04",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "J05",
+      "group": "J",
+      "name": "모바일 메뉴",
+      "type": "enum",
+      "options": [
+        {
+          "value": "drawer",
+          "label": "드로어"
+        },
+        {
+          "value": "bottom",
+          "label": "하단 바"
+        },
+        {
+          "value": "collapse",
+          "label": "접기"
+        }
+      ],
+      "default": "drawer",
+      "description": "모바일 화면에서 내비게이션을 변환합니다.",
+      "binding": "adaptive navigation",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/J05",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "J06",
+      "group": "J",
+      "name": "모바일 필터",
+      "type": "enum",
+      "options": [
+        {
+          "value": "drawer",
+          "label": "드로어"
+        },
+        {
+          "value": "inline",
+          "label": "인라인"
+        },
+        {
+          "value": "popover",
+          "label": "팝오버"
+        }
+      ],
+      "default": "popover",
+      "description": "모바일 화면의 필터 진입 방식입니다.",
+      "binding": "adaptive filter",
+      "scope": "shop",
+      "appliesTo": "쇼핑몰",
+      "dependencies": [],
+      "serialization": "/variables/J06",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "J07",
+      "group": "J",
+      "name": "터치 목표 크기",
+      "type": "number",
+      "options": [
+        {
+          "value": 44,
+          "label": "44"
+        },
+        {
+          "value": 48,
+          "label": "48"
+        },
+        {
+          "value": 56,
+          "label": "56"
+        }
+      ],
+      "default": 44,
+      "description": "작은 시각 컨트롤도 이 값 이상의 클릭 영역을 갖습니다.",
+      "unit": "px",
+      "binding": "--touch-target",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/J07",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "J08",
+      "group": "J",
+      "name": "확대 시 레이아웃",
+      "type": "enum",
+      "options": [
+        {
+          "value": "reflow",
+          "label": "자동 재배치"
+        },
+        {
+          "value": "stack",
+          "label": "세로 스택"
+        },
+        {
+          "value": "scroll",
+          "label": "영역 스크롤"
+        }
+      ],
+      "default": "reflow",
+      "description": "앱의 미리보기 확대 시 좁아진 유효 폭에 대응합니다.",
+      "binding": "data-j08 → zoom reflow",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/J08",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "J09",
+      "group": "J",
+      "name": "화면 방향 대응",
+      "type": "enum",
+      "options": [
+        {
+          "value": "auto",
+          "label": "자동"
+        },
+        {
+          "value": "portrait-stack",
+          "label": "세로 스택 우선"
+        },
+        {
+          "value": "landscape-split",
+          "label": "가로 분할 우선"
+        }
+      ],
+      "default": "auto",
+      "description": "미리보기 가로·세로 비율에 따른 배치입니다.",
+      "binding": "ResizeObserver orientation",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/J09",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "J10",
+      "group": "J",
+      "name": "긴 텍스트 대응",
+      "type": "enum",
+      "options": [
+        {
+          "value": "wrap",
+          "label": "전체 줄바꿈"
+        },
+        {
+          "value": "clamp",
+          "label": "두 줄 제한"
+        },
+        {
+          "value": "ellipsis",
+          "label": "말줄임"
+        }
+      ],
+      "default": "wrap",
+      "description": "긴 상품 이름과 설명의 시각적 처리입니다. 전체 이름은 접근성 레이블로 유지합니다.",
+      "binding": "data-j10 → text overflow",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/J10",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "J11",
+      "group": "J",
+      "name": "Reduced Motion 대응",
+      "type": "enum",
+      "options": [
+        {
+          "value": "system",
+          "label": "시스템 존중"
+        },
+        {
+          "value": "reduce",
+          "label": "항상 축소"
+        },
+        {
+          "value": "essential",
+          "label": "핵심 전환만"
+        }
+      ],
+      "default": "system",
+      "description": "모든 모드는 운영체제의 모션 축소 요청을 우선합니다.",
+      "binding": "--duration / media query",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/J11",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    },
+    {
+      "id": "J12",
+      "group": "J",
+      "name": "고대비 모드 대응",
+      "type": "enum",
+      "options": [
+        {
+          "value": "system",
+          "label": "시스템 존중"
+        },
+        {
+          "value": "enhanced",
+          "label": "대비 강화"
+        },
+        {
+          "value": "outline",
+          "label": "강한 외곽선"
+        }
+      ],
+      "default": "system",
+      "description": "forced-colors를 존중하고 필요하면 대비를 강화합니다.",
+      "binding": "data-j12 / forced-colors",
+      "scope": "all",
+      "appliesTo": "미리보기 전체",
+      "dependencies": [],
+      "serialization": "/variables/J12",
+      "constraint": "허용된 3개 값 중 하나. 타입과 값이 모두 일치해야 합니다."
+    }
+  ]
+}

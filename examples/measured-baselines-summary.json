@@ -1,0 +1,119 @@
+{
+  "version": 2,
+  "experiment_id": "measured-baseline-phase2",
+  "objective": "browser-v2",
+  "level": 2,
+  "evaluation_version": "phase2-eval-1.0.0",
+  "rows": [
+    {
+      "family": "apple-inspired",
+      "algorithm": "random",
+      "n": 1,
+      "mean": 100,
+      "sd": null,
+      "ci95": null,
+      "method": "Student t: mean ± t(0.975,n−1)·s/√n; 독립 반복·근사 정규성 가정, n<2 미제공; df>20 보수적 t20",
+      "planned": 1,
+      "completed": 1,
+      "noEligible": 0,
+      "partial": 0
+    },
+    {
+      "family": "material-inspired",
+      "algorithm": "random",
+      "n": 1,
+      "mean": 100,
+      "sd": null,
+      "ci95": null,
+      "method": "Student t: mean ± t(0.975,n−1)·s/√n; 독립 반복·근사 정규성 가정, n<2 미제공; df>20 보수적 t20",
+      "planned": 1,
+      "completed": 1,
+      "noEligible": 0,
+      "partial": 0
+    },
+    {
+      "family": "experimental",
+      "algorithm": "random",
+      "n": 1,
+      "mean": 100,
+      "sd": null,
+      "ci95": null,
+      "method": "Student t: mean ± t(0.975,n−1)·s/√n; 독립 반복·근사 정규성 가정, n<2 미제공; df>20 보수적 t20",
+      "planned": 1,
+      "completed": 1,
+      "noEligible": 0,
+      "partial": 0
+    }
+  ],
+  "constraints": "평균은 완료 반복 중 적격 최고점만; 적격 후보 없는 반복 수 별도. 중지·부분 반복은 CI에서 제외.",
+  "warning": "탐색적 기술통계. CI 겹침/비겹침으로 유의성·우월성 판정하지 않음. 계열 비교는 동일 계열별 변수 공간 내 결과.",
+  "config": {
+    "families": [
+      "apple-inspired",
+      "material-inspired",
+      "experimental"
+    ],
+    "algorithms": [
+      "random"
+    ],
+    "activeCount": 16,
+    "activeVariables": [
+      "A02",
+      "A07",
+      "A09",
+      "A12",
+      "B01",
+      "B02",
+      "B07",
+      "B09",
+      "C01",
+      "C02",
+      "C05",
+      "C06",
+      "D02",
+      "D03",
+      "E05",
+      "E08"
+    ],
+    "budget": 1,
+    "repetitions": 1,
+    "seed": 12345,
+    "seeds": [
+      12345
+    ],
+    "population": 12,
+    "mutationRate": 0.12,
+    "ucbC": 1,
+    "level": 2,
+    "objective": "browser-v2",
+    "weights": {
+      "F": 0.4,
+      "L": 0.3,
+      "A": 0.2,
+      "C": 0.1
+    },
+    "viewports": [
+      {
+        "id": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "id": "tablet",
+        "width": 768,
+        "height": 1024
+      },
+      {
+        "id": "desktop",
+        "width": 1440,
+        "height": 900
+      }
+    ],
+    "enforceAccessibility": true,
+    "cache": false,
+    "retries": 1,
+    "browserConcurrency": 1,
+    "maxEvaluations": 10000,
+    "evaluationVersion": "phase2-eval-1.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+import {writeFileSync,mkdirSync} from 'node:fs';
+import {SCHEMA,GROUPS,FAMILIES} from '../src/schema';
+import {SCHEMA_VERSION,defaults,combinationStats} from '../src/engine';
+mkdirSync('docs',{recursive:true});mkdirSync('public/presets',{recursive:true});
+writeFileSync('docs/variable-schema.json',JSON.stringify({schemaVersion:SCHEMA_VERSION,groups:GROUPS,variables:SCHEMA},null,2)+'\n');
+const properties=Object.fromEntries(SCHEMA.map(d=>[d.id,{type:d.type==='number'?'number':'string',enum:d.options.map(o=>o.value),default:d.default,description:d.description}]));
+writeFileSync('docs/genome.schema.json',JSON.stringify({$schema:'https://json-schema.org/draft/2020-12/schema',title:'UI Evolution Lab Genome',type:'object',additionalProperties:false,required:['version','schemaVersion','family','signature','seed','variables'],properties:{version:{const:1},schemaVersion:{const:SCHEMA_VERSION},family:{enum:FAMILIES.map(f=>f.id)},signature:{type:'boolean'},seed:{type:'integer',minimum:0,maximum:4294967295},variables:{type:'object',additionalProperties:false,required:SCHEMA.map(d=>d.id),properties}},$comment:'Runtime validation also requires family === variables.A01. Conditional inactive values remain serialized.'},null,2)+'\n');
+for(const f of FAMILIES)writeFileSync(`public/presets/${f.id}.json`,JSON.stringify(defaults(f.id),null,2)+'\n');
+writeFileSync('docs/variable-bindings.md','# 120개 변수 연결표\n\n`src/schema.ts`에서 자동 생성했습니다. 각 옵션 도메인·기본값·의존성·타입은 `variable-schema.json`에 있습니다.\n\n| ID | 변수 | 적용 화면 | 실제 연결 | 조건 |\n|---|---|---|---|---|\n'+SCHEMA.map(d=>`| ${d.id} | ${d.name} | ${d.appliesTo} | ${d.binding} | ${d.dependencies.map(x=>`${x.id} ∈ {${x.values.join(', ')}}`).join('; ')||'항상 (화면별 적용 범위 참고)'} |`).join('\n')+'\n');
+writeFileSync('docs/combination-count.json',JSON.stringify({...combinationStats(),validCount:null,note:'Finite-domain theoretical Cartesian product. Seed and Signature metadata excluded. Conditional/visually equivalent valid combinations are not counted.'},null,2)+'\n');
+process.stdout.write(`Exported ${SCHEMA.length} definitions and ${FAMILIES.length} presets.\n`);

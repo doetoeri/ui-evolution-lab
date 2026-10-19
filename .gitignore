@@ -1,0 +1,12 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.tsbuildinfo
+.sites-local/
+.env*
+.qa-browser/
+standalone-dist/
+UI_Evolution_Lab.html
+
+research-data/

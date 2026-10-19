@@ -1,0 +1,1040 @@
+{
+  "passed": true,
+  "path": "/workspace/scratch/e208b3e3f818/UI_Evolution_Lab_Phase2.html",
+  "at": "2026-10-18T10:36:41.285Z",
+  "experiment": {
+    "version": 2,
+    "experiment_id": "dcdfff8f-161e-4e35-95c9-9ec4c4f5dcfc",
+    "name": "Experiment 2026-10-18 10:36",
+    "config": {
+      "families": [
+        "apple-inspired"
+      ],
+      "algorithms": [
+        "random"
+      ],
+      "activeCount": 16,
+      "activeVariables": [
+        "A02",
+        "A07",
+        "A09",
+        "A12",
+        "B01",
+        "B02",
+        "B07",
+        "B09",
+        "C01",
+        "C02",
+        "C05",
+        "C06",
+        "D02",
+        "D03",
+        "E05",
+        "E08"
+      ],
+      "budget": 1,
+      "repetitions": 1,
+      "seed": 12345,
+      "seeds": [
+        12345
+      ],
+      "population": 12,
+      "mutationRate": 0.12,
+      "ucbC": 1,
+      "level": 2,
+      "objective": "browser-v2",
+      "weights": {
+        "F": 0.4,
+        "L": 0.3,
+        "A": 0.2,
+        "C": 0.1
+      },
+      "viewports": [
+        {
+          "id": "desktop",
+          "width": 1440,
+          "height": 900
+        }
+      ],
+      "enforceAccessibility": true,
+      "cache": true,
+      "retries": 1,
+      "browserConcurrency": 1,
+      "maxEvaluations": 10000,
+      "evaluationVersion": "phase2-eval-1.0.0"
+    },
+    "created_at": "2026-10-18T10:36:32.724Z",
+    "updated_at": "2026-10-18T10:36:41.166Z",
+    "status": "completed",
+    "records": [
+      {
+        "experiment_id": "dcdfff8f-161e-4e35-95c9-9ec4c4f5dcfc",
+        "algorithm": "random",
+        "design_family": "apple-inspired",
+        "run_id": "apple-inspired/random/1",
+        "seed": 12345,
+        "candidate_id": "dcdfff8f-161e-4e35-95c9-9ec4c4f5dcfc/apple-inspired/random/1/1",
+        "genome_hash": "7e2d921b50088d962bf20ae6060d9361d917cf50149b43cd6d636c623df124d8",
+        "genome_json": {
+          "version": 1,
+          "schemaVersion": "phase0-1.0.0",
+          "family": "apple-inspired",
+          "signature": true,
+          "seed": 12345,
+          "variables": {
+            "A01": "apple-inspired",
+            "A02": "standard",
+            "A03": 1200,
+            "A04": 24,
+            "A05": "center",
+            "A06": "grid",
+            "A07": "balanced",
+            "A08": 70,
+            "A09": "space",
+            "A10": 1,
+            "A11": "featured-first",
+            "A12": "symmetric",
+            "B01": "top",
+            "B02": "text",
+            "B03": 64,
+            "B04": 2,
+            "B05": "inline",
+            "B06": "pill",
+            "B07": "content",
+            "B08": "pill",
+            "B09": "row",
+            "B10": "chips",
+            "B11": "toolbar",
+            "B12": "compact",
+            "C01": "blue",
+            "C02": "tonal",
+            "C03": 42,
+            "C04": 95,
+            "C05": "neutral",
+            "C06": "white",
+            "C07": 2,
+            "C08": 3,
+            "C09": "medium",
+            "C10": "semantic",
+            "C11": "light",
+            "C12": "fade",
+            "D01": "sans",
+            "D02": 16,
+            "D03": 2,
+            "D04": 700,
+            "D05": 400,
+            "D06": 1.5,
+            "D07": -0.02,
+            "D08": "left",
+            "D09": "plain",
+            "D10": "tabular",
+            "D11": "balance",
+            "D12": 3,
+            "E01": 4,
+            "E02": 16,
+            "E03": 16,
+            "E04": 32,
+            "E05": 44,
+            "E06": 48,
+            "E07": 240,
+            "E08": 20,
+            "E09": 100,
+            "E10": 1,
+            "E11": 0.06,
+            "E12": 20,
+            "F01": "filled",
+            "F02": "pill",
+            "F03": "leading",
+            "F04": "sentence",
+            "F05": "normal",
+            "F06": "ghost",
+            "F07": "mixed",
+            "F08": "signature-pill",
+            "F09": "signature-pill",
+            "F10": "outlined",
+            "F11": "inline",
+            "F12": "below",
+            "G01": "grid",
+            "G02": "4 / 3",
+            "G03": "top",
+            "G04": "name-first",
+            "G05": "none",
+            "G06": "surface",
+            "G07": "lift",
+            "G08": 2,
+            "G09": "standard",
+            "G10": "bold",
+            "G11": "pill",
+            "G12": "space",
+            "H01": 250,
+            "H02": "spring",
+            "H03": "fade",
+            "H04": "color",
+            "H05": "lift",
+            "H06": "shrink",
+            "H07": "scale",
+            "H08": "rise",
+            "H09": "spinner",
+            "H10": "toast",
+            "H11": "inline",
+            "H12": "together",
+            "I01": "soft",
+            "I02": 100,
+            "I03": 0,
+            "I04": "top",
+            "I05": 1,
+            "I06": "none",
+            "I07": "none",
+            "I08": "none",
+            "I09": 1,
+            "I10": "none",
+            "I11": "outline",
+            "I12": 20,
+            "J01": "single",
+            "J02": "two-column",
+            "J03": "fluid",
+            "J04": 720,
+            "J05": "drawer",
+            "J06": "popover",
+            "J07": 44,
+            "J08": "reflow",
+            "J09": "auto",
+            "J10": "wrap",
+            "J11": "system",
+            "J12": "system"
+          }
+        },
+        "active_variables": [
+          "A02",
+          "A07",
+          "A09",
+          "A12",
+          "B01",
+          "B02",
+          "B07",
+          "B09",
+          "C01",
+          "C02",
+          "C05",
+          "C06",
+          "D02",
+          "D03",
+          "E05",
+          "E08"
+        ],
+        "evaluation_level": 2,
+        "evaluation_version": "phase2-eval-1.0.0",
+        "objective": "browser-v2",
+        "viewport": [
+          {
+            "id": "desktop",
+            "width": 1440,
+            "height": 900
+          }
+        ],
+        "function_score": 100,
+        "accessibility_score": 100,
+        "layout_score": 100,
+        "consistency_proxy_score": 100,
+        "total_score": 100,
+        "score_sources": {
+          "F": "Measured",
+          "A": "Measured",
+          "L": "Measured",
+          "C": "Proxy",
+          "Q": "Measured"
+        },
+        "constraint_violations": [],
+        "task_results": [
+          {
+            "task_id": "task-1-search",
+            "success": true,
+            "steps": 2,
+            "duration_ms": 803.7090410000001,
+            "error": null,
+            "assertions": [
+              "지정 상품 이름 검색",
+              "지정 상품 1개와 상세 버튼 확인"
+            ],
+            "source": "Measured"
+          },
+          {
+            "task_id": "task-2-filter",
+            "success": true,
+            "steps": 4,
+            "duration_ms": 806.5110089999998,
+            "error": null,
+            "assertions": [
+              "필터 접근",
+              "100,000원 이하",
+              "그린 색상 선택",
+              "조건을 만족하는 모든 상품과 일치"
+            ],
+            "source": "Measured"
+          },
+          {
+            "task_id": "task-3-cart",
+            "success": true,
+            "steps": 4,
+            "duration_ms": 1336.2681649999995,
+            "error": null,
+            "assertions": [
+              "지정 상품 담기",
+              "장바구니 열기",
+              "수량 2개로 변경",
+              "수량·합계 확인"
+            ],
+            "source": "Measured"
+          },
+          {
+            "task_id": "task-4-sort",
+            "success": true,
+            "steps": 2,
+            "duration_ms": 687.0537049999984,
+            "error": null,
+            "assertions": [
+              "가격 오름차순 선택",
+              "모든 상품 가격 순서 검증"
+            ],
+            "source": "Measured"
+          }
+        ],
+        "evaluation_duration_ms": 8434,
+        "cache_hit": false,
+        "timestamp": "2026-10-18T10:36:41.158Z",
+        "eligible": true,
+        "error": null,
+        "raw": {
+          "kind": "browser",
+          "browser": {
+            "kind": "playwright",
+            "environment": {
+              "browser": "153.0.8010.0",
+              "platform": "linux",
+              "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+              "deviceScaleFactor": 1,
+              "appVersion": "511f8e52201ba1e1",
+              "runnerVersion": "phase2-eval-1.0.0",
+              "node": "v24.19.0"
+            },
+            "views": [
+              {
+                "viewport": {
+                  "id": "desktop",
+                  "width": 1440,
+                  "height": 900
+                },
+                "layout": {
+                  "issues": [],
+                  "inspected": 58,
+                  "ignoredIntentional": 0,
+                  "scrollWidth": 1440,
+                  "clientWidth": 1440,
+                  "scanVersion": "annotated-peers-v2"
+                },
+                "axe": {
+                  "violations": [],
+                  "incomplete": [
+                    {
+                      "id": "aria-prohibited-attr",
+                      "impact": "serious",
+                      "help": "Elements must only use permitted ARIA attributes",
+                      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=axeAPI",
+                      "nodes": [
+                        {
+                          "target": [
+                            ".signature-slider"
+                          ],
+                          "html": "<span dir=\"ltr\" data-orientation=\"horizontal\" aria-disabled=\"false\" class=\"signature-slider\" aria-labelledby=\"_r_6_\" style=\"--radix-slider-thumb-transform: translateX(-50%);\">",
+                          "failureSummary": "Fix all of the following:\n  aria-labelledby attribute is not well supported, but the elements referenced by aria-labelledby are visible in the page. Verify the label is not necessary.",
+                          "rect": {
+                            "x": 487.84375,
+                            "y": 973.78125,
+                            "width": 517.0625,
+                            "height": 44
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "color-contrast",
+                      "impact": "serious",
+                      "help": "Elements must meet minimum color contrast ratio thresholds",
+                      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                      "nodes": [
+                        {
+                          "target": [
+                            ".brand-symbol"
+                          ],
+                          "html": "<span class=\"brand-symbol\">f.</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 144,
+                            "y": 27.140625,
+                            "width": 24.375,
+                            "height": 38.71875
+                          }
+                        },
+                        {
+                          "target": [
+                            "a > span:nth-child(2)"
+                          ],
+                          "html": "<span>form &amp; function<span class=\"brand-note\">OBJECTS FOR EVERYDAY</span></span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 178.375,
+                            "y": 29.546875,
+                            "width": 122.8125,
+                            "height": 33.90625
+                          }
+                        },
+                        {
+                          "target": [
+                            ".brand-note"
+                          ],
+                          "html": "<span class=\"brand-note\">OBJECTS FOR EVERYDAY</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 178.375,
+                            "y": 55.765625,
+                            "width": 122.8125,
+                            "height": 7.6875
+                          }
+                        },
+                        {
+                          "target": [
+                            ".local-demo-label"
+                          ],
+                          "html": "<span class=\"local-demo-label\">DEMO STORE</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 1174,
+                            "y": 40.5,
+                            "width": 64,
+                            "height": 12
+                          }
+                        },
+                        {
+                          "target": [
+                            "button[title=\"데스크\"] > span"
+                          ],
+                          "html": "<span class=\"\">데스크</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 228.046875,
+                            "y": 116.5,
+                            "width": 32.046875,
+                            "height": 18
+                          }
+                        },
+                        {
+                          "target": [
+                            "button[title=\"오디오\"] > span"
+                          ],
+                          "html": "<span class=\"\">오디오</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 296.09375,
+                            "y": 116.5,
+                            "width": 32.046875,
+                            "height": 18
+                          }
+                        },
+                        {
+                          "target": [
+                            "button[title=\"리빙\"] > span"
+                          ],
+                          "html": "<span class=\"\">리빙</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 364.140625,
+                            "y": 116.5,
+                            "width": 21.375,
+                            "height": 18
+                          }
+                        },
+                        {
+                          "target": [
+                            ".nav-item:nth-child(5)"
+                          ],
+                          "html": "<button type=\"button\" class=\"nav-item\">추천</button>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 405.515625,
+                            "y": 103.5,
+                            "width": 53.375,
+                            "height": 44
+                          }
+                        },
+                        {
+                          "target": [
+                            ".breadcrumb > button"
+                          ],
+                          "html": "<button type=\"button\">컬렉션</button>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 144,
+                            "y": 180,
+                            "width": 44,
+                            "height": 44
+                          }
+                        },
+                        {
+                          "target": [
+                            ".hero-copy > .eyebrow"
+                          ],
+                          "html": "<span class=\"eyebrow\"><span class=\"tiny-dot\"></span> EVERYDAY, CONSIDERED.</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 144,
+                            "y": 288.53125,
+                            "width": 147.578125,
+                            "height": 13.1875
+                          }
+                        },
+                        {
+                          "target": [
+                            "h1"
+                          ],
+                          "html": "<h1>일상을 바꾸는<br><span>작은 디테일.</span></h1>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 144,
+                            "y": 318.125,
+                            "width": 660.28125,
+                            "height": 92.125
+                          }
+                        },
+                        {
+                          "target": [
+                            "h1 > span"
+                          ],
+                          "html": "<span>작은 디테일.</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 144,
+                            "y": 359.1875,
+                            "width": 182.46875,
+                            "height": 55
+                          }
+                        },
+                        {
+                          "target": [
+                            ".hero-copy > p"
+                          ],
+                          "html": "<p>당신의 공간에 꼭 맞는 형태와 기능.<br>좋은 디자인으로 채우는 나만의 컬렉션.</p>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 144,
+                            "y": 426.25,
+                            "width": 660.28125,
+                            "height": 48.9375
+                          }
+                        },
+                        {
+                          "target": [
+                            ".primary > span:nth-child(2)"
+                          ],
+                          "html": "<span>컬렉션 살펴보기</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+                          "rect": {
+                            "x": 193,
+                            "y": 509.671875,
+                            "width": 92.453125,
+                            "height": 19.03125
+                          }
+                        },
+                        {
+                          "target": [
+                            ".art-caption"
+                          ],
+                          "html": "<span class=\"art-caption\">",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+                          "rect": {
+                            "x": 1005.984375,
+                            "y": 528.328125,
+                            "width": 280,
+                            "height": 13
+                          }
+                        },
+                        {
+                          "target": [
+                            ".catalog-heading > div > .eyebrow"
+                          ],
+                          "html": "<span class=\"eyebrow\">CURATED OBJECTS</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 144,
+                            "y": 826.09375,
+                            "width": 88.609375,
+                            "height": 12
+                          }
+                        },
+                        {
+                          "target": [
+                            ".catalog-heading > div > h2"
+                          ],
+                          "html": "<h2>당신을 위한 컬렉션 <span class=\"result-count\">6</span></h2>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 144,
+                            "y": 847.09375,
+                            "width": 178.40625,
+                            "height": 23.421875
+                          }
+                        },
+                        {
+                          "target": [
+                            "#_r_6_"
+                          ],
+                          "html": "<span id=\"_r_6_\">가격 범위</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 480.84375,
+                            "y": 954.515625,
+                            "width": 37.40625,
+                            "height": 14.265625
+                          }
+                        },
+                        {
+                          "target": [
+                            "output"
+                          ],
+                          "html": "<output>0원 — 300,000원</output>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 951.0625,
+                            "y": 955.21875,
+                            "width": 60.84375,
+                            "height": 12.84375
+                          }
+                        },
+                        {
+                          "target": [
+                            ".range-endpoints > button:nth-child(1)"
+                          ],
+                          "html": "<button type=\"button\">최소 핸들</button>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 480.84375,
+                            "y": 1014.78125,
+                            "width": 40.40625,
+                            "height": 28
+                          }
+                        },
+                        {
+                          "target": [
+                            "small"
+                          ],
+                          "html": "<small>겹친 핸들도 선택 후 방향키로 조절</small>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 702.421875,
+                            "y": 1024.125,
+                            "width": 87.921875,
+                            "height": 9.3125
+                          }
+                        },
+                        {
+                          "target": [
+                            ".range-endpoints > button:nth-child(3)"
+                          ],
+                          "html": "<button type=\"button\">최대 핸들</button>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 971.5,
+                            "y": 1014.78125,
+                            "width": 40.40625,
+                            "height": 28
+                          }
+                        },
+                        {
+                          "target": [
+                            ".field:nth-child(1) > span"
+                          ],
+                          "html": "<span>최대 가격</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 1025.90625,
+                            "y": 961.546875,
+                            "width": 90,
+                            "height": 19.1875
+                          }
+                        },
+                        {
+                          "target": [
+                            ".field:nth-child(2) > span"
+                          ],
+                          "html": "<span>상품 색상</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 1127.90625,
+                            "y": 961.546875,
+                            "width": 90,
+                            "height": 19.1875
+                          }
+                        },
+                        {
+                          "target": [
+                            ".secondary > span"
+                          ],
+                          "html": "<span>필터 초기화</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 1240.90625,
+                            "y": 991.921875,
+                            "width": 46.09375,
+                            "height": 13.421875
+                          }
+                        },
+                        {
+                          "target": [
+                            "footer > span:nth-child(1)"
+                          ],
+                          "html": "<span>form &amp; function</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 144,
+                            "y": 3020.171875,
+                            "width": 81.96875,
+                            "height": 16.796875
+                          }
+                        },
+                        {
+                          "target": [
+                            "footer > span:nth-child(2)"
+                          ],
+                          "html": "<span>6개의 가상 상품 · 결제 없는 인터랙션 데모</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 650.84375,
+                            "y": 3022.5625,
+                            "width": 126.015625,
+                            "height": 12
+                          }
+                        },
+                        {
+                          "target": [
+                            "footer > span:nth-child(3)"
+                          ],
+                          "html": "<span>DESIGNED TO EXPLORE ↗</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+                          "rect": {
+                            "x": 1201.71875,
+                            "y": 3022.5625,
+                            "width": 94.28125,
+                            "height": 12
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "passes": 29,
+                  "version": "4.14.0"
+                },
+                "tasks": [
+                  {
+                    "task_id": "task-1-search",
+                    "success": true,
+                    "steps": 2,
+                    "duration_ms": 803.7090410000001,
+                    "error": null,
+                    "assertions": [
+                      "지정 상품 이름 검색",
+                      "지정 상품 1개와 상세 버튼 확인"
+                    ],
+                    "source": "Measured"
+                  },
+                  {
+                    "task_id": "task-2-filter",
+                    "success": true,
+                    "steps": 4,
+                    "duration_ms": 806.5110089999998,
+                    "error": null,
+                    "assertions": [
+                      "필터 접근",
+                      "100,000원 이하",
+                      "그린 색상 선택",
+                      "조건을 만족하는 모든 상품과 일치"
+                    ],
+                    "source": "Measured"
+                  },
+                  {
+                    "task_id": "task-3-cart",
+                    "success": true,
+                    "steps": 4,
+                    "duration_ms": 1336.2681649999995,
+                    "error": null,
+                    "assertions": [
+                      "지정 상품 담기",
+                      "장바구니 열기",
+                      "수량 2개로 변경",
+                      "수량·합계 확인"
+                    ],
+                    "source": "Measured"
+                  },
+                  {
+                    "task_id": "task-4-sort",
+                    "success": true,
+                    "steps": 2,
+                    "duration_ms": 687.0537049999984,
+                    "error": null,
+                    "assertions": [
+                      "가격 오름차순 선택",
+                      "모든 상품 가격 순서 검증"
+                    ],
+                    "source": "Measured"
+                  }
+                ],
+                "keyboard": [
+                  {
+                    "id": "keyboard-tab-focus",
+                    "pass": true,
+                    "details": "Tab으로 실제 초점과 outline/box-shadow 확인",
+                    "source": "Measured"
+                  },
+                  {
+                    "id": "keyboard-switch",
+                    "pass": true,
+                    "details": "Space로 switch 상태 변경",
+                    "source": "Measured"
+                  },
+                  {
+                    "id": "keyboard-range",
+                    "pass": true,
+                    "details": "ArrowLeft로 range 최대 핸들 변경",
+                    "source": "Measured"
+                  },
+                  {
+                    "id": "modal-focus",
+                    "pass": true,
+                    "details": "Tab 5회 트랩·Escape·초점 복귀",
+                    "source": "Measured"
+                  }
+                ],
+                "touchTargets": [],
+                "reducedMotion": {
+                  "pass": true,
+                  "maxDurationMs": 0.01,
+                  "sampled": 411,
+                  "source": "Measured"
+                },
+                "screenshot": "/api/evidence/574a7eb75c1a2ef88238ad80-desktop-baseline.png",
+                "duration_ms": 8359.446911
+              }
+            ],
+            "pageErrors": [],
+            "measuredAt": "2026-10-18T10:36:41.154Z",
+            "attempts": 1
+          },
+          "consistency": {
+            "kind": "static",
+            "rules": [
+              {
+                "id": "spacing-grid",
+                "description": "컴포넌트·섹션 간격이 기본 간격 단위의 배수인지",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "type-leading",
+                "description": "본문 행간이 1.4 이상인지",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "heading-hierarchy",
+                "description": "제목 크기가 본문 대비 1.5배 이상인지",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "radius-coherence",
+                "description": "버튼 형태와 카드 곡률의 극단적 불일치 여부",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "density-space",
+                "description": "조밀한 정보와 큰 간격의 조합 위험",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "motion-duration",
+                "description": "기본 모션 400ms 초과 여부",
+                "value": 250,
+                "threshold": 400,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              }
+            ],
+            "layoutRisk": [
+              {
+                "id": "column-risk",
+                "description": "데스크톱 카드 추정 폭이 210px보다 작은지",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "text-risk",
+                "description": "큰 본문과 높은 상품 정보량 조합",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "page-padding",
+                "description": "좁은 화면에서 큰 좌우 여백 위험",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "height-risk",
+                "description": "입력 높이 대비 큰 본문 위험",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              }
+            ],
+            "contrast": [
+              {
+                "name": "본문 / 표면",
+                "ratio": 16.839590269544242,
+                "threshold": 4.5,
+                "pass": true
+              },
+              {
+                "name": "보조 텍스트 / 표면",
+                "ratio": 6.36784441105769,
+                "threshold": 4.5,
+                "pass": true
+              },
+              {
+                "name": "버튼 전경 / 기본색",
+                "ratio": 5.374598385723805,
+                "threshold": 4.5,
+                "pass": true
+              },
+              {
+                "name": "입력 경계 / 표면",
+                "ratio": 3.4537835339935308,
+                "threshold": 3,
+                "pass": true
+              }
+            ],
+            "inactiveVariables": [],
+            "missingMeasurements": [
+              "기능 과제 수행",
+              "실제 DOM 레이아웃",
+              "axe-core",
+              "키보드·모달",
+              "사람의 사용 편의성·미적 만족도"
+            ]
+          }
+        },
+        "formulas": {
+          "F": "100 × 성공 과제 수 / 전체 과제 수; 화면별 동일 4과제",
+          "A": "min_viewport max(0,100−Σ(위반 노드×심각도 벌점)−20×키보드 실패−2×24px 미만 목표−10×Reduced Motion 실패)",
+          "L": "min_viewport max(0,100−Σ 레이아웃 위반 벌점)",
+          "C": "max(0, 100 − 토큰·간격·위계 규칙 벌점 합)",
+          "Q": "(wF×F + wL×L + wA×A + wC×C) / Σw; 초기 .40/.30/.20/.10은 연구 가설",
+          "penalties": "minor=1, moderate=4, serious=12, critical=25; 필수 기능·접근성 실패는 Q와 별도로 제외"
+        },
+        "evaluation_index": 1,
+        "best_so_far": 100,
+        "operator": null,
+        "reward": null,
+        "attempts": 1,
+        "measurement_id": "dcdfff8f-161e-4e35-95c9-9ec4c4f5dcfc/apple-inspired/random/1/1",
+        "measurement_timestamp": "2026-10-18T10:36:41.154Z"
+      }
+    ],
+    "runs": [
+      {
+        "id": "apple-inspired/random/1",
+        "algorithm": "random",
+        "family": "apple-inspired",
+        "seed": 12345,
+        "repetition": 1,
+        "curve": [
+          100
+        ],
+        "best": 100,
+        "bestCandidateId": "dcdfff8f-161e-4e35-95c9-9ec4c4f5dcfc/apple-inspired/random/1/1",
+        "unique": 1,
+        "cacheHits": 0,
+        "successful": 1,
+        "failed": 0,
+        "ineligible": 0,
+        "arms": [
+          {
+            "id": "color",
+            "label": "색상",
+            "n": 0,
+            "rewardSum": 0
+          },
+          {
+            "id": "layout",
+            "label": "레이아웃",
+            "n": 0,
+            "rewardSum": 0
+          },
+          {
+            "id": "typography",
+            "label": "타이포그래피",
+            "n": 0,
+            "rewardSum": 0
+          },
+          {
+            "id": "spacing",
+            "label": "간격·크기·재질",
+            "n": 0,
+            "rewardSum": 0
+          }
+        ],
+        "status": "completed",
+        "duration_ms": 8442.099999999627
+      }
+    ],
+    "elapsed_ms": 8442.099999999627,
+    "environment": {
+      "evaluator": "playwright/511f8e52201ba1e1/153.0.8010.0/linux/v24.19.0",
+      "client": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+      "app": "2.0.0",
+      "schema": "phase0-1.0.0",
+      "search": "phase2-search-1.0.0"
+    },
+    "warnings": [
+      "Q 가중치는 초기 연구 가설입니다.",
+      "자동 과제 시간은 사람의 사용성·과제 수행시간이 아닙니다.",
+      "CI는 탐색적 요약이며 알고리즘 우월성 검정이 아닙니다."
+    ]
+  }
+}

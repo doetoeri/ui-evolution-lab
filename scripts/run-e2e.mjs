@@ -1,0 +1,11 @@
+// Serves the production bundle for tests; no dev server or remote service required.
+import {createServer} from 'node:http';
+import {readFile,stat} from 'node:fs/promises';
+import {cpSync,mkdtempSync,rmSync,mkdirSync,copyFileSync,existsSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {resolve,extname,sep,join} from 'node:path';
+import {spawn} from 'node:child_process';
+const root=mkdtempSync(join(tmpdir(),'ui-evolution-e2e-'));cpSync(resolve('dist'),root,{recursive:true});
+const mime={'.html':'text/html','.js':'application/javascript','.css':'text/css','.svg':'image/svg+xml','.json':'application/json','.png':'image/png'};
+const server=createServer(async(req,res)=>{try{const url=new URL(req.url,'http://localhost');let p=resolve(root,'.'+decodeURIComponent(url.pathname));if(!p.startsWith(root+sep)&&p!==root){res.writeHead(403).end();return;}let info=await stat(p).catch(()=>null);if(!info||info.isDirectory())p=resolve(root,'index.html');const data=await readFile(p);res.writeHead(200,{'Content-Type':mime[extname(p)]??'application/octet-stream','Cache-Control':p.includes('/assets/')?'public, max-age=3600, immutable':'no-cache'});res.end(data);}catch{res.writeHead(500).end();}});
+server.listen(0,'127.0.0.1',()=>{const port=server.address().port;const args=process.argv.slice(2),label=args.filter(x=>!x.startsWith('-')).join('-').replace(/[^a-zA-Z0-9.-]/g,'_').slice(0,100)||'full',runId=Date.now()+'-'+process.pid,report=resolve('test-results',runId,'report.json');mkdirSync(resolve('test-results',runId),{recursive:true});const child=spawn(process.execPath,args[0]==='--smoke'?['scripts/qa-smoke.mjs']:['node_modules/@playwright/test/cli.js','test',...args],{stdio:'inherit',env:{...process.env,TEST_BASE_URL:`http://127.0.0.1:${port}`,TEST_ARTIFACTS_DIR:resolve('test-results',runId,'artifacts'),TEST_HTML_DIR:resolve('playwright-report',runId),TEST_REPORT_FILE:report}});child.on('exit',code=>{if(args[0]!=='--smoke'&&existsSync(report)){mkdirSync('docs/phase2',{recursive:true});copyFileSync(report,resolve('docs/phase2',`playwright-${label}.json`));copyFileSync(report,'docs/playwright-results.json');}server.close(()=>rmSync(root,{recursive:true,force:true}));process.exitCode=code??1;});});

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "file": "UI_Evolution_Lab_Phase0.html",
+  "timestamp": "2026-10-18T08:44:04.134Z",
+  "checks": {
+    "fileProtocol": true,
+    "signatureShape": {
+      "ratio": 1.4590802805923617,
+      "track": "rgb(7, 133, 252)",
+      "handle": "rgb(255, 255, 255)"
+    },
+    "switchClickAndKeyboard": true,
+    "stockErrorVisibleInsideCart": true,
+    "componentCount": 29,
+    "onDemandAxe": "최근 검사 · 0개 위반 유형\n통과 규칙 23 · 수동 검토 2\n검사 결과 내보내기\n후보에 검사 기록",
+    "uncaughtErrors": []
+  }
+}

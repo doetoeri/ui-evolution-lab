@@ -1,0 +1,14 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {resolve,dirname,join} from 'node:path';
+const destination=resolve(process.argv[2]??'UI_Evolution_Lab.html');
+const buildRoot=process.argv[3]??'dist';
+let html=readFileSync(join(buildRoot,'index.html'),'utf8');
+const cssPath=html.match(/<link[^>]+href="([^"]+\.css)"[^>]*>/)?.[1];
+const jsPath=html.match(/<script[^>]+src="([^"]+\.js)"[^>]*><\/script>/)?.[1];
+if(!cssPath||!jsPath)throw new Error('Expected a Vite CSS/JS bundle. Run npm run build first.');
+let css=readFileSync(join(buildRoot,cssPath),'utf8');
+css=css.replace(/url\(([^)]+)\)/g,(full,url)=>{const asset=url.replace(/^['"]|['"]$/g,'');if(!asset.startsWith('/assets/'))return full;return `url(data:font/woff2;base64,${readFileSync(join(buildRoot,asset)).toString('base64')})`;});
+let js=readFileSync(join(buildRoot,jsPath),'utf8');
+js=js.replace(/import\("(\.\/axe-[^"]+\.js)"\)/g,(_full,path)=>`import("data:text/javascript;base64,${readFileSync(join(buildRoot,dirname(jsPath),path)).toString('base64')}")`);
+html=html.replace(/<link[^>]+href="[^"]+\.css"[^>]*>/,()=>`<style>${css}</style>`).replace(/<script[^>]+src="[^"]+\.js"[^>]*><\/script>/,()=>`<script type="module">${js.replaceAll('</script','<\\/script')}</script>`);
+mkdirSync(dirname(destination),{recursive:true});writeFileSync(destination,html);process.stdout.write(`${destination}\n`);

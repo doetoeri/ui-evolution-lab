@@ -1,0 +1,37 @@
+UI EVOLUTION LAB · PHASE 2
+
+1. 설치 없이 보기
+   Open_UI_Evolution_Lab_Phase2.html을 Chrome, Edge, Samsung Internet에서 여세요.
+   상단 “연구실” → “새 실험 시작”으로 Proxy 실험을 할 수 있습니다.
+   HTML 미리보기 앱에서는 JavaScript가 막힐 수 있으므로 실제 브라우저를 사용하세요.
+
+2. 컴퓨터에서 개발 실행 (Node.js 22.12 이상)
+   npm install
+   npm run dev
+
+3. 실제 Playwright + axe 측정
+   npm install
+   npx playwright install chromium
+   npm run research
+   http://127.0.0.1:4318 → 연구실 → 연결 확인 → Level 2
+
+   첫 실행: 예산 1회, 반복 1회, 데스크톱 한 화면을 권장합니다.
+   유료 API·API 키는 필요하지 않습니다.
+
+태블릿 안내
+   독립 HTML에서 Proxy 실험·사용자 평가는 가능합니다.
+   Playwright 자체 실행에는 컴퓨터가 필요합니다.
+   컴퓨터에서 내보낸 실측 JSON을 태블릿의 “실험 JSON”에서 가져올 수 있습니다.
+
+원자료 보관
+   전체 실험 JSON과 요약을 따로 내보내세요.
+   실제 스크린샷은 research-data/evidence 폴더도 함께 보관하세요.
+   JSON에는 스크린샷 이미지 바이트가 포함되어 있지 않습니다.
+
+예제 구별
+   examples/measured-baselines.json: 실제 소규모 기준선 검사
+   examples/measured-optimization.json: 실제 3알고리즘 소규모 연결 검사
+   examples/proxy-experiment.json: 대리지표 실험 (실측 사용성 아님)
+   사용자·AI 응답 예제는 생성하지 않았습니다.
+
+자세한 내용: README.md, docs/TEST-REPORT.md, docs/EVALUATION-SPEC.md

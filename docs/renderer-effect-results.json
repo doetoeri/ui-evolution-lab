@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "A01",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "apple-inspired",
+      "material-inspired"
+    ]
+  },
+  {
+    "id": "A02",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "standard",
+      "split"
+    ]
+  },
+  {
+    "id": "A03",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      720,
+      960
+    ]
+  },
+  {
+    "id": "A04",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      16,
+      24
+    ]
+  },
+  {
+    "id": "A05",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "start",
+      "center"
+    ]
+  },
+  {
+    "id": "A06",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "grid",
+      "flex"
+    ]
+  },
+  {
+    "id": "A07",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "compact",
+      "balanced"
+    ]
+  },
+  {
+    "id": "A08",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      60,
+      70
+    ]
+  },
+  {
+    "id": "A09",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "space",
+      "line"
+    ]
+  },
+  {
+    "id": "A10",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "A11",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "featured-first",
+      "controls-first"
+    ]
+  },
+  {
+    "id": "A12",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "symmetric",
+      "offset"
+    ]
+  },
+  {
+    "id": "B01",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "top",
+      "left"
+    ]
+  },
+  {
+    "id": "B02",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "text",
+      "icons"
+    ]
+  },
+  {
+    "id": "B03",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      48,
+      64
+    ]
+  },
+  {
+    "id": "B04",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "B05",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "inline",
+      "dropdown"
+    ]
+  },
+  {
+    "id": "B06",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "pill",
+      "underline"
+    ]
+  },
+  {
+    "id": "B07",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "header",
+      "content"
+    ]
+  },
+  {
+    "id": "B08",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "pill",
+      "rounded"
+    ]
+  },
+  {
+    "id": "B09",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "row",
+      "sidebar"
+    ]
+  },
+  {
+    "id": "B10",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "chips",
+      "select"
+    ]
+  },
+  {
+    "id": "B11",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "toolbar",
+      "filter"
+    ]
+  },
+  {
+    "id": "B12",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "none",
+      "compact"
+    ]
+  },
+  {
+    "id": "C01",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "blue",
+      "violet"
+    ]
+  },
+  {
+    "id": "C02",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "tonal",
+      "complementary"
+    ]
+  },
+  {
+    "id": "C03",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      35,
+      42
+    ]
+  },
+  {
+    "id": "C04",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      55,
+      75
+    ]
+  },
+  {
+    "id": "C05",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "neutral",
+      "tinted"
+    ]
+  },
+  {
+    "id": "C06",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "white",
+      "tinted"
+    ]
+  },
+  {
+    "id": "C07",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "C08",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "C09",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "soft",
+      "medium"
+    ]
+  },
+  {
+    "id": "C10",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "semantic",
+      "brand"
+    ]
+  },
+  {
+    "id": "C11",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "light",
+      "dark"
+    ]
+  },
+  {
+    "id": "C12",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "instant",
+      "fade"
+    ]
+  },
+  {
+    "id": "D01",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "sans",
+      "serif"
+    ]
+  },
+  {
+    "id": "D02",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      14,
+      16
+    ]
+  },
+  {
+    "id": "D03",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      1.6,
+      2
+    ]
+  },
+  {
+    "id": "D04",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      500,
+      600
+    ]
+  },
+  {
+    "id": "D05",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      400,
+      500
+    ]
+  },
+  {
+    "id": "D06",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      1.3,
+      1.5
+    ]
+  },
+  {
+    "id": "D07",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      -0.02,
+      0
+    ]
+  },
+  {
+    "id": "D08",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "left",
+      "center"
+    ]
+  },
+  {
+    "id": "D09",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "plain",
+      "accent"
+    ]
+  },
+  {
+    "id": "D10",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "proportional",
+      "tabular"
+    ]
+  },
+  {
+    "id": "D11",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "normal",
+      "balance"
+    ]
+  },
+  {
+    "id": "D12",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "E01",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      4,
+      6
+    ]
+  },
+  {
+    "id": "E02",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      12,
+      16
+    ]
+  },
+  {
+    "id": "E03",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      8,
+      16
+    ]
+  },
+  {
+    "id": "E04",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      20,
+      32
+    ]
+  },
+  {
+    "id": "E05",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      36,
+      44
+    ]
+  },
+  {
+    "id": "E06",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      40,
+      48
+    ]
+  },
+  {
+    "id": "E07",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      180,
+      240
+    ]
+  },
+  {
+    "id": "E08",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      4,
+      12
+    ]
+  },
+  {
+    "id": "E09",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      0,
+      50
+    ]
+  },
+  {
+    "id": "E10",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "E11",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      0,
+      0.06
+    ]
+  },
+  {
+    "id": "E12",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      8,
+      20
+    ]
+  },
+  {
+    "id": "F01",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "filled",
+      "tonal"
+    ]
+  },
+  {
+    "id": "F02",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "pill",
+      "rounded"
+    ]
+  },
+  {
+    "id": "F03",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "leading",
+      "trailing"
+    ]
+  },
+  {
+    "id": "F04",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "sentence",
+      "uppercase"
+    ]
+  },
+  {
+    "id": "F05",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "normal",
+      "elevated"
+    ]
+  },
+  {
+    "id": "F06",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "ghost",
+      "tonal"
+    ]
+  },
+  {
+    "id": "F07",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "mixed",
+      "checkbox"
+    ]
+  },
+  {
+    "id": "F08",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "signature-pill",
+      "wide-pill"
+    ]
+  },
+  {
+    "id": "F09",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "signature-pill",
+      "long-pill"
+    ]
+  },
+  {
+    "id": "F10",
+    "different": true,
+    "scope": "gallery",
+    "values": [
+      "outlined",
+      "filled"
+    ]
+  },
+  {
+    "id": "F11",
+    "different": true,
+    "scope": "gallery",
+    "values": [
+      "inline",
+      "border"
+    ]
+  },
+  {
+    "id": "F12",
+    "different": true,
+    "scope": "gallery",
+    "values": [
+      "below",
+      "above"
+    ]
+  },
+  {
+    "id": "G01",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "grid",
+      "list"
+    ]
+  },
+  {
+    "id": "G02",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "1 / 1",
+      "4 / 3"
+    ]
+  },
+  {
+    "id": "G03",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "top",
+      "left"
+    ]
+  },
+  {
+    "id": "G04",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "name-first",
+      "price-first"
+    ]
+  },
+  {
+    "id": "G05",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "none",
+      "solid"
+    ]
+  },
+  {
+    "id": "G06",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "surface",
+      "tinted"
+    ]
+  },
+  {
+    "id": "G07",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "lift",
+      "outline"
+    ]
+  },
+  {
+    "id": "G08",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "G09",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "minimal",
+      "standard"
+    ]
+  },
+  {
+    "id": "G10",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "subtle",
+      "bold"
+    ]
+  },
+  {
+    "id": "G11",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "pill",
+      "rounded"
+    ]
+  },
+  {
+    "id": "G12",
+    "different": true,
+    "scope": "gallery",
+    "values": [
+      "space",
+      "line"
+    ]
+  },
+  {
+    "id": "H01",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      0,
+      150
+    ]
+  },
+  {
+    "id": "H02",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "ease",
+      "spring"
+    ]
+  },
+  {
+    "id": "H03",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "none",
+      "fade"
+    ]
+  },
+  {
+    "id": "H04",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "color",
+      "scale"
+    ]
+  },
+  {
+    "id": "H05",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "none",
+      "lift"
+    ]
+  },
+  {
+    "id": "H06",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "none",
+      "shrink"
+    ]
+  },
+  {
+    "id": "H07",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "fade",
+      "slide"
+    ]
+  },
+  {
+    "id": "H08",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "fade",
+      "rise"
+    ]
+  },
+  {
+    "id": "H09",
+    "different": true,
+    "scope": "gallery",
+    "values": [
+      "spinner",
+      "progress"
+    ]
+  },
+  {
+    "id": "H10",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "toast",
+      "inline"
+    ]
+  },
+  {
+    "id": "H11",
+    "different": true,
+    "scope": "gallery",
+    "values": [
+      "inline",
+      "toast"
+    ]
+  },
+  {
+    "id": "H12",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "together",
+      "stagger"
+    ]
+  },
+  {
+    "id": "I01",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "flat",
+      "soft"
+    ]
+  },
+  {
+    "id": "I02",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      70,
+      85
+    ]
+  },
+  {
+    "id": "I03",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      0,
+      8
+    ]
+  },
+  {
+    "id": "I04",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "none",
+      "top"
+    ]
+  },
+  {
+    "id": "I05",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "I06",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "none",
+      "subtle"
+    ]
+  },
+  {
+    "id": "I07",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "none",
+      "radial"
+    ]
+  },
+  {
+    "id": "I08",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "none",
+      "dots"
+    ]
+  },
+  {
+    "id": "I09",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "I10",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "none",
+      "cart"
+    ]
+  },
+  {
+    "id": "I11",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "outline",
+      "bold"
+    ]
+  },
+  {
+    "id": "I12",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      16,
+      20
+    ]
+  },
+  {
+    "id": "J01",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "single",
+      "two-column"
+    ]
+  },
+  {
+    "id": "J02",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "two-column",
+      "three-column"
+    ]
+  },
+  {
+    "id": "J03",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "fluid",
+      "centered"
+    ]
+  },
+  {
+    "id": "J04",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      600,
+      840
+    ]
+  },
+  {
+    "id": "J05",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "drawer",
+      "bottom"
+    ]
+  },
+  {
+    "id": "J06",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "drawer",
+      "inline"
+    ]
+  },
+  {
+    "id": "J07",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      44,
+      48
+    ]
+  },
+  {
+    "id": "J08",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "reflow",
+      "stack"
+    ]
+  },
+  {
+    "id": "J09",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "auto",
+      "portrait-stack"
+    ]
+  },
+  {
+    "id": "J10",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "wrap",
+      "clamp"
+    ]
+  },
+  {
+    "id": "J11",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "system",
+      "reduce"
+    ]
+  },
+  {
+    "id": "J12",
+    "different": true,
+    "scope": "shop",
+    "values": [
+      "system",
+      "enhanced"
+    ]
+  }
+]

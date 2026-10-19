@@ -1,0 +1,866 @@
+{
+  "passed": true,
+  "quick": true,
+  "at": "2026-10-18T10:12:35.921Z",
+  "results": [
+    {
+      "test": "baseline",
+      "family": "apple-inspired",
+      "evaluation": {
+        "scores": {
+          "F": 100,
+          "A": 100,
+          "L": 100,
+          "C": 100,
+          "Q": 100
+        },
+        "sources": {
+          "F": "Measured",
+          "A": "Measured",
+          "L": "Measured",
+          "C": "Proxy",
+          "Q": "Measured"
+        },
+        "constraints": [],
+        "eligible": true,
+        "raw": {
+          "kind": "browser",
+          "browser": {
+            "kind": "playwright",
+            "environment": {
+              "browser": "153.0.8010.0",
+              "platform": "linux",
+              "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+              "deviceScaleFactor": 1,
+              "appVersion": "55cfed6abc2c7cc6",
+              "runnerVersion": "phase2-eval-1.0.0",
+              "node": "v24.19.0"
+            },
+            "views": [
+              {
+                "viewport": {
+                  "id": "desktop",
+                  "width": 1440,
+                  "height": 900
+                },
+                "layout": {
+                  "issues": [],
+                  "inspected": 58,
+                  "ignoredIntentional": 0,
+                  "scrollWidth": 1440,
+                  "clientWidth": 1440,
+                  "scanVersion": "annotated-peers-v2"
+                },
+                "axe": {
+                  "violations": [],
+                  "incomplete": [
+                    {
+                      "id": "aria-prohibited-attr",
+                      "impact": "serious",
+                      "help": "Elements must only use permitted ARIA attributes",
+                      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=axeAPI",
+                      "nodes": [
+                        {
+                          "target": [
+                            ".signature-slider"
+                          ],
+                          "html": "<span dir=\"ltr\" data-orientation=\"horizontal\" aria-disabled=\"false\" class=\"signature-slider\" aria-labelledby=\"_r_6_\" style=\"--radix-slider-thumb-transform: translateX(-50%);\">",
+                          "failureSummary": "Fix all of the following:\n  aria-labelledby attribute is not well supported, but the elements referenced by aria-labelledby are visible in the page. Verify the label is not necessary."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "color-contrast",
+                      "impact": "serious",
+                      "help": "Elements must meet minimum color contrast ratio thresholds",
+                      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                      "nodes": [
+                        {
+                          "target": [
+                            ".brand-symbol"
+                          ],
+                          "html": "<span class=\"brand-symbol\">f.</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            "a > span:nth-child(2)"
+                          ],
+                          "html": "<span>form &amp; function<span class=\"brand-note\">OBJECTS FOR EVERYDAY</span></span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".brand-note"
+                          ],
+                          "html": "<span class=\"brand-note\">OBJECTS FOR EVERYDAY</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".local-demo-label"
+                          ],
+                          "html": "<span class=\"local-demo-label\">DEMO STORE</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            "button[title=\"데스크\"] > span"
+                          ],
+                          "html": "<span class=\"\">데스크</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            "button[title=\"오디오\"] > span"
+                          ],
+                          "html": "<span class=\"\">오디오</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            "button[title=\"리빙\"] > span"
+                          ],
+                          "html": "<span class=\"\">리빙</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".nav-item:nth-child(5)"
+                          ],
+                          "html": "<button type=\"button\" class=\"nav-item\">추천</button>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".breadcrumb > button"
+                          ],
+                          "html": "<button type=\"button\">컬렉션</button>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".hero-copy > .eyebrow"
+                          ],
+                          "html": "<span class=\"eyebrow\"><span class=\"tiny-dot\"></span> EVERYDAY, CONSIDERED.</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            "h1"
+                          ],
+                          "html": "<h1>일상을 바꾸는<br><span>작은 디테일.</span></h1>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            "h1 > span"
+                          ],
+                          "html": "<span>작은 디테일.</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".hero-copy > p"
+                          ],
+                          "html": "<p>당신의 공간에 꼭 맞는 형태와 기능.<br>좋은 디자인으로 채우는 나만의 컬렉션.</p>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".primary > span:nth-child(2)"
+                          ],
+                          "html": "<span>컬렉션 살펴보기</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+                        },
+                        {
+                          "target": [
+                            ".art-caption"
+                          ],
+                          "html": "<span class=\"art-caption\">",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+                        },
+                        {
+                          "target": [
+                            ".catalog-heading > div > .eyebrow"
+                          ],
+                          "html": "<span class=\"eyebrow\">CURATED OBJECTS</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".catalog-heading > div > h2"
+                          ],
+                          "html": "<h2>당신을 위한 컬렉션 <span class=\"result-count\">6</span></h2>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            "#_r_6_"
+                          ],
+                          "html": "<span id=\"_r_6_\">가격 범위</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            "output"
+                          ],
+                          "html": "<output>0원 — 300,000원</output>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".range-endpoints > button:nth-child(1)"
+                          ],
+                          "html": "<button type=\"button\">최소 핸들</button>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            "small"
+                          ],
+                          "html": "<small>겹친 핸들도 선택 후 방향키로 조절</small>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".range-endpoints > button:nth-child(3)"
+                          ],
+                          "html": "<button type=\"button\">최대 핸들</button>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".field:nth-child(1) > span"
+                          ],
+                          "html": "<span>최대 가격</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".field:nth-child(2) > span"
+                          ],
+                          "html": "<span>상품 색상</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            ".secondary > span"
+                          ],
+                          "html": "<span>필터 초기화</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            "footer > span:nth-child(1)"
+                          ],
+                          "html": "<span>form &amp; function</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            "footer > span:nth-child(2)"
+                          ],
+                          "html": "<span>6개의 가상 상품 · 결제 없는 인터랙션 데모</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        },
+                        {
+                          "target": [
+                            "footer > span:nth-child(3)"
+                          ],
+                          "html": "<span>DESIGNED TO EXPLORE ↗</span>",
+                          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                        }
+                      ]
+                    }
+                  ],
+                  "passes": 29,
+                  "version": "4.14.0"
+                },
+                "tasks": [
+                  {
+                    "task_id": "task-1-search",
+                    "success": true,
+                    "steps": 2,
+                    "duration_ms": 921.3846639999997,
+                    "error": null,
+                    "assertions": [
+                      "지정 상품 이름 검색",
+                      "지정 상품 1개와 상세 버튼 확인"
+                    ],
+                    "source": "Measured"
+                  },
+                  {
+                    "task_id": "task-2-filter",
+                    "success": true,
+                    "steps": 4,
+                    "duration_ms": 1287.9458109999996,
+                    "error": null,
+                    "assertions": [
+                      "필터 접근",
+                      "100,000원 이하",
+                      "그린 색상 선택",
+                      "조건을 만족하는 모든 상품과 일치"
+                    ],
+                    "source": "Measured"
+                  },
+                  {
+                    "task_id": "task-3-cart",
+                    "success": true,
+                    "steps": 4,
+                    "duration_ms": 1547.5751799999998,
+                    "error": null,
+                    "assertions": [
+                      "지정 상품 담기",
+                      "장바구니 열기",
+                      "수량 2개로 변경",
+                      "수량·합계 확인"
+                    ],
+                    "source": "Measured"
+                  },
+                  {
+                    "task_id": "task-4-sort",
+                    "success": true,
+                    "steps": 2,
+                    "duration_ms": 724.1065780000008,
+                    "error": null,
+                    "assertions": [
+                      "가격 오름차순 선택",
+                      "모든 상품 가격 순서 검증"
+                    ],
+                    "source": "Measured"
+                  }
+                ],
+                "keyboard": [
+                  {
+                    "id": "keyboard-tab-focus",
+                    "pass": true,
+                    "details": "Tab으로 실제 초점과 outline/box-shadow 확인",
+                    "source": "Measured"
+                  },
+                  {
+                    "id": "keyboard-switch",
+                    "pass": true,
+                    "details": "Space로 switch 상태 변경",
+                    "source": "Measured"
+                  },
+                  {
+                    "id": "keyboard-range",
+                    "pass": true,
+                    "details": "ArrowLeft로 range 최대 핸들 변경",
+                    "source": "Measured"
+                  },
+                  {
+                    "id": "modal-focus",
+                    "pass": true,
+                    "details": "Tab 5회 트랩·Escape·초점 복귀",
+                    "source": "Measured"
+                  }
+                ],
+                "touchTargets": [],
+                "reducedMotion": {
+                  "pass": true,
+                  "maxDurationMs": 0.01,
+                  "sampled": 411,
+                  "source": "Measured"
+                },
+                "screenshot": "/api/evidence/287f045e51d955946ffe0045-desktop-baseline.png",
+                "duration_ms": 9119.568476
+              }
+            ],
+            "pageErrors": [],
+            "measuredAt": "2026-10-18T10:12:35.917Z",
+            "attempts": 1
+          },
+          "consistency": {
+            "kind": "static",
+            "rules": [
+              {
+                "id": "spacing-grid",
+                "description": "컴포넌트·섹션 간격이 기본 간격 단위의 배수인지",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "type-leading",
+                "description": "본문 행간이 1.4 이상인지",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "heading-hierarchy",
+                "description": "제목 크기가 본문 대비 1.5배 이상인지",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "radius-coherence",
+                "description": "버튼 형태와 카드 곡률의 극단적 불일치 여부",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "density-space",
+                "description": "조밀한 정보와 큰 간격의 조합 위험",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "motion-duration",
+                "description": "기본 모션 400ms 초과 여부",
+                "value": 250,
+                "threshold": 400,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              }
+            ],
+            "layoutRisk": [
+              {
+                "id": "column-risk",
+                "description": "데스크톱 카드 추정 폭이 210px보다 작은지",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "text-risk",
+                "description": "큰 본문과 높은 상품 정보량 조합",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "page-padding",
+                "description": "좁은 화면에서 큰 좌우 여백 위험",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              },
+              {
+                "id": "height-risk",
+                "description": "입력 높이 대비 큰 본문 위험",
+                "value": 0,
+                "threshold": 0,
+                "pass": true,
+                "penalty": 0,
+                "source": "Proxy"
+              }
+            ],
+            "contrast": [
+              {
+                "name": "본문 / 표면",
+                "ratio": 16.839590269544242,
+                "threshold": 4.5,
+                "pass": true
+              },
+              {
+                "name": "보조 텍스트 / 표면",
+                "ratio": 6.36784441105769,
+                "threshold": 4.5,
+                "pass": true
+              },
+              {
+                "name": "버튼 전경 / 기본색",
+                "ratio": 5.374598385723805,
+                "threshold": 4.5,
+                "pass": true
+              },
+              {
+                "name": "입력 경계 / 표면",
+                "ratio": 3.4537835339935308,
+                "threshold": 3,
+                "pass": true
+              }
+            ],
+            "inactiveVariables": [],
+            "missingMeasurements": [
+              "기능 과제 수행",
+              "실제 DOM 레이아웃",
+              "axe-core",
+              "키보드·모달",
+              "사람의 사용 편의성·미적 만족도"
+            ]
+          }
+        },
+        "formulas": {
+          "F": "100 × 성공 과제 수 / 전체 과제 수; 화면별 동일 4과제",
+          "A": "min_viewport max(0,100−Σ(위반 노드×심각도 벌점)−20×키보드 실패−2×24px 미만 목표−10×Reduced Motion 실패)",
+          "L": "min_viewport max(0,100−Σ 레이아웃 위반 벌점)",
+          "C": "max(0, 100 − 토큰·간격·위계 규칙 벌점 합)",
+          "Q": "(wF×F + wL×L + wA×A + wC×C) / Σw; 초기 .40/.30/.20/.10은 연구 가설",
+          "penalties": "minor=1, moderate=4, serious=12, critical=25; 필수 기능·접근성 실패는 Q와 별도로 제외"
+        },
+        "error": null
+      },
+      "raw": {
+        "kind": "playwright",
+        "environment": {
+          "browser": "153.0.8010.0",
+          "platform": "linux",
+          "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+          "deviceScaleFactor": 1,
+          "appVersion": "55cfed6abc2c7cc6",
+          "runnerVersion": "phase2-eval-1.0.0",
+          "node": "v24.19.0"
+        },
+        "views": [
+          {
+            "viewport": {
+              "id": "desktop",
+              "width": 1440,
+              "height": 900
+            },
+            "layout": {
+              "issues": [],
+              "inspected": 58,
+              "ignoredIntentional": 0,
+              "scrollWidth": 1440,
+              "clientWidth": 1440,
+              "scanVersion": "annotated-peers-v2"
+            },
+            "axe": {
+              "violations": [],
+              "incomplete": [
+                {
+                  "id": "aria-prohibited-attr",
+                  "impact": "serious",
+                  "help": "Elements must only use permitted ARIA attributes",
+                  "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=axeAPI",
+                  "nodes": [
+                    {
+                      "target": [
+                        ".signature-slider"
+                      ],
+                      "html": "<span dir=\"ltr\" data-orientation=\"horizontal\" aria-disabled=\"false\" class=\"signature-slider\" aria-labelledby=\"_r_6_\" style=\"--radix-slider-thumb-transform: translateX(-50%);\">",
+                      "failureSummary": "Fix all of the following:\n  aria-labelledby attribute is not well supported, but the elements referenced by aria-labelledby are visible in the page. Verify the label is not necessary."
+                    }
+                  ]
+                },
+                {
+                  "id": "color-contrast",
+                  "impact": "serious",
+                  "help": "Elements must meet minimum color contrast ratio thresholds",
+                  "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+                  "nodes": [
+                    {
+                      "target": [
+                        ".brand-symbol"
+                      ],
+                      "html": "<span class=\"brand-symbol\">f.</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        "a > span:nth-child(2)"
+                      ],
+                      "html": "<span>form &amp; function<span class=\"brand-note\">OBJECTS FOR EVERYDAY</span></span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".brand-note"
+                      ],
+                      "html": "<span class=\"brand-note\">OBJECTS FOR EVERYDAY</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".local-demo-label"
+                      ],
+                      "html": "<span class=\"local-demo-label\">DEMO STORE</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        "button[title=\"데스크\"] > span"
+                      ],
+                      "html": "<span class=\"\">데스크</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        "button[title=\"오디오\"] > span"
+                      ],
+                      "html": "<span class=\"\">오디오</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        "button[title=\"리빙\"] > span"
+                      ],
+                      "html": "<span class=\"\">리빙</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".nav-item:nth-child(5)"
+                      ],
+                      "html": "<button type=\"button\" class=\"nav-item\">추천</button>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".breadcrumb > button"
+                      ],
+                      "html": "<button type=\"button\">컬렉션</button>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".hero-copy > .eyebrow"
+                      ],
+                      "html": "<span class=\"eyebrow\"><span class=\"tiny-dot\"></span> EVERYDAY, CONSIDERED.</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        "h1"
+                      ],
+                      "html": "<h1>일상을 바꾸는<br><span>작은 디테일.</span></h1>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        "h1 > span"
+                      ],
+                      "html": "<span>작은 디테일.</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".hero-copy > p"
+                      ],
+                      "html": "<p>당신의 공간에 꼭 맞는 형태와 기능.<br>좋은 디자인으로 채우는 나만의 컬렉션.</p>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".primary > span:nth-child(2)"
+                      ],
+                      "html": "<span>컬렉션 살펴보기</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+                    },
+                    {
+                      "target": [
+                        ".art-caption"
+                      ],
+                      "html": "<span class=\"art-caption\">",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+                    },
+                    {
+                      "target": [
+                        ".catalog-heading > div > .eyebrow"
+                      ],
+                      "html": "<span class=\"eyebrow\">CURATED OBJECTS</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".catalog-heading > div > h2"
+                      ],
+                      "html": "<h2>당신을 위한 컬렉션 <span class=\"result-count\">6</span></h2>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        "#_r_6_"
+                      ],
+                      "html": "<span id=\"_r_6_\">가격 범위</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        "output"
+                      ],
+                      "html": "<output>0원 — 300,000원</output>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".range-endpoints > button:nth-child(1)"
+                      ],
+                      "html": "<button type=\"button\">최소 핸들</button>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        "small"
+                      ],
+                      "html": "<small>겹친 핸들도 선택 후 방향키로 조절</small>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".range-endpoints > button:nth-child(3)"
+                      ],
+                      "html": "<button type=\"button\">최대 핸들</button>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".field:nth-child(1) > span"
+                      ],
+                      "html": "<span>최대 가격</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".field:nth-child(2) > span"
+                      ],
+                      "html": "<span>상품 색상</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        ".secondary > span"
+                      ],
+                      "html": "<span>필터 초기화</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        "footer > span:nth-child(1)"
+                      ],
+                      "html": "<span>form &amp; function</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        "footer > span:nth-child(2)"
+                      ],
+                      "html": "<span>6개의 가상 상품 · 결제 없는 인터랙션 데모</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    },
+                    {
+                      "target": [
+                        "footer > span:nth-child(3)"
+                      ],
+                      "html": "<span>DESIGNED TO EXPLORE ↗</span>",
+                      "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+                    }
+                  ]
+                }
+              ],
+              "passes": 29,
+              "version": "4.14.0"
+            },
+            "tasks": [
+              {
+                "task_id": "task-1-search",
+                "success": true,
+                "steps": 2,
+                "duration_ms": 921.3846639999997,
+                "error": null,
+                "assertions": [
+                  "지정 상품 이름 검색",
+                  "지정 상품 1개와 상세 버튼 확인"
+                ],
+                "source": "Measured"
+              },
+              {
+                "task_id": "task-2-filter",
+                "success": true,
+                "steps": 4,
+                "duration_ms": 1287.9458109999996,
+                "error": null,
+                "assertions": [
+                  "필터 접근",
+                  "100,000원 이하",
+                  "그린 색상 선택",
+                  "조건을 만족하는 모든 상품과 일치"
+                ],
+                "source": "Measured"
+              },
+              {
+                "task_id": "task-3-cart",
+                "success": true,
+                "steps": 4,
+                "duration_ms": 1547.5751799999998,
+                "error": null,
+                "assertions": [
+                  "지정 상품 담기",
+                  "장바구니 열기",
+                  "수량 2개로 변경",
+                  "수량·합계 확인"
+                ],
+                "source": "Measured"
+              },
+              {
+                "task_id": "task-4-sort",
+                "success": true,
+                "steps": 2,
+                "duration_ms": 724.1065780000008,
+                "error": null,
+                "assertions": [
+                  "가격 오름차순 선택",
+                  "모든 상품 가격 순서 검증"
+                ],
+                "source": "Measured"
+              }
+            ],
+            "keyboard": [
+              {
+                "id": "keyboard-tab-focus",
+                "pass": true,
+                "details": "Tab으로 실제 초점과 outline/box-shadow 확인",
+                "source": "Measured"
+              },
+              {
+                "id": "keyboard-switch",
+                "pass": true,
+                "details": "Space로 switch 상태 변경",
+                "source": "Measured"
+              },
+              {
+                "id": "keyboard-range",
+                "pass": true,
+                "details": "ArrowLeft로 range 최대 핸들 변경",
+                "source": "Measured"
+              },
+              {
+                "id": "modal-focus",
+                "pass": true,
+                "details": "Tab 5회 트랩·Escape·초점 복귀",
+                "source": "Measured"
+              }
+            ],
+            "touchTargets": [],
+            "reducedMotion": {
+              "pass": true,
+              "maxDurationMs": 0.01,
+              "sampled": 411,
+              "source": "Measured"
+            },
+            "screenshot": "/api/evidence/287f045e51d955946ffe0045-desktop-baseline.png",
+            "duration_ms": 9119.568476
+          }
+        ],
+        "pageErrors": [],
+        "measuredAt": "2026-10-18T10:12:35.917Z",
+        "attempts": 1
+      }
+    }
+  ]
+}

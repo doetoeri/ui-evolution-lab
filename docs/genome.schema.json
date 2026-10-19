@@ -1,0 +1,1373 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UI Evolution Lab Genome",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "schemaVersion",
+    "family",
+    "signature",
+    "seed",
+    "variables"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "schemaVersion": {
+      "const": "phase0-1.0.0"
+    },
+    "family": {
+      "enum": [
+        "apple-inspired",
+        "material-inspired",
+        "experimental"
+      ]
+    },
+    "signature": {
+      "type": "boolean"
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "variables": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B09",
+        "B10",
+        "B11",
+        "B12",
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10",
+        "C11",
+        "C12",
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "D10",
+        "D11",
+        "D12",
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06",
+        "E07",
+        "E08",
+        "E09",
+        "E10",
+        "E11",
+        "E12",
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G10",
+        "G11",
+        "G12",
+        "H01",
+        "H02",
+        "H03",
+        "H04",
+        "H05",
+        "H06",
+        "H07",
+        "H08",
+        "H09",
+        "H10",
+        "H11",
+        "H12",
+        "I01",
+        "I02",
+        "I03",
+        "I04",
+        "I05",
+        "I06",
+        "I07",
+        "I08",
+        "I09",
+        "I10",
+        "I11",
+        "I12",
+        "J01",
+        "J02",
+        "J03",
+        "J04",
+        "J05",
+        "J06",
+        "J07",
+        "J08",
+        "J09",
+        "J10",
+        "J11",
+        "J12"
+      ],
+      "properties": {
+        "A01": {
+          "type": "string",
+          "enum": [
+            "apple-inspired",
+            "material-inspired",
+            "experimental"
+          ],
+          "default": "apple-inspired",
+          "description": "구조·형태·색상 역할·모션의 기본 철학을 바꿉니다."
+        },
+        "A02": {
+          "type": "string",
+          "enum": [
+            "standard",
+            "split",
+            "editorial"
+          ],
+          "default": "standard",
+          "description": "히어로와 상품 영역의 공간 구성을 바꿉니다."
+        },
+        "A03": {
+          "type": "number",
+          "enum": [
+            720,
+            960,
+            1200,
+            1440
+          ],
+          "default": 1200,
+          "description": "콘텐츠가 확장될 수 있는 최대 폭입니다."
+        },
+        "A04": {
+          "type": "number",
+          "enum": [
+            16,
+            24,
+            36,
+            48
+          ],
+          "default": 24,
+          "description": "화면 내부 좌우 안전 여백입니다."
+        },
+        "A05": {
+          "type": "string",
+          "enum": [
+            "start",
+            "center",
+            "end"
+          ],
+          "default": "center",
+          "description": "최대 너비 콘텐츠의 화면 기준 위치입니다."
+        },
+        "A06": {
+          "type": "string",
+          "enum": [
+            "grid",
+            "flex",
+            "stack"
+          ],
+          "default": "grid",
+          "description": "상품 컬렉션의 배치 알고리즘을 바꿉니다."
+        },
+        "A07": {
+          "type": "string",
+          "enum": [
+            "compact",
+            "balanced",
+            "spacious"
+          ],
+          "default": "balanced",
+          "description": "컴포넌트 간격과 카드 내부 여백의 배율입니다."
+        },
+        "A08": {
+          "type": "number",
+          "enum": [
+            60,
+            70,
+            80
+          ],
+          "default": 70,
+          "description": "분할 히어로의 제목 영역이 차지하는 비율입니다."
+        },
+        "A09": {
+          "type": "string",
+          "enum": [
+            "space",
+            "line",
+            "surface"
+          ],
+          "default": "space",
+          "description": "주요 섹션의 경계를 구별하는 방식입니다."
+        },
+        "A10": {
+          "type": "number",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "default": 1,
+          "description": "전체 표면·내부 패널에 적용하는 입체 계층입니다."
+        },
+        "A11": {
+          "type": "string",
+          "enum": [
+            "featured-first",
+            "controls-first",
+            "reverse"
+          ],
+          "default": "featured-first",
+          "description": "설정과 상품의 순서 또는 상품 열거 방향을 바꿉니다."
+        },
+        "A12": {
+          "type": "string",
+          "enum": [
+            "symmetric",
+            "offset",
+            "staggered"
+          ],
+          "default": "symmetric",
+          "description": "히어로와 카드의 수평 정렬·교차 오프셋입니다."
+        },
+        "B01": {
+          "type": "string",
+          "enum": [
+            "top",
+            "left",
+            "bottom"
+          ],
+          "default": "top",
+          "description": "동일한 탐색 메뉴를 화면의 다른 위치에 배치합니다."
+        },
+        "B02": {
+          "type": "string",
+          "enum": [
+            "text",
+            "icons",
+            "both"
+          ],
+          "default": "text",
+          "description": "텍스트를 숨겨도 접근 가능한 이름은 유지합니다."
+        },
+        "B03": {
+          "type": "number",
+          "enum": [
+            48,
+            64,
+            80
+          ],
+          "default": 64,
+          "description": "탐색 항목 행의 최소 높이입니다."
+        },
+        "B04": {
+          "type": "number",
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "default": 2,
+          "description": "더보기 메뉴의 중첩 카테고리 깊이입니다."
+        },
+        "B05": {
+          "type": "string",
+          "enum": [
+            "inline",
+            "dropdown",
+            "drawer"
+          ],
+          "default": "inline",
+          "description": "보조 탐색 메뉴를 여는 방식을 선택합니다."
+        },
+        "B06": {
+          "type": "string",
+          "enum": [
+            "pill",
+            "underline",
+            "bold"
+          ],
+          "default": "pill",
+          "description": "선택된 탐색 항목의 시각적 표시입니다."
+        },
+        "B07": {
+          "type": "string",
+          "enum": [
+            "header",
+            "content",
+            "aside"
+          ],
+          "default": "content",
+          "description": "검색 필드가 놓이는 위치를 바꿉니다."
+        },
+        "B08": {
+          "type": "string",
+          "enum": [
+            "pill",
+            "rounded",
+            "line"
+          ],
+          "default": "pill",
+          "description": "검색 필드의 외곽선 모양입니다."
+        },
+        "B09": {
+          "type": "string",
+          "enum": [
+            "row",
+            "sidebar",
+            "popover"
+          ],
+          "default": "row",
+          "description": "카테고리·가격 필터 영역의 위치입니다."
+        },
+        "B10": {
+          "type": "string",
+          "enum": [
+            "chips",
+            "select",
+            "checkbox"
+          ],
+          "default": "chips",
+          "description": "카테고리 선택 의미와 조작을 바꿉니다."
+        },
+        "B11": {
+          "type": "string",
+          "enum": [
+            "toolbar",
+            "filter",
+            "footer"
+          ],
+          "default": "toolbar",
+          "description": "가격·이름 정렬 입력의 배치입니다."
+        },
+        "B12": {
+          "type": "string",
+          "enum": [
+            "none",
+            "compact",
+            "full"
+          ],
+          "default": "compact",
+          "description": "상위 경로로 돌아갈 수 있는 이동 경로입니다."
+        },
+        "C01": {
+          "type": "string",
+          "enum": [
+            "blue",
+            "violet",
+            "teal",
+            "orange"
+          ],
+          "default": "blue",
+          "description": "역할 기반 팔레트의 기준 색조입니다."
+        },
+        "C02": {
+          "type": "string",
+          "enum": [
+            "tonal",
+            "complementary",
+            "analogous"
+          ],
+          "default": "tonal",
+          "description": "보조·강조 색상의 색조 관계를 생성합니다."
+        },
+        "C03": {
+          "type": "number",
+          "enum": [
+            35,
+            42,
+            50
+          ],
+          "default": 42,
+          "description": "기본 강조색의 HSL 명도입니다. 전경색은 대비를 계산해 정합니다."
+        },
+        "C04": {
+          "type": "number",
+          "enum": [
+            55,
+            75,
+            95
+          ],
+          "default": 95,
+          "description": "강조색의 선명함을 조절합니다."
+        },
+        "C05": {
+          "type": "string",
+          "enum": [
+            "neutral",
+            "tinted",
+            "warm"
+          ],
+          "default": "neutral",
+          "description": "미리보기 전체 배경의 톤입니다."
+        },
+        "C06": {
+          "type": "string",
+          "enum": [
+            "white",
+            "tinted",
+            "contrast"
+          ],
+          "default": "white",
+          "description": "카드와 입력 컨테이너의 표면색입니다."
+        },
+        "C07": {
+          "type": "number",
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "default": 2,
+          "description": "배지와 칩에 사용하는 팔레트 색상 수입니다."
+        },
+        "C08": {
+          "type": "number",
+          "enum": [
+            2,
+            3,
+            4
+          ],
+          "default": 3,
+          "description": "제목·본문·설명·메타데이터의 색상 위계 단계입니다."
+        },
+        "C09": {
+          "type": "string",
+          "enum": [
+            "soft",
+            "medium",
+            "strong"
+          ],
+          "default": "medium",
+          "description": "카드와 입력 외곽선의 대비를 조절합니다."
+        },
+        "C10": {
+          "type": "string",
+          "enum": [
+            "semantic",
+            "brand",
+            "monochrome"
+          ],
+          "default": "semantic",
+          "description": "성공·오류·로딩 피드백의 색상 체계입니다."
+        },
+        "C11": {
+          "type": "string",
+          "enum": [
+            "light",
+            "dark",
+            "system"
+          ],
+          "default": "light",
+          "description": "미리보기 테마를 선택합니다. 앱 셸은 밝은 톤을 유지합니다."
+        },
+        "C12": {
+          "type": "string",
+          "enum": [
+            "instant",
+            "fade",
+            "smooth"
+          ],
+          "default": "fade",
+          "description": "색상 변경 시 CSS 색상 전환 시간입니다."
+        },
+        "D01": {
+          "type": "string",
+          "enum": [
+            "sans",
+            "serif",
+            "mono"
+          ],
+          "default": "sans",
+          "description": "기기에서 제공하는 글꼴 스택을 사용합니다."
+        },
+        "D02": {
+          "type": "number",
+          "enum": [
+            14,
+            16,
+            18
+          ],
+          "default": 16,
+          "description": "미리보기 본문 글자 크기입니다."
+        },
+        "D03": {
+          "type": "number",
+          "enum": [
+            1.6,
+            2,
+            2.5
+          ],
+          "default": 2,
+          "description": "본문 대비 큰 제목의 배율입니다."
+        },
+        "D04": {
+          "type": "number",
+          "enum": [
+            500,
+            600,
+            700,
+            800
+          ],
+          "default": 700,
+          "description": "히어로·카드 제목의 글꼴 굵기입니다."
+        },
+        "D05": {
+          "type": "number",
+          "enum": [
+            400,
+            500,
+            600
+          ],
+          "default": 400,
+          "description": "설명·입력 텍스트의 기본 굵기입니다."
+        },
+        "D06": {
+          "type": "number",
+          "enum": [
+            1.3,
+            1.5,
+            1.75
+          ],
+          "default": 1.5,
+          "description": "본문 줄 사이 간격입니다."
+        },
+        "D07": {
+          "type": "number",
+          "enum": [
+            -0.02,
+            0,
+            0.04
+          ],
+          "default": -0.02,
+          "description": "미리보기의 글자 사이 간격입니다."
+        },
+        "D08": {
+          "type": "string",
+          "enum": [
+            "left",
+            "center",
+            "right"
+          ],
+          "default": "left",
+          "description": "히어로와 카드 본문을 정렬합니다."
+        },
+        "D09": {
+          "type": "string",
+          "enum": [
+            "plain",
+            "accent",
+            "uppercase"
+          ],
+          "default": "plain",
+          "description": "제목의 강조색과 영문 표시 방법입니다."
+        },
+        "D10": {
+          "type": "string",
+          "enum": [
+            "proportional",
+            "tabular",
+            "mono"
+          ],
+          "default": "tabular",
+          "description": "가격·진행 값의 숫자 글꼴입니다."
+        },
+        "D11": {
+          "type": "string",
+          "enum": [
+            "normal",
+            "balance",
+            "pretty"
+          ],
+          "default": "balance",
+          "description": "브라우저가 지원하는 text-wrap 전략입니다."
+        },
+        "D12": {
+          "type": "number",
+          "enum": [
+            2,
+            3,
+            4
+          ],
+          "default": 3,
+          "description": "상품의 메타·본문·제목 크기 단계를 나눕니다."
+        },
+        "E01": {
+          "type": "number",
+          "enum": [
+            4,
+            6,
+            8
+          ],
+          "default": 4,
+          "description": "칩과 아이콘 내부 간격의 기준입니다."
+        },
+        "E02": {
+          "type": "number",
+          "enum": [
+            12,
+            16,
+            24
+          ],
+          "default": 16,
+          "description": "카드와 패널의 내부 여백입니다."
+        },
+        "E03": {
+          "type": "number",
+          "enum": [
+            8,
+            16,
+            24
+          ],
+          "default": 16,
+          "description": "상품 그리드와 갤러리의 간격입니다."
+        },
+        "E04": {
+          "type": "number",
+          "enum": [
+            20,
+            32,
+            48
+          ],
+          "default": 32,
+          "description": "히어로·컨트롤·상품 영역 사이의 간격입니다."
+        },
+        "E05": {
+          "type": "number",
+          "enum": [
+            36,
+            44,
+            52
+          ],
+          "default": 44,
+          "description": "보이는 버튼의 높이. 실제 터치 영역은 J07 이상입니다."
+        },
+        "E06": {
+          "type": "number",
+          "enum": [
+            40,
+            48,
+            56
+          ],
+          "default": 48,
+          "description": "텍스트·검색·선택 입력의 높이입니다."
+        },
+        "E07": {
+          "type": "number",
+          "enum": [
+            180,
+            240,
+            300
+          ],
+          "default": 240,
+          "description": "상품 카드가 갖는 최소 높이입니다."
+        },
+        "E08": {
+          "type": "number",
+          "enum": [
+            4,
+            12,
+            20,
+            28
+          ],
+          "default": 20,
+          "description": "카드·패널의 기본 모서리 반경입니다."
+        },
+        "E09": {
+          "type": "number",
+          "enum": [
+            0,
+            50,
+            100
+          ],
+          "default": 100,
+          "description": "칩·입력·보조 버튼에 캡슐 반경을 순차 적용합니다."
+        },
+        "E10": {
+          "type": "number",
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "default": 1,
+          "description": "테두리가 있는 컴포넌트의 두께입니다."
+        },
+        "E11": {
+          "type": "number",
+          "enum": [
+            0,
+            0.06,
+            0.14,
+            0.24
+          ],
+          "default": 0.06,
+          "description": "카드 그림자의 알파값입니다."
+        },
+        "E12": {
+          "type": "number",
+          "enum": [
+            8,
+            20,
+            40
+          ],
+          "default": 20,
+          "description": "그림자의 흐림 반경입니다."
+        },
+        "F01": {
+          "type": "string",
+          "enum": [
+            "filled",
+            "tonal",
+            "outlined"
+          ],
+          "default": "filled",
+          "description": "주요 동작 버튼의 배경과 테두리입니다."
+        },
+        "F02": {
+          "type": "string",
+          "enum": [
+            "pill",
+            "rounded",
+            "square"
+          ],
+          "default": "pill",
+          "description": "버튼의 시각적인 외곽입니다."
+        },
+        "F03": {
+          "type": "string",
+          "enum": [
+            "leading",
+            "trailing",
+            "none"
+          ],
+          "default": "leading",
+          "description": "버튼 텍스트와 아이콘의 순서입니다."
+        },
+        "F04": {
+          "type": "string",
+          "enum": [
+            "sentence",
+            "uppercase",
+            "spaced"
+          ],
+          "default": "sentence",
+          "description": "버튼 레이블의 타이포그래피입니다."
+        },
+        "F05": {
+          "type": "string",
+          "enum": [
+            "normal",
+            "elevated",
+            "ring"
+          ],
+          "default": "normal",
+          "description": "주요 버튼의 추가 시각적 강조입니다."
+        },
+        "F06": {
+          "type": "string",
+          "enum": [
+            "ghost",
+            "tonal",
+            "outlined"
+          ],
+          "default": "ghost",
+          "description": "보조 동작 버튼의 표현입니다."
+        },
+        "F07": {
+          "type": "string",
+          "enum": [
+            "mixed",
+            "checkbox",
+            "radio"
+          ],
+          "default": "mixed",
+          "description": "데모 설정에 보여 줄 선택 입력 유형입니다."
+        },
+        "F08": {
+          "type": "string",
+          "enum": [
+            "signature-pill",
+            "wide-pill",
+            "compact-pill"
+          ],
+          "default": "signature-pill",
+          "description": "흰색 가로형 핸들의 길이와 트랙 폭을 바꿉니다."
+        },
+        "F09": {
+          "type": "string",
+          "enum": [
+            "signature-pill",
+            "long-pill",
+            "flat-pill"
+          ],
+          "default": "signature-pill",
+          "description": "가로형 슬라이더 핸들의 길이·두께입니다."
+        },
+        "F10": {
+          "type": "string",
+          "enum": [
+            "outlined",
+            "filled",
+            "underline"
+          ],
+          "default": "outlined",
+          "description": "텍스트 필드의 외곽과 채움입니다."
+        },
+        "F11": {
+          "type": "string",
+          "enum": [
+            "inline",
+            "border",
+            "summary"
+          ],
+          "default": "inline",
+          "description": "갤러리의 이메일 검증 실패를 보여 주는 방식입니다."
+        },
+        "F12": {
+          "type": "string",
+          "enum": [
+            "below",
+            "above",
+            "tooltip"
+          ],
+          "default": "below",
+          "description": "이메일 입력 설명의 위치입니다."
+        },
+        "G01": {
+          "type": "string",
+          "enum": [
+            "grid",
+            "list",
+            "feature"
+          ],
+          "default": "grid",
+          "description": "상품 컬렉션의 카드 구조입니다."
+        },
+        "G02": {
+          "type": "string",
+          "enum": [
+            "1 / 1",
+            "4 / 3",
+            "3 / 2"
+          ],
+          "default": "4 / 3",
+          "description": "상품 일러스트 영역의 가로세로 비율입니다."
+        },
+        "G03": {
+          "type": "string",
+          "enum": [
+            "top",
+            "left",
+            "right"
+          ],
+          "default": "top",
+          "description": "상품 일러스트를 본문과 배치하는 방향입니다."
+        },
+        "G04": {
+          "type": "string",
+          "enum": [
+            "name-first",
+            "price-first",
+            "category-first"
+          ],
+          "default": "name-first",
+          "description": "카드 제목·가격·메타데이터의 순서입니다."
+        },
+        "G05": {
+          "type": "string",
+          "enum": [
+            "none",
+            "solid",
+            "dashed"
+          ],
+          "default": "none",
+          "description": "상품 카드 테두리의 선 형태입니다."
+        },
+        "G06": {
+          "type": "string",
+          "enum": [
+            "surface",
+            "tinted",
+            "transparent"
+          ],
+          "default": "surface",
+          "description": "상품 카드가 놓이는 배경색입니다."
+        },
+        "G07": {
+          "type": "string",
+          "enum": [
+            "lift",
+            "outline",
+            "reveal"
+          ],
+          "default": "lift",
+          "description": "카드 hover·focus-within 피드백입니다."
+        },
+        "G08": {
+          "type": "number",
+          "enum": [
+            2,
+            3,
+            4
+          ],
+          "default": 2,
+          "description": "넓은 화면의 최대 열 수. 작은 화면은 J01·J02가 조정합니다."
+        },
+        "G09": {
+          "type": "string",
+          "enum": [
+            "minimal",
+            "standard",
+            "detailed"
+          ],
+          "default": "standard",
+          "description": "상품 설명·재고 정보의 표시량입니다."
+        },
+        "G10": {
+          "type": "string",
+          "enum": [
+            "subtle",
+            "bold",
+            "large"
+          ],
+          "default": "bold",
+          "description": "가격의 글자 크기와 굵기입니다."
+        },
+        "G11": {
+          "type": "string",
+          "enum": [
+            "pill",
+            "rounded",
+            "dot"
+          ],
+          "default": "pill",
+          "description": "상품 상태 배지의 형태입니다."
+        },
+        "G12": {
+          "type": "string",
+          "enum": [
+            "space",
+            "line",
+            "alternating"
+          ],
+          "default": "space",
+          "description": "장바구니·데이터 표 행의 구분입니다."
+        },
+        "H01": {
+          "type": "number",
+          "enum": [
+            0,
+            150,
+            250,
+            400
+          ],
+          "default": 250,
+          "description": "상태 전환의 기본 시간입니다. Reduced Motion이 우선합니다."
+        },
+        "H02": {
+          "type": "string",
+          "enum": [
+            "ease",
+            "spring",
+            "linear"
+          ],
+          "default": "spring",
+          "description": "핸들과 표면 전환의 CSS 보간 곡선입니다."
+        },
+        "H03": {
+          "type": "string",
+          "enum": [
+            "none",
+            "fade",
+            "slide"
+          ],
+          "default": "fade",
+          "description": "쇼핑몰 내 컬렉션·미리보기 탭 전환 효과입니다."
+        },
+        "H04": {
+          "type": "string",
+          "enum": [
+            "color",
+            "scale",
+            "shadow"
+          ],
+          "default": "color",
+          "description": "주요 버튼 hover·focus의 반응입니다."
+        },
+        "H05": {
+          "type": "string",
+          "enum": [
+            "none",
+            "lift",
+            "brighten"
+          ],
+          "default": "lift",
+          "description": "갤러리 카드와 칩의 hover 반응입니다."
+        },
+        "H06": {
+          "type": "string",
+          "enum": [
+            "none",
+            "shrink",
+            "inset"
+          ],
+          "default": "shrink",
+          "description": "포인터·키보드 누름 상태의 효과입니다."
+        },
+        "H07": {
+          "type": "string",
+          "enum": [
+            "fade",
+            "slide",
+            "scale"
+          ],
+          "default": "scale",
+          "description": "팝오버·드롭다운 메뉴 등장 애니메이션입니다."
+        },
+        "H08": {
+          "type": "string",
+          "enum": [
+            "fade",
+            "rise",
+            "scale"
+          ],
+          "default": "rise",
+          "description": "모달·드로어의 등장 애니메이션입니다."
+        },
+        "H09": {
+          "type": "string",
+          "enum": [
+            "spinner",
+            "progress",
+            "skeleton"
+          ],
+          "default": "spinner",
+          "description": "갤러리 비동기 시연의 진행 표시입니다."
+        },
+        "H10": {
+          "type": "string",
+          "enum": [
+            "toast",
+            "inline",
+            "banner"
+          ],
+          "default": "toast",
+          "description": "장바구니 추가·갤러리 저장 결과의 위치입니다."
+        },
+        "H11": {
+          "type": "string",
+          "enum": [
+            "inline",
+            "toast",
+            "banner"
+          ],
+          "default": "inline",
+          "description": "재고 부족·입력 실패 결과의 위치입니다."
+        },
+        "H12": {
+          "type": "string",
+          "enum": [
+            "together",
+            "stagger",
+            "single"
+          ],
+          "default": "together",
+          "description": "카드·갤러리 타일의 등장 지연입니다."
+        },
+        "I01": {
+          "type": "string",
+          "enum": [
+            "flat",
+            "soft",
+            "translucent"
+          ],
+          "default": "soft",
+          "description": "표면의 입체감과 투명도를 조절합니다."
+        },
+        "I02": {
+          "type": "number",
+          "enum": [
+            70,
+            85,
+            100
+          ],
+          "default": 100,
+          "description": "반투명 표면의 불투명도입니다."
+        },
+        "I03": {
+          "type": "number",
+          "enum": [
+            0,
+            8,
+            16
+          ],
+          "default": 0,
+          "description": "반투명 표면 뒤 콘텐츠를 흐리게 합니다."
+        },
+        "I04": {
+          "type": "string",
+          "enum": [
+            "none",
+            "top",
+            "edge"
+          ],
+          "default": "top",
+          "description": "카드 안쪽에 얇은 광원 표시를 추가합니다."
+        },
+        "I05": {
+          "type": "number",
+          "enum": [
+            0,
+            1,
+            2
+          ],
+          "default": 1,
+          "description": "컨트롤 핸들의 그림자와 카드 하단 깊이입니다."
+        },
+        "I06": {
+          "type": "string",
+          "enum": [
+            "none",
+            "subtle",
+            "brand"
+          ],
+          "default": "none",
+          "description": "카드 외곽 링의 색상입니다."
+        },
+        "I07": {
+          "type": "string",
+          "enum": [
+            "none",
+            "radial",
+            "linear"
+          ],
+          "default": "none",
+          "description": "전체 캔버스의 색조 그라디언트입니다."
+        },
+        "I08": {
+          "type": "string",
+          "enum": [
+            "none",
+            "dots",
+            "grid"
+          ],
+          "default": "none",
+          "description": "캔버스 배경 패턴입니다."
+        },
+        "I09": {
+          "type": "number",
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "default": 1,
+          "description": "히어로 일러스트 뒤의 겹친 종이 레이어 수입니다."
+        },
+        "I10": {
+          "type": "string",
+          "enum": [
+            "none",
+            "cart",
+            "help"
+          ],
+          "default": "none",
+          "description": "미리보기 오른쪽 아래의 고정 동작입니다."
+        },
+        "I11": {
+          "type": "string",
+          "enum": [
+            "outline",
+            "bold",
+            "duotone"
+          ],
+          "default": "outline",
+          "description": "Lucide 아이콘의 선 굵기와 채움입니다."
+        },
+        "I12": {
+          "type": "number",
+          "enum": [
+            16,
+            20,
+            24
+          ],
+          "default": 20,
+          "description": "미리보기 내부 아이콘의 기본 크기입니다."
+        },
+        "J01": {
+          "type": "string",
+          "enum": [
+            "single",
+            "two-column",
+            "compact-list"
+          ],
+          "default": "single",
+          "description": "모바일 폭에서 상품 컬렉션을 재배치합니다."
+        },
+        "J02": {
+          "type": "string",
+          "enum": [
+            "two-column",
+            "three-column",
+            "list"
+          ],
+          "default": "two-column",
+          "description": "태블릿 폭에서의 상품 배치입니다."
+        },
+        "J03": {
+          "type": "string",
+          "enum": [
+            "fluid",
+            "centered",
+            "wide"
+          ],
+          "default": "fluid",
+          "description": "큰 화면에서 콘텐츠 최대 폭·정렬을 바꿉니다."
+        },
+        "J04": {
+          "type": "number",
+          "enum": [
+            600,
+            720,
+            840
+          ],
+          "default": 720,
+          "description": "모바일에서 태블릿으로 전환하는 실제 미리보기 폭입니다."
+        },
+        "J05": {
+          "type": "string",
+          "enum": [
+            "drawer",
+            "bottom",
+            "collapse"
+          ],
+          "default": "drawer",
+          "description": "모바일 화면에서 내비게이션을 변환합니다."
+        },
+        "J06": {
+          "type": "string",
+          "enum": [
+            "drawer",
+            "inline",
+            "popover"
+          ],
+          "default": "popover",
+          "description": "모바일 화면의 필터 진입 방식입니다."
+        },
+        "J07": {
+          "type": "number",
+          "enum": [
+            44,
+            48,
+            56
+          ],
+          "default": 44,
+          "description": "작은 시각 컨트롤도 이 값 이상의 클릭 영역을 갖습니다."
+        },
+        "J08": {
+          "type": "string",
+          "enum": [
+            "reflow",
+            "stack",
+            "scroll"
+          ],
+          "default": "reflow",
+          "description": "앱의 미리보기 확대 시 좁아진 유효 폭에 대응합니다."
+        },
+        "J09": {
+          "type": "string",
+          "enum": [
+            "auto",
+            "portrait-stack",
+            "landscape-split"
+          ],
+          "default": "auto",
+          "description": "미리보기 가로·세로 비율에 따른 배치입니다."
+        },
+        "J10": {
+          "type": "string",
+          "enum": [
+            "wrap",
+            "clamp",
+            "ellipsis"
+          ],
+          "default": "wrap",
+          "description": "긴 상품 이름과 설명의 시각적 처리입니다. 전체 이름은 접근성 레이블로 유지합니다."
+        },
+        "J11": {
+          "type": "string",
+          "enum": [
+            "system",
+            "reduce",
+            "essential"
+          ],
+          "default": "system",
+          "description": "모든 모드는 운영체제의 모션 축소 요청을 우선합니다."
+        },
+        "J12": {
+          "type": "string",
+          "enum": [
+            "system",
+            "enhanced",
+            "outline"
+          ],
+          "default": "system",
+          "description": "forced-colors를 존중하고 필요하면 대비를 강화합니다."
+        }
+      }
+    }
+  },
+  "$comment": "Runtime validation also requires family === variables.A01. Conditional inactive values remain serialized."
+}

@@ -1,0 +1,20 @@
+{
+  "phase": "Phase 2",
+  "genome_schema": "phase0-1.0.0",
+  "evaluation_version": "phase2-eval-1.0.0",
+  "search_version": "phase2-search-1.0.0",
+  "files": {
+    "index.html": {
+      "bytes": 579,
+      "sha256": "511f8e52201ba1e102aef1ebca7e25cb12a5a18b224faffc7cd7e909b4f12f35"
+    },
+    "UI_Evolution_Lab_Phase2.html": {
+      "bytes": 6158418,
+      "sha256": "dd2641e08cea219a47e8ff9dddb0c3206162545462e165c6e9240793e82ff8f5"
+    },
+    "UI_Evolution_Lab_Phase1_Experiment.html": {
+      "bytes": 6056526,
+      "sha256": "37a80b2a49936f40dfc81604adc1333d87ab311d7befd6b3a6fec0be2296fc6d"
+    }
+  }
+}

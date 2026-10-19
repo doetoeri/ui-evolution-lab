@@ -1,0 +1,36 @@
+import {mkdirSync,writeFileSync,cpSync,mkdtempSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {resolve,join} from 'node:path';
+import assert from 'node:assert/strict';
+import {startResearchServer} from './research-server';
+import {defaults} from '../src/engine';
+import {defaultConfig} from '../src/research/config';
+import {browserEvaluation} from '../src/research/evaluation';
+import {runExperiment,localEvaluator} from '../src/research/experiment';
+import {summaryDocument} from '../src/research/statistics';
+import {recordsCSV} from '../src/research/data';
+import {FAMILIES} from '../src/schema';
+import {VIEWPORTS,type BrowserRaw,type ExperimentConfig,type Evaluator} from '../src/research/types';
+
+const quick=process.argv.includes('--quick'),snapshot=mkdtempSync(join(tmpdir(),'uel-research-check-'));cpSync(resolve('dist'),snapshot,{recursive:true});mkdirSync('docs/phase2',{recursive:true});mkdirSync('examples',{recursive:true});
+const app=await startResearchServer({port:0,root:snapshot,evidenceDir:'docs/phase2/evidence'}),results:any[]=[];let passed=false;
+try{
+ const status=await fetch(app.baseURL+'/api/status').then(r=>r.json());assert.equal(status.ready,true);assert.equal((await fetch(app.baseURL+'/api/evaluate',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'})).status,403);assert.equal((await fetch(app.baseURL+'/api/status',{headers:{Origin:'https://untrusted.example'}})).status,403);
+ const c:ExperimentConfig={...defaultConfig(),level:2,objective:'browser-v2',budget:1,repetitions:1,seeds:[12345],viewports:quick?[VIEWPORTS[2]]:[...VIEWPORTS],algorithms:['random'],cache:false};
+ const measured:BrowserRaw[]=[];
+ for(const family of quick?FAMILIES.slice(0,1):FAMILIES){const g=defaults(family.id),raw=await app.runner.evaluate(g,c,'baseline-'+family.id);measured.push(raw);const evaluation=browserEvaluation(g,c,raw);results.push({test:'baseline',family:family.id,evaluation,raw});console.log(JSON.stringify({family:family.id,F:evaluation.scores.F,A:evaluation.scores.A,L:evaluation.scores.L,eligible:evaluation.eligible,views:raw.views.map(v=>({viewport:v.viewport.id,tasks:v.tasks.map(t=>({id:t.task_id,pass:t.success,error:t.error?.slice(0,220)})),layout:v.layout.issues.map(i=>({id:i.id,message:i.message,selector:i.selector})),axe:v.axe.violations.map(a=>a.id),keyboard:v.keyboard,targets:v.touchTargets.map(t=>({selector:t.selector,message:t.message})),reduced:v.reducedMotion}))}));
+  assert.equal(evaluation.scores.F,100,'Baseline four task correctness');assert.deepEqual(raw.pageErrors,[],'Baseline JS errors');assert.ok(raw.views.every(v=>v.layout.issues.length===0),'Baseline should have no detected layout errors (false-positive control)');assert.ok(raw.views.every(v=>v.axe.violations.length===0),'Baseline axe errors');assert.ok(raw.views.every(v=>v.keyboard.every(k=>k.pass)),'Baseline keyboard');assert.ok(raw.views.every(v=>v.reducedMotion.pass),'Reduced motion');
+ }
+ if(!quick){
+  const desktop={...c,viewports:[VIEWPORTS[2]]},normal=measured[0].views.find(v=>v.viewport.id==='desktop')!,repeat=await app.runner.evaluate(defaults(),desktop,'repeat-baseline');results.push({test:'repeat-identical-genome',raw:repeat});assert.deepEqual(repeat.views[0].tasks.map(t=>t.success),normal.tasks.map(t=>t.success));assert.equal(repeat.views[0].layout.issues.length,normal.layout.issues.length);assert.equal(repeat.views[0].axe.violations.length,normal.axe.violations.length);
+  const broken=await app.runner.evaluate(defaults(),desktop,'known-broken',undefined,'broken');results.push({test:'known-broken',raw:broken});const ids=broken.views[0].layout.issues.map(i=>i.id);assert.ok(ids.includes('horizontal-scroll'));assert.ok(ids.includes('peer-overlap'));assert.ok(ids.includes('text-clipped'));assert.ok(broken.views[0].axe.violations.some(r=>['button-name','image-alt'].includes(r.id)));assert.ok(broken.views[0].touchTargets.some(t=>t.id==='target-size'));
+  const intentional=await app.runner.evaluate(defaults(),desktop,'known-intentional',undefined,'intentional');results.push({test:'intentional-overlap',raw:intentional});assert.equal(intentional.views[0].layout.issues.filter(i=>i.id==='peer-overlap').length,0);assert.ok(intentional.views[0].layout.ignoredIntentional>0);
+  // Real protocol test: browser UI connects to HTTP service, executes a Level 2 candidate, renders results, saves and reloads.
+  const browser=await app.runner.browser(),context=await browser.newContext({viewport:{width:1600,height:1100}}),page=await context.newPage();const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(app.baseURL);await page.getByRole('button',{name:'연구실',exact:true}).click();await page.getByRole('textbox',{name:'로컬 실행기 주소'}).fill(app.baseURL);await page.getByRole('button',{name:'연결 확인',exact:true}).click();await page.getByText(/로컬 Chromium .* 연결 완료/).waitFor();await page.getByRole('combobox',{name:'실험 평가 수준'}).selectOption('browser-v2');await page.getByRole('combobox',{name:'탐색 알고리즘'}).selectOption('random');await page.getByRole('spinbutton',{name:'후보 평가 예산'}).fill('1');await page.getByRole('button',{name:'새 실험 시작',exact:true}).click();await page.getByText('실험 완료. 원자료·제약·실행환경을 포함해 저장했습니다.',{exact:true}).waitFor({timeout:120000});await page.getByRole('button',{name:'원자료',exact:true}).click();assert.equal(await page.locator('.r-record-table tbody tr').count(),1);assert.equal(await page.locator('.r-record-table tbody tr td').nth(4).textContent(),'100.00');await page.screenshot({path:'docs/phase2/research-browser-result.png',fullPage:true});await page.reload();await page.getByRole('button',{name:'연구실',exact:true}).click();await page.getByRole('button',{name:/실험 보관함/}).click();assert.ok(await page.locator('.r-archive-row').count()>0);assert.deepEqual(errors,[]);await context.close();
+  // Preserve actual observations as an explicit small measured example; no invented score rows.
+  const evaluator:Evaluator={id:'playwright-measured-example/'+status.environmentId,async evaluate(g,{config}){const raw=measured[FAMILIES.findIndex(f=>f.id===g.family)];return browserEvaluation(g,config,raw);}};
+  const example=await runExperiment({...c,families:FAMILIES.map(f=>f.id)},evaluator,{id:'measured-baseline-phase2'});example.example='실제 Playwright 소규모 기준선 검사 (세 계열 × 세 화면, 각 4과제). 최적화 알고리즘 우월성 실험 아님. 재사용된 검사 원자료의 measuredAt에 실제 검사 시각 기록.';writeFileSync('examples/measured-baselines.json',JSON.stringify(example,null,2));writeFileSync('examples/measured-baselines.csv',recordsCSV(example.records));writeFileSync('examples/measured-baselines-summary.json',JSON.stringify(summaryDocument(example),null,2));
+  const proxy=await runExperiment({...defaultConfig(),enforceAccessibility:true},localEvaluator,{id:'proxy-example-phase2'});proxy.example='이 환경에서 실제 실행한 Level 1 Proxy 900회 예제. UI 기능·미적 만족도 측정이 아닙니다.';writeFileSync('examples/proxy-experiment.json',JSON.stringify(proxy));writeFileSync('examples/proxy-summary.json',JSON.stringify(summaryDocument(proxy),null,2));
+ }
+ passed=true;console.log('RESEARCH VERIFICATION PASSED');
+}finally{writeFileSync(quick?'docs/phase2/diagnostic.json':'docs/phase2/browser-verification.json',JSON.stringify({passed,quick,at:new Date().toISOString(),results},null,2));await app.close();rmSync(snapshot,{recursive:true,force:true});}

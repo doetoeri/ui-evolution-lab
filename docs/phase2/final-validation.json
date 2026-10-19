@@ -1,0 +1,172 @@
+{
+  "uniqueScenarios": 25,
+  "passed": 25,
+  "originalFullStats": {
+    "startTime": "2026-10-18T10:25:50.855Z",
+    "duration": 422381.51499999996,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "latestUIStats": {
+    "startTime": "2026-10-18T10:34:22.078Z",
+    "duration": 135634.489,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "scenarios": [
+    {
+      "file": "effects.spec.ts",
+      "title": "each of 120 variables changes actual rendered geometry, CSS, content or interaction feedback",
+      "passed": true,
+      "source": "playwright-full.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "all 120 variable editors update, preserve types and immediately reach the renderer",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "random seed reproducibility, locks, undo/redo and saved preset persistence",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "JSON exports exact values, rejects malformed import and accepts file upload",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "functional shop searches, filters, sorts, opens detail and manages cart inventory",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "component semantics, dragging, keyboard, overlap, disabled and focus",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "dialog focus trap, dropdown, popover, accordion, table, success and error",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "compare 2–4 genomes at identical dimensions, differences and CSV evaluations",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "visual Apple desktop",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "visual Apple tablet",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "visual Apple mobile",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "visual Material desktop",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "visual Material tablet",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "visual Material mobile",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "visual Experimental desktop",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "visual Experimental tablet",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "visual Experimental mobile",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "eight control state screenshots and reduced motion / 200% reflow",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "axe-core on shell and all three baseline shop/gallery views, with real contrast",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "lab.spec.ts",
+      "title": "real touch, zoom reflow, system dark theme and on-demand mobile Inspector audit",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "research.spec.ts",
+      "title": "research L1 executes all three algorithms, exports raw/summary, restores and applies the winning genome",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "research.spec.ts",
+      "title": "research preserves partial evaluations on stop and resumes the same experiment",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "research.spec.ts",
+      "title": "imports a saved experiment, refuses forged measured values, and exposes Level 2 connection requirement",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "research.spec.ts",
+      "title": "anonymous human module requires consent, records only explicit answers and exports Human-rated data",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    },
+    {
+      "file": "research.spec.ts",
+      "title": "research tablet/mobile layouts, reduced motion and axe coverage",
+      "passed": true,
+      "source": "playwright-lab.spec.ts-research.spec.ts.json"
+    }
+  ]
+}

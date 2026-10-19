@@ -1,0 +1,28 @@
+import {describe,it,expect} from 'vitest';
+import {SCHEMA,GROUPS} from '../src/schema';
+import {defaults,parseGenome,change,randomize,mutate,genomeKey,constraints,combinationStats,diff,candidatesCSV,SCHEMA_VERSION,inactiveReason} from '../src/engine';
+import {designTokens,tokenChecks,contrast} from '../src/tokens';
+describe('120-variable schema',()=>{
+  it('has exactly 10 groups × 12 unique and fully specified definitions',()=>{expect(SCHEMA).toHaveLength(120);expect(new Set(SCHEMA.map(d=>d.id)).size).toBe(120);for(const group of GROUPS)expect(SCHEMA.filter(d=>d.group===group.id)).toHaveLength(12);for(const d of SCHEMA){expect(d.options.length).toBeGreaterThan(1);expect(d.options.some(o=>o.value===d.default)).toBe(true);expect(d.binding.length).toBeGreaterThan(5);expect(d.serialization).toBe(`/variables/${d.id}`);expect(d.constraint).toBeTruthy();}});
+  for(const d of SCHEMA)it(`${d.id} accepts every allowed value, roundtrips and rejects an unknown value`,()=>{for(const o of d.options){const g=change(defaults(),d.id,o.value);expect(parseGenome(JSON.stringify(g))).toEqual(g);expect(g.variables[d.id]).toBe(o.value);expect(constraints(g)).toEqual([]);}expect(()=>change(defaults(),d.id,'not-a-domain-value')).toThrow();});
+  it('explains conditional variables without deleting their serialized values',()=>{const g=defaults();expect(inactiveReason(SCHEMA.find(d=>d.id==='I03')!,g)).toMatch('반투명');expect(inactiveReason(SCHEMA.find(d=>d.id==='G01')!,g,'gallery')).toMatch('쇼핑몰');expect(Object.keys(g.variables)).toHaveLength(120);});
+});
+describe('strict import boundary',()=>{
+  const invalid=[null,[],{}, {...defaults(),version:2},{...defaults(),schemaVersion:'other'},{...defaults(),seed:-1},{...defaults(),seed:0.1},{...defaults(),seed:4294967296},{...defaults(),family:'experimental'},{...defaults(),signature:'yes'},{...defaults(),variables:{...defaults().variables,A03:'1200'}},{...defaults(),variables:{...defaults().variables,Z99:0}}];
+  it.each(invalid.map((g,i)=>[i,g]))('rejects invalid document %s',(_i,g)=>{expect(()=>parseGenome(JSON.stringify(g))).toThrow();});
+  it('rejects missing and prototype keys, oversized or malformed JSON',()=>{const g=defaults();delete (g.variables as Partial<typeof g.variables>).A01;expect(()=>parseGenome(JSON.stringify(g))).toThrow();expect(()=>parseGenome('{')).toThrow();expect(()=>parseGenome(' '.repeat(100001))).toThrow();expect(()=>parseGenome(JSON.stringify({...defaults(),variables:{...defaults().variables,constructor:'polluted'}}))).toThrow();});
+});
+describe('search reproducibility and constraints',()=>{
+  it('reproduces across seeds including uint32 boundaries',()=>{for(const seed of [0,1,12345,0xffffffff]){const a=randomize(defaults(),seed),b=randomize(defaults(),seed);expect(a).toEqual(b);expect(constraints(a)).toEqual([]);}expect(genomeKey(randomize(defaults(),1))).not.toBe(genomeKey(randomize(defaults(),2)));});
+  it('respects locks and requested scope',()=>{const g=defaults(),ids=SCHEMA.filter(d=>d.group==='C').map(d=>d.id);const r=randomize(g,21,ids,['C01','C03']);expect(r.variables.C01).toBe(g.variables.C01);expect(r.variables.C03).toBe(g.variables.C03);for(const d of SCHEMA.filter(d=>d.group!=='C'))expect(r.variables[d.id]).toBe(g.variables[d.id]);});
+  it('mutates exactly four distinct unlocked values and preserves domain validity',()=>{const g=defaults(),a=mutate(g,88,4,['A01']);expect(diff(g,a)).toHaveLength(4);expect(a.variables.A01).toBe(g.variables.A01);expect(a).toEqual(mutate(g,88,4,['A01']));expect(constraints(a)).toEqual([]);});
+  it('ignores seed metadata but includes Signature when checking duplicate candidates',()=>{const a=defaults();expect(genomeKey(a)).toBe(genomeKey({...a,seed:44}));expect(genomeKey(a)).not.toBe(genomeKey({...a,signature:false}));});
+  it('computes exact products beyond Number.MAX_SAFE_INTEGER',()=>{const stats=combinationStats();expect(BigInt(stats.exact)).toBeGreaterThan(BigInt(Number.MAX_SAFE_INTEGER));expect(stats.digits).toBe(stats.exact.length);expect(stats.log10).toBeCloseTo(Math.log10(Number(stats.exact)),10);const small=combinationStats(SCHEMA.slice(0,2));expect(small.exact).toBe('9');});
+  it('escapes CSV newlines/quotes and neutralizes formula injection',()=>{const csv=candidatesCSV([{id:'1',name:'=1+1',genome:defaults(),createdAt:'now',evaluations:[{timestamp:'now',kind:'manual',score:8,notes:'line\n"quote"'}]}]);expect(csv).toContain('"\'=1+1"');expect(csv).toContain('line\n""quote""');expect(csv.charCodeAt(0)).toBe(0xfeff);});
+});
+describe('role tokens and contrast',()=>{
+  it('uses the WCAG luminance ratio',()=>{expect(contrast([0,0,0],[255,255,255])).toBeCloseTo(21);expect(contrast([255,255,255],[255,255,255])).toBe(1);});
+  it('computes accessible primary foreground for all finite palette choices',()=>{for(const hue of ['blue','violet','teal','orange'])for(const light of [35,42,50])for(const sat of [55,75,95]){let g=change(defaults(),'C01',hue);g=change(g,'C03',light);g=change(g,'C04',sat);expect(designTokens(g).contrast.primary).toBeGreaterThanOrEqual(4.5);}});
+  it('responds to system theme and reduced motion without an unsafe opt-out',()=>{let g=change(defaults(),'C11','system');expect(designTokens(g,true).dark).toBe(true);expect(designTokens(g,false).dark).toBe(false);expect(designTokens(g,false,true).style['--duration']).toBe('0ms');g=change(g,'J11','reduce');expect(designTokens(g).style['--duration']).toBe('0ms');});
+  it('keeps all three baselines above text contrast thresholds',()=>{for(const f of ['apple-inspired','material-inspired','experimental'] as const){const checks=tokenChecks(defaults(f));for(const check of checks.filter(c=>c.name!=='입력 경계 / 표면'))expect(check.pass,`${f} ${check.name}: ${check.ratio}`).toBe(true);}});
+});

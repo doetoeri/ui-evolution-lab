@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "examples": [
+    "measured-baselines",
+    "measured-optimization",
+    "proxy-experiment"
+  ],
+  "evidenceFallback": true,
+  "at": "2026-10-18T10:35:12.440Z"
+}

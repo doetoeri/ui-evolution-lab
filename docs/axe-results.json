@@ -1,0 +1,44 @@
+[
+  {
+    "family": "apple-inspired",
+    "view": "shop",
+    "passes": 33,
+    "incomplete": 2,
+    "violations": []
+  },
+  {
+    "family": "apple-inspired",
+    "view": "gallery",
+    "passes": 36,
+    "incomplete": 2,
+    "violations": []
+  },
+  {
+    "family": "material-inspired",
+    "view": "shop",
+    "passes": 33,
+    "incomplete": 2,
+    "violations": []
+  },
+  {
+    "family": "material-inspired",
+    "view": "gallery",
+    "passes": 36,
+    "incomplete": 2,
+    "violations": []
+  },
+  {
+    "family": "experimental",
+    "view": "shop",
+    "passes": 33,
+    "incomplete": 2,
+    "violations": []
+  },
+  {
+    "family": "experimental",
+    "view": "gallery",
+    "passes": 36,
+    "incomplete": 2,
+    "violations": []
+  }
+]

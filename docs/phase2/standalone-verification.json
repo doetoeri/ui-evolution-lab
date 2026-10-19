@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "path": "/workspace/scratch/e208b3e3f818/UI_Evolution_Lab_Phase2.html",
+  "protocol": "file:",
+  "at": "2026-10-18T10:33:44.159Z",
+  "checks": [
+    "48 Level 1 records; F null; Q Proxy",
+    "seven charts",
+    "switch click and keyboard",
+    "29 real gallery components"
+  ],
+  "pageErrors": []
+}

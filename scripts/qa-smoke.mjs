@@ -1,0 +1,13 @@
+import {chromium} from 'playwright';
+import {mkdirSync,writeFileSync} from 'node:fs';
+import {resolve} from 'node:path';
+const browser=await chromium.launch({executablePath:resolve('.qa-browser/chromium'),headless:true,args:['--no-sandbox','--disable-dev-shm-usage','--use-gl=angle','--use-angle=swiftshader','--disable-gpu-sandbox']});
+const page=await browser.newPage({viewport:{width:1600,height:1050}});const errors=[];
+page.on('pageerror',e=>errors.push(e.message));
+await page.goto(process.env.TEST_BASE_URL??'http://terminal.local:4173/',{waitUntil:'networkidle'});
+await page.screenshot({path:'docs/qa-desktop.png',fullPage:true});
+const axe=await import('axe-core');await page.addScriptTag({content:axe.default.source});
+const result=await page.evaluate(async()=>await window.axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa','wcag22aa']}}));
+writeFileSync('docs/qa-initial-axe.json',JSON.stringify({violations:result.violations,passes:result.passes.length,incomplete:result.incomplete.length,errors},null,2));
+process.stdout.write(JSON.stringify({title:await page.title(),errors,violations:result.violations.map(v=>({id:v.id,count:v.nodes.length,targets:v.nodes.slice(0,8).map(n=>n.target),summary:v.nodes[0]?.failureSummary})),passes:result.passes.length},null,2));
+await browser.close();
