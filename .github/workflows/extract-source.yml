@@ -1,0 +1,32 @@
+name: Extract UI Evolution Lab source
+on:
+  push:
+    paths:
+      - 'UI_Evolution_Lab_Phase2_1_Preview_Source.zip'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Unpack project
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/ui-evolution-unpacked
+          unzip -q UI_Evolution_Lab_Phase2_1_Preview_Source.zip -d /tmp/ui-evolution-unpacked
+          test -f /tmp/ui-evolution-unpacked/UI_Evolution_Lab_Phase2/package.json
+          cp -a /tmp/ui-evolution-unpacked/UI_Evolution_Lab_Phase2/. .
+          rm -rf node_modules
+      - name: Commit extracted source
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Import UI Evolution Lab Phase 2.1 source"
+            git push
+          fi
