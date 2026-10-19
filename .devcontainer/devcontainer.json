@@ -1,0 +1,21 @@
+{
+  "name": "UI Evolution Lab Playwright",
+  "image": "mcr.microsoft.com/playwright:v1.58.2-noble",
+  "forwardPorts": [
+    4318
+  ],
+  "portsAttributes": {
+    "4318": {
+      "label": "UI Evolution Lab",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "if [ -f package.json ]; then npm install; fi",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-playwright.playwright"
+      ]
+    }
+  }
+}
